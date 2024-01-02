@@ -1,26 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Manrope&display=swap');
+
 :root {
-/* Fondo de la section de bienvenida y el footer */
---color-primario: #093931;
+  /* ============================ Paleta de colores ============================== */
 
-/* Fondo del main y letra sin hoover del nav bar y footer */
---color-secundario: #FFFFFF;
+  /* Fondo de la section de bienvenida y el footer */
+  --color-fondo-verde: #093931;
+  /* Fondo del main, titulos de las colecciones y letra sin hoover del nav bar y footer */
+  --color-fondo-blanco: #ffffff;
+  /* Color de h1, iconos y enlaces en hover del nav */
+  --color-primario: #f5d38e;
+  /* Títulos dentro del main, botones con fondo blanco */
+  --color-secundario: #0d554a;
+  /* Titulos de los subtitulos, productos destacados y del order sumary */
+  --color-terciario: #171a1f;
+  /* Color de los párrafos, precios */
+  --color-texto: #9095a0;
+  /* Fondo del botón subscribe */
+  --color-fondo-boton: #6b4a09;
+  /* Texto del botón subscribe */
+  --color-texto-boton: #f2c66d;
+  /* Precios destacados */
+  --color-precio-destacado: #B37D10;
+  
+  /* ============================ Grosor fuente y font-family ============================== */
+    
+  /* Logo, enlaces nav, h1, colecciones de productos, subtitulo footer*/
+  --peso-primario: 400 'Cormorant Garamond', serif;
+  /* Texto botones, parrafos, precios, testimonio, copyright, subs texto footer */
+  --peso-secundario: 400 'Manrope', sans-serif;
+  /* Autor del testimonio, enlaces del footer */
+  --peso-terciario: 700 'Manrope', sans-serif;
+  /* Subtitulos */
+  --peso-subtitulos: 600 'Cormorant Garamond', serif;
+  /* Precios */
+  --peso-precios: 600 'Manrope', sans-serif;
 
-/* Color de h1, iconos y enlaces en hover del nav */
---nav-iconos: #F5D38E;
+  /* ============================ Tamaño fuente ============================== */
 
-/* Títulos dentro del main */
---color-titulos: #6B4A09;
-
-/* subtitulos en negro */
---color-subtitulos: #171A1F;
-
-/* Color de los párrafos */
---color-texto: #9095A0;
-
-/* Fondo del botón suscribirse */
---fondo-boton: #0D554A;
-
-/* Texto del botón suscribirse */
---texto-boton: #F2C66D;
-
+    /* lOGO */
+    --tamaño-logo: 30px;
+    /* Enlaces de las barras de navegacion, footer, copyrigth y boton de subscribe*/
+    --tamaño-enlaces: 14px;
+    /* Texto principal (h1)*/
+    --tamaño-primario: 72px;
+    /* Titulos, precios destacados */
+    --tamaño-secundario: 40px;
+    /* Texto de los botones, subtitulos */
+    --tamaño-terciario: 18px;
+    /* Parrafos, precios, carruseles, testimonio*/
+    --tamaño-texto: 16px;
+    /* Titulos de los productos destacados y el del order sumary */
+    --tamaño-titulos-productos: 24px 700 'Cormorant Garamond', serif;
+    /* Titulos de las colecciones de productos */
+    --tamaño-colecciones: 32px;
+    /* Testimonio */
+    --tamaño-autor-testimonio: 20px;
+    /* Texto invitando a subscribir en el footer */
+    --tamaño-texto-subs: 12px;
 }

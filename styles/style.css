@@ -58,3 +58,61 @@
     /* Texto invitando a subscribir en el footer */
     --tamaño-texto-subs: 12px;
 }
+
+
+/* Estilos del footer */
+footer {
+    background-color: var(--color-fondo-verde);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 1440px;
+    height: 234px;
+    flex-shrink: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.redes-sociales {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.redes-sociales> li {
+    padding-left: 20px;
+}
+
+.email {
+    width: 100%;
+    display: flex;
+  }
+
+  span {
+    display: inline-flex;
+    padding: 7px 132px 6px 12px;
+    align-items: center;
+    gap: 6px;
+
+    border-radius: 18px 0px 0px 18px;
+    border: 1px solid #fff;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .uno {
+    background-color: inherit;
+    outline: none;
+    border: none;
+  }
+  .dos {
+    display: inline-flex;
+    padding: 7px 23.5px 7px 24.5px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0px 18px 18px 0px;
+    background: #f2c66d;
+  }

@@ -1,0 +1,26 @@
+:root {
+/* Fondo de la section de bienvenida y el footer */
+--color-primario: #093931;
+
+/* Fondo del main y letra sin hoover del nav bar y footer */
+--color-secundario: #FFFFFF;
+
+/* Color de h1, iconos y enlaces en hover del nav */
+--nav-iconos: #F5D38E;
+
+/* Títulos dentro del main */
+--color-titulos: #6B4A09;
+
+/* subtitulos en negro */
+--color-subtitulos: #171A1F;
+
+/* Color de los párrafos */
+--color-texto: #9095A0;
+
+/* Fondo del botón suscribirse */
+--fondo-boton: #0D554A;
+
+/* Texto del botón suscribirse */
+--texto-boton: #F2C66D;
+
+}

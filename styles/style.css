@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Manrope&display=swap");
 
 :root {
+/*Type*/
+
+    --tipografia-body: 'Manrope', sans-serif;
+    --tamaño-fuente: 16px;
+
   /* ============================ Paleta de colores ============================== */
 
   /* Fondo de la section de bienvenida y el footer */
-  --color-fondo-verde: #093931;
+  --color-fondo-verde: #093931; 
   /* Fondo del main, titulos de las colecciones y letra sin hoover del nav bar y footer */
   --color-fondo-blanco: #ffffff;
   /* Color de h1, iconos y enlaces en hover del nav */
@@ -61,10 +66,316 @@
   --tamaño-texto-subs: 12px;
 }
 
-* {
+/*GENERAL*/
+*{
   margin: 0;
   padding: 0;
 }
+
+body{
+  font-family: var(--tipografia-body);
+  font-size: var(--tamaño-fuente)
+}
+
+p {
+  font-size: 16px;
+}
+
+/*0.HEADER*/
+header section {
+  background-color: var(--color-fondo-verde);
+  display: flex;
+  flex-wrap: nowrap; /*alinear*/
+  justify-content: space-between; /*espaciar*/
+  width: 1440px;
+  height: 82px;
+  flex-shrink: 0;
+}
+.logo--principal {
+  color: #F5D38E;
+  font-family: 'Cormorant Garamond';
+  font-size: var(--tamaño-logo);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px; 
+  display: flex;  
+  justify-content: flex-start;
+  padding: 10px 130px;
+}
+
+.nav {
+  font-family: 'Manrope';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  display: flex;
+  height: 43px;
+  padding: 10.5px 130px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav a {
+  margin-right: 35px;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.nav a:hover {
+  color: #F2C66D;
+  font-weight: 700;
+}
+
+.nav--a-figure {
+  margin-right: 30px;
+}
+
+.nav--a-figure:hover {
+  color: #F2C66D;
+}
+
+/*1. BIENVENIDA*/
+.bienvenida {
+  background-color: var(--color-fondo-verde);
+  width: 1440px;
+  height: 730px;
+  background-image:url(/Assets/1Home-Page/1Bienvenida/TEXTURA-olas_\ blancas.png);
+  background-repeat: repeat-x;
+  display: flex;
+  flex-wrap: nowrap; /*alinear*/
+}
+
+.bienvenida--text {
+  color: #F5D38E;
+  font-family: 'Cormorant Garamond';
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 94px; 
+  width: 537px;
+  padding: 110px 130px;
+}
+
+.bienvenida--boton {
+    display: inline-flex;
+    text-decoration: none;
+    padding: 12px 59px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 26px;
+    border: 1px solid #FFF; /*"oculta" funcionalidad*/
+    background-color: rgba(0, 0, 0, 0.00);
+    color:#FFF;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    position: relative;
+    top: -94px;
+    left: 140px;
+}
+
+.bienvenida--boton:hover {
+  border: 1px solid #F2C66D;
+}
+
+.aside--figure img {
+  width: 407px;
+  height: 543px;
+  object-fit: fill;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.aside--figure-vd img {
+  position: absolute;
+  z-index: 1;
+  top: 200px;
+  left: 1050px;
+  width: 241px;
+  height: 321px;
+  flex-shrink: 0;
+  border-radius: 121px 121px 0px 0px;
+  background:lightgray 0px -19px / 100% 112.15% no-repeat;
+  box-shadow: 0px 8px 17px 0px rgba(23, 26, 31, 0.15), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+}
+
+.aside--boton {
+  position: absolute;
+  z-index: 1;
+  top: 350px;
+  left: 1150px;
+  display: flex;
+  width: 52px;
+  height: 52px;
+  padding: 10.5px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 26px;
+  border: 1px solid #EFFDFA;
+  background: rgba(0, 0, 0, 0.00);
+}
+
+.aside--boton:hover {
+  border: 1px solid #F2C66D;
+}
+
+/*2. SERVICIOS*/
+.servicios {
+  display: flex;
+  flex-wrap: nowrap; /*alinear*/
+  align-items: center;
+  justify-content: space-around;
+}
+.servicios--article {
+  padding: 90px 80px;
+}
+
+.servicios h4 {
+  color: #171A1F;
+  text-align: center;
+  font-family: 'Cormorant Garamond';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; 
+}
+
+.servicios figure {
+  align-items: center;
+  padding: 0px 110px;
+}
+
+.servicios p {
+  color: #9095A0;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; 
+}
+
+
+/*3. PRODUCTOS*/
+.productos {
+  display: flex;
+  flex-wrap: nowrap; /*alinear*/
+  width: 1440px;
+  height: 470px;
+  justify-content: space-around;
+  padding: 0px 10px;
+}
+
+.productos--title button {
+  text-decoration: none;
+  display: inline-flex;
+  padding: 12px 59px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 26px;
+  border: 1px solid #0D554A;
+  background: rgba(0, 0, 0, 0.00);
+  color: #0D554A;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; 
+  position: relative;
+  top: 20px;
+  left: 80px;
+}
+
+.productos--title button:hover {
+  border: 1px solid #F2C66D;
+}
+
+.productos--title h3 {
+  width: 264px;
+  color: #0D554A;
+  font-family: 'Cormorant Garamond';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; 
+  padding: 5px 80px;
+}
+
+.productos--title p {
+  width: 264px;
+  color: #9095A0;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; 
+  padding: 5px 80px;
+}
+
+.productos--exhibi figure {
+  object-fit: fill;
+}
+
+.productos--exhibi img {
+  background: url(<path-to-image>), lightgray -62px 0px / 144.928% 100% no-repeat;
+  box-sizing: border-box;
+  width: 276px;
+  height: 320px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.productos--exhibi h4 {
+  color: #171A1F;
+  font-family: 'Cormorant Garamond';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; 
+  padding: 0px 13px;
+}
+
+.productos--exhibi p {
+  color: #171A1F;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; 
+  padding: 0px 13px;
+}
+
+/*4.OUR COLLECTIONS*/
+
+.collections h2 {
+  color: #0D554A;
+  text-align: center;
+  font-family: Cormorant Garamond;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; 
+  justify-content: center;
+}
+
+.collections--selec-fila1 {
+  display: flex;
+  flex-wrap: nowrap; /*alinear*/
+}
+
+.collections img {
+  width: 360px;
+  height: 360px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+/* ================== Secciones de Gaby ==================== */
 
 /* Selection of jewelry */
 

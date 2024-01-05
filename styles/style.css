@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Manrope&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Manrope&display=swap");
 
 :root {
 /*Type*/
@@ -18,50 +18,52 @@
   --color-secundario: #0d554a;
   /* Titulos de los subtitulos, productos destacados y del order sumary */
   --color-terciario: #171a1f;
-  /* Color de los párrafos, precios */
-  --color-texto: #9095a0;
+  /* Color de los precios */
+  --color-precio: #9095a0;
+  /* de los párrafos */
+  --color-texto: #424955;
   /* Fondo del botón subscribe */
   --color-fondo-boton: #6b4a09;
   /* Texto del botón subscribe */
   --color-texto-boton: #f2c66d;
   /* Precios destacados */
-  --color-precio-destacado: #B37D10;
-  
+  --color-precio-destacado: #b37d10;
+
   /* ============================ Grosor fuente y font-family ============================== */
-    
+
   /* Logo, enlaces nav, h1, colecciones de productos, subtitulo footer*/
-  --peso-primario: 400 'Cormorant Garamond', serif;
+  --peso-primario: 400 "Cormorant Garamond", serif;
   /* Texto botones, parrafos, precios, testimonio, copyright, subs texto footer */
-  --peso-secundario: 400 'Manrope', sans-serif;
+  --peso-secundario: 400 "Manrope", sans-serif;
   /* Autor del testimonio, enlaces del footer */
-  --peso-terciario: 700 'Manrope', sans-serif;
+  --peso-terciario: 700 "Manrope", sans-serif;
   /* Subtitulos */
-  --peso-subtitulos: 600 'Cormorant Garamond', serif;
+  --peso-subtitulos: 600 "Cormorant Garamond", serif;
   /* Precios */
-  --peso-precios: 600 'Manrope', sans-serif;
+  --peso-precios: 600 "Manrope", sans-serif;
 
   /* ============================ Tamaño fuente ============================== */
 
-    /* lOGO */
-    --tamaño-logo: 30px;
-    /* Enlaces de las barras de navegacion, footer, copyrigth y boton de subscribe*/
-    --tamaño-enlaces: 14px;
-    /* Texto principal (h1)*/
-    --tamaño-primario: 72px;
-    /* Titulos, precios destacados */
-    --tamaño-secundario: 40px;
-    /* Texto de los botones, subtitulos */
-    --tamaño-terciario: 18px;
-    /* Parrafos, precios, carruseles, testimonio*/
-    --tamaño-texto: 16px;
-    /* Titulos de los productos destacados y el del order sumary */
-    --tamaño-titulos-productos: 24px 700 'Cormorant Garamond', serif;
-    /* Titulos de las colecciones de productos */
-    --tamaño-colecciones: 32px;
-    /* Testimonio */
-    --tamaño-autor-testimonio: 20px;
-    /* Texto invitando a subscribir en el footer */
-    --tamaño-texto-subs: 12px;
+  /* lOGO */
+  --tamaño-logo: 30px;
+  /* Enlaces de las barras de navegacion, footer, copyrigth y boton de subscribe*/
+  --tamaño-enlaces: 14px;
+  /* Texto principal (h1)*/
+  --tamaño-primario: 72px;
+  /* Titulos, precios destacados */
+  --tamaño-secundario: 40px;
+  /* Texto de los botones, subtitulos */
+  --tamaño-terciario: 18px;
+  /* Parrafos, precios, carruseles, testimonio*/
+  --tamaño-texto: 16px;
+  /* Titulos de los productos destacados y el del order sumary */
+  --tamaño-titulos-productos: 24px 700 "Cormorant Garamond", serif;
+  /* Titulos de las colecciones de productos */
+  --tamaño-colecciones: 32px;
+  /* Testimonio y descripcion de contacto*/
+  --tamaño-autor-testimonio: 20px;
+  /* Texto invitando a subscribir en el footer */
+  --tamaño-texto-subs: 12px;
 }
 
 /*GENERAL*/
@@ -373,60 +375,333 @@ header section {
   border-radius: 8px;
 }
 
+/* ================== Secciones de Gaby ==================== */
 
-/* Estilos del footer */
-footer {
-    background-color: var(--color-fondo-verde);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+/* Selection of jewelry */
 
-    width: 1440px;
-    height: 234px;
-    flex-shrink: 0;
+.sectionJewelry {
+  width: 1440px;
+  height: 554px;
+  padding: 0 0px;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--color-fondo-blanco);
 }
 
-ul {
-    list-style: none;
+.sectionJewelry__description {
+  padding: 78px 60px 48px;
 }
 
-.redes-sociales {
-    width: 90%;
-    display: flex;
-    justify-content: flex-end;
+.sectionJewelry__title {
+  color: var(--color-secundario);
+  font-family: var(--tamaño-secundario);
+  font-weight: var(--peso-subtitulos);
 }
 
-.redes-sociales> li {
-    padding-left: 20px;
+.sectionJewelry__text {
+  margin-top: 12px;
+  margin-bottom: 24px;
+  color: var(--color-texto);
+  font-family: var(--peso-secundario);
+  font-size: var(--tamaño-texto);
+  text-align: justify;
 }
 
-.email {
-    width: 100%;
-    display: flex;
-  }
+.sectionJewelry__buttom {
+  border-radius: 26px;
+  border: 1px solid var(--color-secundario);
+  background: rgba(0, 0, 0, 0);
+}
 
-  span {
-    display: inline-flex;
-    padding: 7px 132px 6px 12px;
-    align-items: center;
-    gap: 6px;
+.sectionJewelry__buttomText {
+  padding: 10px 57px;
+  color: var(--color-secundario);
+  font-weight: var(--peso-secundario);
+  font-size: var(--tamaño-terciario);
+}
 
-    border-radius: 18px 0px 0px 18px;
-    border: 1px solid #fff;
-    background: rgba(0, 0, 0, 0);
-  }
+.sectionJewelry__cards {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-  .uno {
-    background-color: inherit;
-    outline: none;
-    border: none;
-  }
-  .dos {
-    display: inline-flex;
-    padding: 7px 23.5px 7px 24.5px;
-    justify-content: center;
-    align-items: center;
+.sectionJewelry__card {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07),
+    0px 0px 2px 0px rgba(23, 26, 31, 0.12);
 
-    border-radius: 0px 18px 18px 0px;
-    background: #f2c66d;
-  }
+  height: 75%;
+  width: 25%;
+  margin: 0;
+}
+
+.sectionJewelry__containerImg {
+  width: 100%;
+  height: 320px;
+}
+.sectionJewelry__img {
+  background: lightgray 0px -42px / 100% 126.562% no-repeat;
+  border-radius: 5px 5px 0 0;
+  width: 266px;
+  height: 320px;
+}
+
+.sectionJewelry__containerProducts {
+  padding: 24px;
+  color: var(--color-terciario);
+}
+
+.sectionJewelry__products {
+  padding-bottom: 10px;
+  font-size: var(--tamaño-titulos-productos);
+}
+
+.sectionJewelry__price {
+  font-weight: var(--peso-secundario);
+  padding-bottom: 18px;
+}
+
+/* Our story */
+.sectionStory {
+  width: 1440px;
+  height: 564px;
+}
+
+.sectionStory__title {
+  display: flex;
+  justify-content: center;
+  padding-top: 48px;
+
+  color: var(--color-secundario);
+  font-family: var(--tamaño-secundario);
+  font-weight: var(--peso-subtitulos);
+}
+
+.sectionStory__containerImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 72px;
+}
+
+.sectionStory__img {
+  width: 1176px;
+  height: 368px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background-color: rgb(18, 18, 18) 0px -208px / 100% 213.043% no-repeat;
+  position: relative;
+  opacity: 0.8;
+}
+
+.sectionStory__icon {
+  background-color: white;
+  border-radius: 100%;
+  font-size: 40px;
+  position: absolute;
+  color: var(--color-fondo-verde);
+}
+
+/* From the people */
+.sectionTestimony {
+  width: 1440px;
+  height: 522px;
+  background-color: var(--color-fondo-verde);
+  color: var(--color-fondo-blanco);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sectionTestimony__description {
+  width: 311px;
+  height: 172px;
+}
+
+.sectionTestimony__title {
+  font-weight: var(--peso-secundario);
+  font-size: var(--tamaño-secundario);
+  padding-bottom: 12px;
+}
+
+.sectionTestimony__text {
+  font-size: var(--tamaño-texto);
+  font-weight: var(--peso-secundario);
+  padding-right: 67px;
+}
+
+.sectionTestimony__people {
+  width: 696px;
+  height: 375px;
+  background-color: #0d302b;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+
+  position: relative;
+}
+
+.sectionTestimony__img {
+  width: 300px;
+  height: 375px;
+  border-radius: 8px 0 0 8px;
+}
+
+.sectionTestimony__containerTestimony {
+  width: 324px;
+  height: 182px;
+  padding-top: 60px;
+  padding-right: 36px;
+}
+
+.sectionTestimony__testimony {
+  font-weight: var(--peso-secundario);
+  font-weight: var(--tamaño-texto);
+  padding-bottom: 18px;
+}
+
+.sectionTestimony__person {
+  font-size: var(--tamaño-autor-testimonio);
+  font-weight: var(--peso-terciario);
+}
+
+.sectionTestimony__country {
+  font-weight: var(--peso-secundario);
+  font-weight: var(--tamaño-texto);
+}
+
+.sectionTestimony__arrows {
+  position: absolute;
+  font-size: 20px;
+  margin-top: 375px;
+  margin-left: 1020px;
+}
+
+.sectionTestimony__arrow {
+  border: 1px solid;
+  border-radius: 90%;
+  padding: 15px 20px;
+  margin: 10.5px;
+}
+/* Footer */
+.footer {
+  background-color: var(--color-fondo-verde);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  color: var(--color-fondo-blanco);
+
+  width: 1440px;
+  height: 234px;
+}
+
+.footer__containerLogo {
+  list-style: none;
+}
+
+.footer_logo {
+  color: var(--color-primario);
+  font-weight: var(--peso-primario);
+  font-size: var(--tamaño-logo);
+  margin-top: 48px;
+  margin-bottom: 93px;
+}
+
+.footer__copyright {
+  font-size: var(--tamaño-enlaces);
+  font-weight: var(--peso-secundario);
+}
+
+.footer__firtsLinks {
+  list-style: none;
+  font-size: var(--tamaño-enlaces);
+  font-weight: var(--peso-secundario);
+}
+
+.footer__secondLinks {
+  list-style: none;
+  font-size: var(--tamaño-enlaces);
+  font-weight: var(--peso-secundario);
+}
+
+.footer__links {
+  padding-bottom: 12px;
+}
+
+.footer__contactTitle {
+  font-size: var(--tamaño-autor-testimonio);
+  font-weight: var(--peso-primario);
+}
+
+.footer__contactText {
+  font-size: 12px;
+  line-height: 2;
+  font-weight: var(--peso-secundario);
+  padding-bottom: 16px;
+}
+
+.footer__contactEmail {
+  width: 100%;
+  display: flex;
+}
+
+.footer__barEmail {
+  display: inline-flex;
+  width: 169px;
+  height: 30px;
+  padding: 7px 132px 6px 12px;
+  align-items: center;
+  gap: 6px;
+
+  border-radius: 18px 0px 0px 18px;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0);
+}
+
+.footer__iconEmail {
+  padding-left: 12px;
+  padding-right: 6px;
+  font-size: 16px;
+}
+
+.footer__inputEmail {
+  color: var(--color-fondo-blanco);
+  font-size: var(--tamaño-enlaces);
+  font-weight: var(--peso-primario);
+  background-color: inherit;
+  outline: none;
+  border: none;
+}
+.footer__button {
+  font-size: var(--tamaño-enlaces);
+  font-weight: var(--peso-secundario);
+  display: inline-flex;
+  padding: 7px 23.5px 7px 24.5px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0px 18px 18px 0px;
+  background: #f2c66d;
+  color: var(--color-fondo-boton);
+}
+
+.footer__containerRRSS {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding-left: 60px;
+}
+
+.footer__rrssIcon {
+  font-size: 24px;
+  padding-top: 37px;
+  margin-right: 16px;
+}

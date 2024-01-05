@@ -320,7 +320,7 @@ header section {
 
 .productos--exhibi img {
   background: url(<path-to-image>), lightgray -62px 0px / 144.928% 100% no-repeat;
-  box-sizing: border-box
+  box-sizing: border-box;
   width: 276px;
   height: 320px;
   flex-shrink: 0;
@@ -369,7 +369,7 @@ header section {
   width: 360px;
   height: 360px;
   flex-shrink: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
   border-radius: 8px;
 }
 

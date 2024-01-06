@@ -277,7 +277,8 @@ header section {
   flex-wrap: nowrap; /*alinear*/
   height: 506px;
   justify-content: space-around;
-  padding: 0px 100px;
+  justify-content: flex-start;
+  padding: 0px 5px;
 }
 
 .productos--title button {
@@ -335,6 +336,7 @@ header section {
 }
 
 .productos--exhibi img {
+  background:lightgray -62px 0px / 144.928% 100% no-repeat;
   background: lightgray -62px 0px / 144.928% 100% no-repeat;
   box-sizing: border-box;
   width: 276px;
@@ -385,7 +387,7 @@ header section {
   display: flex;
   flex-wrap: nowrap; /*alinear*/
   justify-content: space-around;
-  padding-right: 200px;
+  padding-right: 90px;
 }
 
 .collections img {

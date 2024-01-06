@@ -1,11 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Manrope&display=swap");
 
 :root {
-  /*Type*/
-
-  --tipografia-body: "Manrope", sans-serif;
-  --tamaño-fuente: 16px;
-
   /* ============================ Paleta de colores ============================== */
 
   /* Fondo de la section de bienvenida y el footer */
@@ -28,42 +23,6 @@
   --color-texto-boton: #f2c66d;
   /* Precios destacados */
   --color-precio-destacado: #b37d10;
-
-  /* ============================ Grosor fuente y font-family ============================== */
-
-  /* Logo, enlaces nav, h1, colecciones de productos, subtitulo footer*/
-  --peso-primario: 400 "Cormorant Garamond", serif;
-  /* Texto botones, parrafos, precios, testimonio, copyright, subs texto footer */
-  --peso-secundario: 400 "Manrope", sans-serif;
-  /* Autor del testimonio, enlaces del footer */
-  --peso-terciario: 700 "Manrope", sans-serif;
-  /* Subtitulos */
-  --peso-subtitulos: 600 "Cormorant Garamond", serif;
-  /* Precios */
-  --peso-precios: 600 "Manrope", sans-serif;
-
-  /* ============================ Tamaño fuente ============================== */
-
-  /* lOGO */
-  --tamaño-logo: 30px;
-  /* Enlaces de las barras de navegacion, footer, copyrigth y boton de subscribe*/
-  --tamaño-enlaces: 14px;
-  /* Texto principal (h1)*/
-  --tamaño-primario: 72px;
-  /* Titulos, precios destacados */
-  --tamaño-secundario: 40px;
-  /* Texto de los botones, subtitulos */
-  --tamaño-terciario: 18px;
-  /* Parrafos, precios, carruseles, testimonio*/
-  --tamaño-texto: 16px;
-  /* Titulos de los productos destacados y el del order sumary */
-  --tamaño-titulos-productos: 24px 700 "Cormorant Garamond", serif;
-  /* Titulos de las colecciones de productos */
-  --tamaño-colecciones: 32px;
-  /* Testimonio y descripcion de contacto*/
-  --tamaño-autor-testimonio: 20px;
-  /* Texto invitando a subscribir en el footer */
-  --tamaño-texto-subs: 12px;
 }
 
 /*GENERAL*/
@@ -80,49 +39,45 @@
 }
 
 .header__logo {
-  color: #f5d38e;
-font-family: "Cormorant Garamond";
-font-size: 30px;
-font-weight: 400;
-line-height: 46px;
-display: flex;
-justify-content: flex-start;
-padding: 10px 130px;
+  color: var(--color-primario);
+  font-family: "Cormorant Garamond";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 46px;
+  margin-top: 12px;
+  padding: 10px 130px;
 }
 
 .header__nav {
-font-family: "Manrope";
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px;
-padding: 35px 5px;
-display: flex;
-margin-left: 340px;
+  font-family: "Manrope";
+  font-size: 14px;
+  font-weight: 400;
+  padding: 35px 5px;
+  margin-left: 340px;
 }
 
 .header__nav-list {
   display: flex;
-list-style: none;
-gap: 37px;
-cursor: pointer;
+  list-style: none;
+  gap: 37px;
+  cursor: pointer;
 }
 
 .header__nav-link {
-text-decoration: none;
-color: #fff;
+  text-decoration: none;
+  color: var(--color-fondo-blanco);
 }
 
 .header__nav-link--active {
+  color: var(--color-primario);
   padding-bottom: 10px;
-  color: #f2c66d;
-font-weight: 700;
-border-bottom: 2px solid #f2c66d;
+  font-weight: 700;
+  border-bottom: 2px solid var(--color-primario);
 }
 
 .header__nav-link:hover {
-  color: #f2c66d;
-font-weight: 700;
+  color: var(--color-primario);
+  font-weight: 700;
 }
 
 /*1. BIENVENIDA*/
@@ -132,14 +87,14 @@ font-weight: 700;
   background-image: url(/Assets/1Home-Page/1Bienvenida/TEXTURA-olas_\ blancas.png);
   background-repeat: repeat-x;
   display: flex;
-  flex-wrap: nowrap; /*alinear*/
+  flex-wrap: nowrap;
+  /*alinear*/
 }
 
 .bienvenida--text {
-  color: #f5d38e;
+  color: var(--color-primario);
   font-family: "Cormorant Garamond";
   font-size: 72px;
-  font-style: normal;
   font-weight: 400;
   line-height: 94px;
   width: 537px;
@@ -153,12 +108,12 @@ font-weight: 700;
   justify-content: center;
   align-items: center;
   border-radius: 26px;
-  border: 1px solid #fff; /*"oculta" funcionalidad*/
+  border: 1px solid var(--color-fondo-blanco);
+  /*"oculta" funcionalidad*/
   background-color: rgba(0, 0, 0, 0);
-  color: #fff;
+  color: var(--color-fondo-blanco);
   font-family: Manrope;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 28px;
   position: relative;
@@ -167,7 +122,7 @@ font-weight: 700;
 }
 
 .bienvenida--boton:hover {
-  border: 1px solid #f2c66d;
+  border: 1px solid var(--color-texto-boton);
 }
 
 .aside--figure img {
@@ -213,28 +168,28 @@ font-weight: 700;
 }
 
 .aside--boton:hover {
-  border: 1px solid #f2c66d;
+  border: 1px solid var(--color-texto-boton);
 }
 
 /*2. SERVICIOS*/
 .servicios {
   display: flex;
-  flex-wrap: nowrap; /*alinear*/
+  flex-wrap: nowrap;
+  /*alinear*/
   align-items: center;
   justify-content: space-around;
   height: 232px;
-  flex-shrink: 0;
 }
+
 .servicios--article {
   padding: 90px 80px;
 }
 
 .servicios h4 {
-  color: #171a1f;
+  color: var(--color-terciario);
   text-align: center;
   font-family: "Cormorant Garamond";
   font-size: 18px;
-  font-style: normal;
   font-weight: 600;
   line-height: 28px;
 }
@@ -245,11 +200,10 @@ font-weight: 700;
 }
 
 .servicios p {
-  color: #9095a0;
+  color: var(--color-precio);
   text-align: center;
   font-family: Manrope;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 26px;
 }
@@ -263,7 +217,7 @@ font-weight: 700;
   background-color: var(--color-fondo-blanco);
 }
 
-.sectionFeaturedProducts__description{
+.sectionFeaturedProducts__description {
   padding: 78px 60px 48px;
 }
 
@@ -282,10 +236,10 @@ font-weight: 700;
   text-align: justify;
 
   font-family: Manrope;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 26px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .sectionFeaturedProducts__button {
@@ -299,11 +253,11 @@ line-height: 26px;
 
 .sectionFeaturedProducts__buttonText {
   color: var(--color-secundario);
-font-family: Manrope;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 26px;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .sectionFeaturedProducts__button--hover:hover {
@@ -311,7 +265,7 @@ line-height: 26px;
   cursor: pointer;
 }
 
-.sectionFeaturedProducts__buttomText--hover:hover {
+.sectionFeaturedProducts__buttonText--hover:hover {
   color: var(--color-precio-destacado);
 }
 
@@ -323,7 +277,7 @@ line-height: 26px;
 
 .sectionFeaturedProducts__card {
   border-radius: 8px;
-  background: #fff;
+  background: var(--color-fondo-blanco);
   box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07),
     0px 0px 2px 0px rgba(23, 26, 31, 0.12);
 
@@ -336,6 +290,7 @@ line-height: 26px;
   width: 100%;
   height: 320px;
 }
+
 .sectionFeaturedProducts__img {
   background: lightgray 0px -42px / 100% 126.562% no-repeat;
   border-radius: 5px 5px 0 0;
@@ -348,29 +303,32 @@ line-height: 26px;
   color: var(--color-terciario);
 }
 
-.sectionJewelry__products {
+.sectionFeaturedProducts__products {
   padding-bottom: 10px;
-  font-size: var(--tamaño-titulos-productos);
+  font-family: Cormorant Garamond;
+  font-size: 24px;
+  font-weight: 700;
 }
 
-.sectionJewelry__price {
-  font-weight: var(--peso-secundario);
-  padding-bottom: 18px;
+.sectionFeaturedProducts__price {
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--color-terciario);
 }
 
 /*4.OUR COLLECTIONS*/
 
 .collections {
   height: 1082px;
-  flex-shrink: 0;
 }
 
 .collections h2 {
-  color: #0d554a;
+  color: var(--color-secundario);
   text-align: center;
   font-family: "Cormorant Garamond";
   font-size: 40px;
-  font-style: normal;
   font-weight: 600;
   line-height: 56px;
   justify-content: center;
@@ -378,7 +336,8 @@ line-height: 26px;
 
 .collections__products {
   display: flex;
-  flex-wrap: nowrap; /*alinear*/
+  flex-wrap: nowrap;
+  /*alinear*/
   justify-content: space-around;
   padding-right: 90px;
 }
@@ -386,7 +345,6 @@ line-height: 26px;
 .collections img {
   width: 360px;
   height: 360px;
-  flex-shrink: 0;
   box-sizing: border-box;
   border-radius: 8px;
 }
@@ -399,7 +357,7 @@ line-height: 26px;
 }
 
 .collections__products h3 {
-  color: #fff;
+  color: var(--color-fondo-blanco);
   text-align: center;
   font-family: "Cormorant Garamond";
   font-size: 32px;
@@ -425,24 +383,22 @@ line-height: 26px;
   justify-content: center;
   align-items: center;
   border-radius: 26px;
-  border: 1px solid #0d554a;
+  border: 1px solid var(--color-secundario);
   background: rgba(0, 0, 0, 0);
-  color: #0d554a;
+  color: var(--color-secundario);
   font-family: Manrope;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 28px;
   position: relative;
   top: 20px;
   left: 80px;
-  position: relative;
   top: 40px;
   left: 550px;
 }
 
 .collections button:hover {
-  border: 1px solid #f2c66d;
+  border: 1px solid var(--color-texto-boton);
 }
 
 /* ================== Secciones de Gaby ==================== */
@@ -465,7 +421,6 @@ line-height: 26px;
   color: var(--color-secundario);
   font-family: Cormorant Garamond;
   font-size: 40px;
-  font-style: normal;
   font-weight: 600;
 }
 
@@ -476,10 +431,9 @@ line-height: 26px;
   text-align: justify;
 
   font-family: Manrope;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 26px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .sectionJewelry__buttom {
@@ -493,8 +447,10 @@ line-height: 26px;
 
 .sectionJewelry__buttomText {
   color: var(--color-secundario);
-  font-weight: var(--peso-secundario);
-  font-size: var(--tamaño-terciario);
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 .sectionJewelry__buttom--hover:hover {
@@ -514,7 +470,7 @@ line-height: 26px;
 
 .sectionJewelry__card {
   border-radius: 8px;
-  background: #fff;
+  background: var(--color-fondo-blanco);
   box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07),
     0px 0px 2px 0px rgba(23, 26, 31, 0.12);
 
@@ -527,6 +483,7 @@ line-height: 26px;
   width: 100%;
   height: 320px;
 }
+
 .sectionJewelry__img {
   background: lightgray 0px -42px / 100% 126.562% no-repeat;
   border-radius: 5px 5px 0 0;
@@ -541,12 +498,17 @@ line-height: 26px;
 
 .sectionJewelry__products {
   padding-bottom: 10px;
-  font-size: var(--tamaño-titulos-productos);
+  font-family: Cormorant Garamond;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .sectionJewelry__price {
-  font-weight: var(--peso-secundario);
-  padding-bottom: 18px;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--color-terciario);
 }
 
 /* Our story */
@@ -562,7 +524,6 @@ line-height: 26px;
   color: var(--color-secundario);
   font-family: Cormorant Garamond;
   font-size: 40px;
-  font-style: normal;
   font-weight: 600;
 }
 
@@ -578,7 +539,6 @@ line-height: 26px;
   cursor: pointer;
   width: 1176px;
   height: 368px;
-  flex-shrink: 0;
   border-radius: 8px;
   background-color: rgb(18, 18, 18) 0px -208px / 100% 213.043% no-repeat;
   position: relative;
@@ -587,7 +547,7 @@ line-height: 26px;
 
 .sectionStory__icon {
   cursor: pointer;
-  background-color: white;
+  background-color: var(--color-fondo-blanco);
   border-radius: 100%;
   font-size: 40px;
   position: absolute;
@@ -613,21 +573,22 @@ line-height: 26px;
 .sectionTestimony__title {
   font-family: Cormorant Garamond;
   font-size: 48px;
-  font-style: normal;
   font-weight: 600;
   padding-bottom: 12px;
 }
 
 .sectionTestimony__text {
-  font-size: var(--tamaño-texto);
-  font-weight: var(--peso-secundario);
   padding-right: 67px;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .sectionTestimony__people {
   width: 696px;
   height: 375px;
-  background-color: #0d302b;
+  background-color: var(--color-secundario);
   border-radius: 8px;
 
   display: flex;
@@ -651,19 +612,24 @@ line-height: 26px;
 }
 
 .sectionTestimony__testimony {
-  font-weight: var(--peso-secundario);
-  font-weight: var(--tamaño-texto);
   padding-bottom: 18px;
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .sectionTestimony__person {
-  font-size: var(--tamaño-autor-testimonio);
-  font-weight: var(--peso-terciario);
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .sectionTestimony__country {
-  font-weight: var(--peso-secundario);
-  font-weight: var(--tamaño-texto);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .sectionTestimony__arrows {
@@ -674,7 +640,7 @@ line-height: 26px;
 }
 
 .sectionTestimony__arrow {
-  border: 1px solid;
+  border: 1px solid var(--color-fondo-blanco);
   border-radius: 90%;
   padding: 15px 20px;
   margin: 10.5px;
@@ -684,10 +650,12 @@ line-height: 26px;
   color: var(--color-precio-destacado);
   cursor: pointer;
 }
+
 .sectionTestimony__arrowLeft--hover:hover {
   color: var(--color-precio-destacado);
   cursor: pointer;
 }
+
 /* Footer */
 .footer {
   background-color: var(--color-fondo-verde);
@@ -707,8 +675,9 @@ line-height: 26px;
 
 .footer_logo {
   color: var(--color-primario);
-  font-weight: var(--peso-primario);
-  font-size: var(--tamaño-logo);
+  font-family: Cormorant Garamond;
+  font-size: 30px;
+  font-weight: 400;
   margin-top: 48px;
   margin-bottom: 93px;
 }
@@ -721,33 +690,40 @@ line-height: 26px;
 .footer__firtsLinks {
   cursor: pointer;
   list-style: none;
-  font-size: var(--tamaño-enlaces);
-  font-weight: var(--peso-secundario);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .footer__secondLinks {
   cursor: pointer;
   list-style: none;
-  font-size: var(--tamaño-enlaces);
-  font-weight: var(--peso-secundario);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .footer__links {
   padding-bottom: 12px;
 }
+
 .footer__links--hover:hover {
   color: var(--color-precio-destacado);
 }
 
 .footer__contactTitle {
-  font-size: var(--tamaño-autor-testimonio);
-  font-weight: var(--peso-primario);
+  font-family: Cormorant Garamond;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .footer__contactText {
+  font-family: Manrope;
   font-size: 12px;
+  font-weight: 400;
   line-height: 2;
-  font-weight: var(--peso-secundario);
   padding-bottom: 16px;
 }
 
@@ -765,7 +741,7 @@ line-height: 26px;
   gap: 6px;
 
   border-radius: 18px 0px 0px 18px;
-  border: 1px solid #fff;
+  border: 1px solid var(--color-fondo-blanco);
   background: rgba(0, 0, 0, 0);
 }
 
@@ -777,15 +753,19 @@ line-height: 26px;
 
 .footer__inputEmail {
   color: var(--color-fondo-blanco);
-  font-size: var(--tamaño-enlaces);
-  font-weight: var(--peso-primario);
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
   background-color: inherit;
   outline: none;
   border: none;
 }
+
 .footer__button {
-  font-size: var(--tamaño-enlaces);
-  font-weight: var(--peso-secundario);
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
   display: inline-flex;
   padding: 7px 23.5px 7px 24.5px;
   justify-content: center;
@@ -794,7 +774,7 @@ line-height: 26px;
   cursor: pointer;
 
   border-radius: 0px 18px 18px 0px;
-  background: #f2c66d;
+  background: var(--color-texto-boton);
   color: var(--color-fondo-boton);
 }
 

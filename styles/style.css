@@ -255,97 +255,107 @@ font-weight: 700;
 }
 
 /*3. PRODUCTOS*/
-.productos {
+.sectionFeaturedProducts {
+  height: 554px;
+  padding: 0 0px;
   display: flex;
-  flex-wrap: nowrap; /*alinear*/
-  height: 506px;
   justify-content: space-around;
-  justify-content: flex-start;
-  padding: 0px 5px;
+  background-color: var(--color-fondo-blanco);
 }
 
-.productos--title button {
-  text-decoration: none;
-  display: inline-flex;
-  padding: 12px 59px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 26px;
-  border: 1px solid #0d554a;
-  background: rgba(0, 0, 0, 0);
-  color: #0d554a;
-  font-family: Manrope;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  position: relative;
-  top: 20px;
-  left: 80px;
+.sectionFeaturedProducts__description{
+  padding: 78px 60px 48px;
 }
 
-.productos--title button:hover {
-  border: 1px solid #f2c66d;
-}
-
-.productos--title h3 {
-  width: 264px;
-  color: #0d554a;
-  font-family: "Cormorant Garamond";
+.sectionFeaturedProducts__title {
+  color: var(--color-secundario);
+  font-family: Cormorant Garamond;
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
-  line-height: 56px;
-  padding: 5px 80px;
 }
 
-.productos--title p {
-  width: 264px;
-  color: #9095a0;
+.sectionFeaturedProducts__text {
+  margin-top: 12px;
+  margin-bottom: 24px;
+  color: var(--color-texto);
+  text-align: justify;
+
   font-family: Manrope;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  padding: 5px 80px;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
 }
 
-.productos--exhibi figure {
-  object-fit: contain;
+.sectionFeaturedProducts__button {
+  border-radius: 26px;
+  border: 1px solid var(--color-secundario);
+  background: rgba(0, 0, 0, 0);
+
+  width: 200px;
+  height: 52px;
+}
+
+.sectionFeaturedProducts__buttonText {
+  color: var(--color-secundario);
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+}
+
+.sectionFeaturedProducts__button--hover:hover {
+  border: 1px solid var(--color-precio-destacado);
+  cursor: pointer;
+}
+
+.sectionFeaturedProducts__buttomText--hover:hover {
+  color: var(--color-precio-destacado);
+}
+
+.sectionFeaturedProducts__cards {
   display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  padding: 0px 13px;
+  align-items: center;
+  gap: 10px;
 }
 
-.productos--exhibi img {
-  background:lightgray -62px 0px / 144.928% 100% no-repeat;
-  background: lightgray -62px 0px / 144.928% 100% no-repeat;
-  box-sizing: border-box;
-  width: 276px;
-  height: 320px;
-  flex-shrink: 0;
+.sectionFeaturedProducts__card {
   border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07),
+    0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+
+  height: 75%;
+  width: 24%;
+  margin: 0;
 }
 
-.productos--exhibi h4 {
-  color: #171a1f;
-  font-family: "Cormorant Garamond";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  padding: 0px 13px;
+.sectionFeaturedProducts__containerImg {
+  width: 100%;
+  height: 320px;
+}
+.sectionFeaturedProducts__img {
+  background: lightgray 0px -42px / 100% 126.562% no-repeat;
+  border-radius: 5px 5px 0 0;
+  width: 236px;
+  height: 320px;
 }
 
-.productos--exhibi p {
-  color: #171a1f;
-  font-family: "Manrope";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-  padding: 0px 13px;
+.sectionFeaturedProducts__containerProducts {
+  padding: 24px;
+  color: var(--color-terciario);
+}
+
+.sectionJewelry__products {
+  padding-bottom: 10px;
+  font-size: var(--tamaño-titulos-productos);
+}
+
+.sectionJewelry__price {
+  font-weight: var(--peso-secundario);
+  padding-bottom: 18px;
 }
 
 /*4.OUR COLLECTIONS*/
@@ -463,9 +473,13 @@ font-weight: 700;
   margin-top: 12px;
   margin-bottom: 24px;
   color: var(--color-texto);
-  font-family: var(--peso-secundario);
-  font-size: var(--tamaño-texto);
   text-align: justify;
+
+  font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
 }
 
 .sectionJewelry__buttom {
@@ -505,7 +519,7 @@ font-weight: 700;
     0px 0px 2px 0px rgba(23, 26, 31, 0.12);
 
   height: 75%;
-  width: 25%;
+  width: 24%;
   margin: 0;
 }
 
@@ -516,7 +530,7 @@ font-weight: 700;
 .sectionJewelry__img {
   background: lightgray 0px -42px / 100% 126.562% no-repeat;
   border-radius: 5px 5px 0 0;
-  width: 266px;
+  width: 236px;
   height: 320px;
 }
 

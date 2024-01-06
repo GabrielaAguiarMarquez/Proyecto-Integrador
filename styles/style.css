@@ -116,7 +116,7 @@ header section {
   align-items: center;
 }
 
-.nav a {
+.header__link {
   margin-right: 35px;
   text-decoration: none;
   color: #FFF;
@@ -125,6 +125,14 @@ header section {
 .nav a:hover {
   color: #F2C66D;
   font-weight: 700;
+}
+
+.header__link--active {
+  font-size: var(--tamaño-enlaces);
+  font-weight: var(--peso-terciario);
+  color: var(--color-texto-boton);
+  font-weight: 700;
+  border-bottom: 1px solid var(--color-texto-boton);
 }
 
 .nav--a-figure {

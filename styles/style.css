@@ -72,74 +72,57 @@
   padding: 0;
 }
 
-body {
-  font-family: var(--tipografia-body);
-  font-size: var(--tamaño-fuente);
-}
-
-p {
-  font-size: 16px;
-}
-
 /*0.HEADER*/
-header section {
+.header {
   background-color: var(--color-fondo-verde);
-  display: flex;
-  flex-wrap: nowrap; /*alinear*/
-  justify-content: space-between; /*espaciar*/
   height: 82px;
-  flex-shrink: 0;
+  display: flex;
 }
-.logo--principal {
+
+.header__logo {
   color: #f5d38e;
-  font-family: "Cormorant Garamond";
-  font-size: var(--tamaño-logo);
-  font-style: normal;
-  font-weight: 400;
-  line-height: 46px;
+font-family: "Cormorant Garamond";
+font-size: 30px;
+font-weight: 400;
+line-height: 46px;
+display: flex;
+justify-content: flex-start;
+padding: 10px 130px;
+}
+
+.header__nav {
+font-family: "Manrope";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
+padding: 35px 5px;
+display: flex;
+margin-left: 340px;
+}
+
+.header__nav-list {
   display: flex;
-  justify-content: flex-start;
-  padding: 10px 130px;
+list-style: none;
+gap: 37px;
+cursor: pointer;
 }
 
-.nav {
-  font-family: "Manrope";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px; /* 157.143% */
-  display: flex;
-  height: 43px;
-  padding: 10.5px 130px;
-  justify-content: center;
-  align-items: center;
+.header__nav-link {
+text-decoration: none;
+color: #fff;
 }
 
-.header__link {
-  margin-right: 35px;
-  text-decoration: none;
-  color: #fff;
-}
-
-.nav a:hover {
+.header__nav-link--active {
+  padding-bottom: 10px;
   color: #f2c66d;
-  font-weight: 700;
+font-weight: 700;
+border-bottom: 2px solid #f2c66d;
 }
 
-.header__link--active {
-  font-size: var(--tamaño-enlaces);
-  font-weight: var(--peso-terciario);
-  color: var(--color-texto-boton);
-  font-weight: 700;
-  border-bottom: 1px solid var(--color-texto-boton);
-}
-
-.nav--a-figure {
-  margin-right: 30px;
-}
-
-.nav--a-figure:hover {
+.header__nav-link:hover {
   color: #f2c66d;
+font-weight: 700;
 }
 
 /*1. BIENVENIDA*/

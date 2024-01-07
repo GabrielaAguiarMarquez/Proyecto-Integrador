@@ -29,37 +29,41 @@
 * {
   margin: 0;
   padding: 0;
+  max-width: 100%;
 }
+
+html { font-size: 100%;}
+body { font-size: 100%;}
 
 /*0.HEADER*/
 .header {
   background-color: var(--color-fondo-verde);
-  height: 82px;
+  height: 5.125rem;
   display: flex;
 }
 
 .header__logo {
   color: var(--color-primario);
   font-family: "Cormorant Garamond";
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400;
-  line-height: 46px;
-  margin-top: 12px;
-  padding: 10px 130px;
+  line-height: 2.875rem;
+  margin-top: .75rem;
+  padding: .625rem 8.125rem;
 }
 
 .header__nav {
   font-family: "Manrope";
-  font-size: 14px;
+  font-size: .875rem;
   font-weight: 400;
-  padding: 35px 5px;
-  margin-left: 340px;
+  padding: 2.1875rem .3125rem;
+  margin-left: 21.25rem;
 }
 
 .header__nav-list {
   display: flex;
   list-style: none;
-  gap: 37px;
+  gap: 2.3125rem;
   cursor: pointer;
 }
 
@@ -70,9 +74,9 @@
 
 .header__nav-link--active {
   color: var(--color-primario);
-  padding-bottom: 10px;
+  padding-bottom: .625rem;
   font-weight: 700;
-  border-bottom: 2px solid var(--color-primario);
+  border-bottom: .125rem solid var(--color-primario);
 }
 
 .header__nav-link:hover {
@@ -83,7 +87,7 @@
 /*1. BIENVENIDA*/
 .bienvenida {
   background-color: var(--color-fondo-verde);
-  height: 821px;
+  height: 51.3125rem;
   background-image: url(/Assets/1Home-Page/1Bienvenida/TEXTURA-olas_\ blancas.png);
   background-repeat: repeat-x;
   display: flex;
@@ -94,81 +98,81 @@
 .bienvenida--text {
   color: var(--color-primario);
   font-family: "Cormorant Garamond";
-  font-size: 72px;
+  font-size: 4.5rem;
   font-weight: 400;
-  line-height: 94px;
-  width: 537px;
-  padding: 200px 130px;
+  line-height: 5.875rem;
+  width: 33.5625rem;
+  padding: 12.5rem 8.125rem;
 }
 
 .bienvenida--boton {
   display: inline-flex;
   text-decoration: none;
-  padding: 12px 59px;
+  padding: .75rem 3.6875rem;
   justify-content: center;
   align-items: center;
-  border-radius: 26px;
-  border: 1px solid var(--color-fondo-blanco);
+  border-radius: 1.625rem;
+  border: .0625rem solid var(--color-fondo-blanco);
   /*"oculta" funcionalidad*/
   background-color: rgba(0, 0, 0, 0);
   color: var(--color-fondo-blanco);
   font-family: Manrope;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.75rem;
   position: relative;
-  top: -184px;
-  left: 140px;
+  top: -11.5rem;
+  left: 8.75rem;
 }
 
 .bienvenida--boton:hover {
-  border: 1px solid var(--color-texto-boton);
+  border: .0625rem solid var(--color-texto-boton);
 }
 
 .aside--figure img {
-  width: 407px;
-  height: 543px;
+  width: 25.4375rem;
+  height: 33.9375rem;
   object-fit: fill;
   flex-shrink: 0;
-  border-radius: 8px;
+  border-radius: .5rem;
   position: relative;
-  top: 84px;
-  left: 60px;
+  top: 5.25rem;
+  left: 3.75rem;
 }
 
 .aside--figure-vd img {
   position: absolute;
   z-index: 1;
-  top: 300px;
-  left: 1050px;
-  width: 241px;
-  height: 321px;
+  top: 18.75rem;
+  left: 65.625rem;
+  width: 15.0625rem;
+  height: 20.0625rem;
   flex-shrink: 0;
-  border-radius: 121px 121px 0px 0px;
-  background: lightgray 0px -19px / 100% 112.15% no-repeat;
-  box-shadow: 0px 8px 17px 0px rgba(23, 26, 31, 0.15),
-    0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+  border-radius: 7.5625rem 7.5625rem 0rem 0rem;
+  background: lightgray 0px -1.1875rem / 100% 112.15% no-repeat;
+  box-shadow: 0rem .5rem 1.0625rem 0rem rgba(23, 26, 31, 0.15),
+    0rem 0rem .125rem 0rem rgba(23, 26, 31, 0.12);
 }
 
 .aside--boton {
   position: absolute;
   z-index: 1;
-  top: 450px;
-  left: 1150px;
+  top: 28.125rem;
+  left: 71.875rem;
   display: flex;
-  width: 52px;
-  height: 52px;
-  padding: 10.5px;
+  width: 3.25rem;
+  height: 3.25rem;
+  padding: .6563rem;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  border-radius: 26px;
-  border: 1px solid #effdfa;
+  border-radius: 1.625rem;
+  border: .0625rem solid #effdfa;
   background: rgba(0, 0, 0, 0);
 }
 
 .aside--boton:hover {
-  border: 1px solid var(--color-texto-boton);
+  border: .0625rem solid var(--color-texto-boton);
 }
 
 /*2. SERVICIOS*/
@@ -178,90 +182,92 @@
   /*alinear*/
   align-items: center;
   justify-content: space-around;
-  height: 232px;
+  height: 14.5rem;
 }
 
 .servicios--article {
-  padding: 90px 80px;
+  padding: 5.625rem 5rem;
 }
 
 .servicios h4 {
   color: var(--color-terciario);
   text-align: center;
   font-family: "Cormorant Garamond";
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 1.75rem;
 }
 
 .servicios figure {
   align-items: center;
-  padding: 0px 110px;
+  padding: 0rem 6.875rem;
 }
 
 .servicios p {
   color: var(--color-precio);
   text-align: center;
   font-family: Manrope;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 1.625rem;
 }
 
 /*3. PRODUCTOS*/
 .sectionFeaturedProducts {
-  height: 554px;
-  padding: 0 0px;
+  height: 34.625rem;
+  padding: 0 8.75rem;
   display: flex;
   justify-content: space-around;
   background-color: var(--color-fondo-blanco);
 }
 
 .sectionFeaturedProducts__description {
-  padding: 78px 60px 48px;
+  padding: .625rem 3.75rem 3rem;
+  width: 16.5rem;
 }
 
 .sectionFeaturedProducts__title {
   color: var(--color-secundario);
   font-family: Cormorant Garamond;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 600;
+  display: flex;
 }
 
 .sectionFeaturedProducts__text {
-  margin-top: 12px;
-  margin-bottom: 24px;
+  margin-top: .75rem;
+  margin-bottom: 1.5rem;
   color: var(--color-texto);
   text-align: justify;
 
   font-family: Manrope;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 1.625rem;
 }
 
 .sectionFeaturedProducts__button {
-  border-radius: 26px;
-  border: 1px solid var(--color-secundario);
+  border-radius: 1.625rem;
+  border: .0625rem solid var(--color-secundario);
   background: rgba(0, 0, 0, 0);
 
-  width: 200px;
-  height: 52px;
+  width: 12.5rem;
+  height: 3.25rem;
 }
 
 .sectionFeaturedProducts__buttonText {
   color: var(--color-secundario);
   font-family: Manrope;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 1.625rem;
 }
 
 .sectionFeaturedProducts__button--hover:hover {
-  border: 1px solid var(--color-precio-destacado);
+  border: .0625rem solid var(--color-precio-destacado);
   cursor: pointer;
 }
 
@@ -271,48 +277,38 @@
 
 .sectionFeaturedProducts__cards {
   display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.sectionFeaturedProducts__card {
-  border-radius: 8px;
-  background: var(--color-fondo-blanco);
-  box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07),
-    0px 0px 2px 0px rgba(23, 26, 31, 0.12);
-
-  height: 75%;
-  width: 24%;
-  margin: 0;
+  align-items: nowrap;
+  gap: 1.5rem;
 }
 
 .sectionFeaturedProducts__containerImg {
-  width: 100%;
-  height: 320px;
+  width: 17.25rem;
+  height: 20rem;
 }
 
 .sectionFeaturedProducts__img {
-  background: lightgray 0px -42px / 100% 126.562% no-repeat;
-  border-radius: 5px 5px 0 0;
-  width: 236px;
-  height: 320px;
+  background: lightgray 0rem -2.625rem / 100% 126.562% no-repeat;
+  border-radius: .3125rem .3125rem 0 0;
+  width: 17.25rem;
+  height: 20rem;
+  object-fit: fill;
 }
 
 .sectionFeaturedProducts__containerProducts {
-  padding: 24px;
+  padding: 1.5rem;
   color: var(--color-terciario);
 }
 
 .sectionFeaturedProducts__products {
-  padding-bottom: 10px;
+  padding-bottom: .625rem;
   font-family: Cormorant Garamond;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 .sectionFeaturedProducts__price {
   font-family: Manrope;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   color: var(--color-terciario);
@@ -321,16 +317,16 @@
 /*4.OUR COLLECTIONS*/
 
 .collections {
-  height: 1082px;
+  height: 67.625rem;
 }
 
 .collections h2 {
   color: var(--color-secundario);
   text-align: center;
   font-family: "Cormorant Garamond";
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 600;
-  line-height: 56px;
+  line-height: 3.5rem;
   justify-content: center;
 }
 
@@ -339,66 +335,66 @@
   flex-wrap: nowrap;
   /*alinear*/
   justify-content: space-around;
-  padding-right: 90px;
+  padding-right: 5.625rem;
 }
 
 .collections img {
-  width: 360px;
-  height: 360px;
+  width: 22.5rem;
+  height: 22.5rem;
   box-sizing: border-box;
-  border-radius: 8px;
+  border-radius: .5rem;
 }
 
 .collections__products div {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-right: -87px;
+  gap: 1.25rem;
+  margin-right: -5.4375rem;
 }
 
 .collections__products h3 {
   color: var(--color-fondo-blanco);
   text-align: center;
   font-family: "Cormorant Garamond";
-  font-size: 32px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 48px;
+  line-height: 3rem;
   position: relative;
   z-index: 1;
-  top: 330px;
-  left: 0px;
+  top: 20.625rem;
+  left: 0rem;
 }
 
 .collections__products-mov {
   position: relative;
-  top: -30px;
-  left: 0px;
+  top: -1.875rem;
+  left: 0rem;
 }
 
 .collections button {
   text-decoration: none;
   display: inline-flex;
-  padding: 12px 59px;
+  padding: .75rem 3.6875rem;
   justify-content: center;
   align-items: center;
-  border-radius: 26px;
-  border: 1px solid var(--color-secundario);
+  border-radius: 1.625rem;
+  border: .0625rem solid var(--color-secundario);
   background: rgba(0, 0, 0, 0);
   color: var(--color-secundario);
   font-family: Manrope;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.75rem;
   position: relative;
-  top: 20px;
-  left: 80px;
-  top: 40px;
-  left: 550px;
+  top: 1.25rem;
+  left: 5rem;
+  top: 2.5rem;
+  left: 34.375rem;
 }
 
 .collections button:hover {
-  border: 1px solid var(--color-texto-boton);
+  border: .0625rem solid var(--color-texto-boton);
 }
 
 /* ================== Secciones de Gaby ==================== */
@@ -406,55 +402,57 @@
 /* Selection of jewelry */
 
 .sectionJewelry {
-  height: 554px;
-  padding: 0 0px;
+  height: 34.625rem;
+  padding: 0 11.5625rem;
   display: flex;
   justify-content: space-around;
   background-color: var(--color-fondo-blanco);
 }
 
 .sectionJewelry__description {
-  padding: 78px 60px 48px;
+  padding: 4.875rem 2.5rem 3rem;
+  width: 16.5rem;
 }
 
 .sectionJewelry__title {
   color: var(--color-secundario);
   font-family: Cormorant Garamond;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 600;
+  width: 16.5rem;
 }
 
 .sectionJewelry__text {
-  margin-top: 12px;
-  margin-bottom: 24px;
+  margin-top: .75rem;
+  margin-bottom: 1.5rem;
   color: var(--color-texto);
   text-align: justify;
 
   font-family: Manrope;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 1.625rem;
 }
 
 .sectionJewelry__buttom {
-  border-radius: 26px;
-  border: 1px solid var(--color-secundario);
+  border-radius: 1.625rem;
+  border: .0625rem solid var(--color-secundario);
   background: rgba(0, 0, 0, 0);
 
-  width: 200px;
-  height: 52px;
+  width: 12.5rem;
+  height: 3.25rem;
 }
 
 .sectionJewelry__buttomText {
   color: var(--color-secundario);
   font-family: Manrope;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.75rem;
 }
 
 .sectionJewelry__buttom--hover:hover {
-  border: 1px solid var(--color-precio-destacado);
+  border: .0625rem solid var(--color-precio-destacado);
   cursor: pointer;
 }
 
@@ -465,47 +463,43 @@
 .sectionJewelry__cards {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1.125rem;
 }
 
 .sectionJewelry__card {
-  border-radius: 8px;
+  border-radius: .5rem;
   background: var(--color-fondo-blanco);
-  box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07),
-    0px 0px 2px 0px rgba(23, 26, 31, 0.12);
-
-  height: 75%;
-  width: 24%;
-  margin: 0;
+  box-shadow: 0rem 0rem .0625rem 0rem rgba(23, 26, 31, 0.07),
+    0rem 0rem .125rem 0rem rgba(23, 26, 31, 0.12);
 }
 
 .sectionJewelry__containerImg {
-  width: 100%;
-  height: 320px;
+  width: 17.25rem;
+  height: 20rem;
 }
 
 .sectionJewelry__img {
-  background: lightgray 0px -42px / 100% 126.562% no-repeat;
-  border-radius: 5px 5px 0 0;
-  width: 236px;
-  height: 320px;
+  background: lightgray 0rem -2.625rem / 100% 126.562% no-repeat;
+  border-radius: .3125rem .3125rem 0 0;
+  width: 17.25rem;
+  height: 20rem;
 }
 
 .sectionJewelry__containerProducts {
-  padding: 24px;
+  padding: .5rem;
   color: var(--color-terciario);
 }
 
 .sectionJewelry__products {
-  padding-bottom: 10px;
+  padding-bottom: .625rem;
   font-family: Cormorant Garamond;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 .sectionJewelry__price {
   font-family: Manrope;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   color: var(--color-terciario);
@@ -513,17 +507,17 @@
 
 /* Our story */
 .sectionStory {
-  height: 564px;
+  height: 35.25rem;
 }
 
 .sectionStory__title {
   display: flex;
   justify-content: center;
-  padding-top: 48px;
+  padding-top: 3rem;
 
   color: var(--color-secundario);
   font-family: Cormorant Garamond;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 
@@ -531,16 +525,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 72px;
+  padding-top: 1.25rem;
+  padding-bottom: 4.5rem;
 }
 
 .sectionStory__img {
   cursor: pointer;
-  width: 1176px;
-  height: 368px;
-  border-radius: 8px;
-  background-color: rgb(18, 18, 18) 0px -208px / 100% 213.043% no-repeat;
+  width: 73.5rem;
+  height: 23rem;
+  border-radius: .5rem;
+  background-color: rgb(18, 18, 18) 0rem -13rem / 100% 213.043% no-repeat;
   position: relative;
   opacity: 0.8;
 }
@@ -549,14 +543,14 @@
   cursor: pointer;
   background-color: var(--color-fondo-blanco);
   border-radius: 100%;
-  font-size: 40px;
+  font-size: 2.5rem;
   position: absolute;
   color: var(--color-fondo-verde);
 }
 
 /* From the people */
 .sectionTestimony {
-  height: 522px;
+  height: 32.625rem;
   background-color: var(--color-fondo-verde);
   color: var(--color-fondo-blanco);
 
@@ -566,84 +560,84 @@
 }
 
 .sectionTestimony__description {
-  width: 311px;
-  height: 172px;
+  width: 19.4375rem;
+  height: 10.75rem;
 }
 
 .sectionTestimony__title {
   font-family: Cormorant Garamond;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
-  padding-bottom: 12px;
+  padding-bottom: .75rem;
 }
 
 .sectionTestimony__text {
-  padding-right: 67px;
+  padding-right: 4.1875rem;
   font-family: Manrope;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 1.625rem;
 }
 
 .sectionTestimony__people {
-  width: 696px;
-  height: 375px;
+  width: 43.5rem;
+  height: 23.4375rem;
   background-color: var(--color-secundario);
-  border-radius: 8px;
+  border-radius: .5rem;
 
   display: flex;
   flex-direction: row;
-  gap: 36px;
+  gap: 2.25rem;
 
   position: relative;
 }
 
 .sectionTestimony__img {
-  width: 300px;
-  height: 375px;
-  border-radius: 8px 0 0 8px;
+  width: 18.75rem;
+  height: 23.4375rem;
+  border-radius: .5rem 0 0 .5rem;
 }
 
 .sectionTestimony__containerTestimony {
-  width: 324px;
-  height: 182px;
-  padding-top: 60px;
-  padding-right: 36px;
+  width: 20.25rem;
+  height: 11.375rem;
+  padding-top: 3.75rem;
+  padding-right: 2.25rem;
 }
 
 .sectionTestimony__testimony {
-  padding-bottom: 18px;
+  padding-bottom: 1.125rem;
   font-family: Manrope;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 1.625rem;
 }
 
 .sectionTestimony__person {
   font-family: Manrope;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 
 .sectionTestimony__country {
   font-family: Manrope;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
 }
 
 .sectionTestimony__arrows {
   position: absolute;
-  font-size: 20px;
-  margin-top: 375px;
-  margin-left: 1020px;
+  font-size: 1.25rem;
+  margin-top: 23.4375rem;
+  margin-left: 63.75rem;
 }
 
 .sectionTestimony__arrow {
-  border: 1px solid var(--color-fondo-blanco);
+  border: .0625rem solid var(--color-fondo-blanco);
   border-radius: 90%;
-  padding: 15px 20px;
-  margin: 10.5px;
+  padding: .9375rem 1.25rem;
+  margin: .6563rem;
 }
 
 .sectionTestimony__arrowRight--hover:hover {
@@ -665,7 +659,7 @@
 
   color: var(--color-fondo-blanco);
 
-  height: 234px;
+  height: 14.625rem;
 }
 
 .footer__containerLogo {
@@ -676,10 +670,10 @@
 .footer_logo {
   color: var(--color-primario);
   font-family: Cormorant Garamond;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400;
-  margin-top: 48px;
-  margin-bottom: 93px;
+  margin-top: 3rem;
+  margin-bottom: 5.8125rem;
 }
 
 .footer__copyright {
@@ -691,7 +685,7 @@
   cursor: pointer;
   list-style: none;
   font-family: Manrope;
-  font-size: 14px;
+  font-size: .875rem;
   font-style: normal;
   font-weight: 400;
 }
@@ -700,13 +694,13 @@
   cursor: pointer;
   list-style: none;
   font-family: Manrope;
-  font-size: 14px;
+  font-size: .875rem;
   font-style: normal;
   font-weight: 400;
 }
 
 .footer__links {
-  padding-bottom: 12px;
+  padding-bottom: .75rem;
 }
 
 .footer__links--hover:hover {
@@ -715,16 +709,16 @@
 
 .footer__contactTitle {
   font-family: Cormorant Garamond;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
 .footer__contactText {
   font-family: Manrope;
-  font-size: 12px;
+  font-size: .75rem;
   font-weight: 400;
   line-height: 2;
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
 }
 
 .footer__contactEmail {
@@ -734,29 +728,29 @@
 
 .footer__barEmail {
   display: inline-flex;
-  width: 169px;
-  height: 30px;
-  padding: 7px 132px 6px 12px;
+  width: 10.5625rem;
+  height: 1.875rem;
+  padding: .4375rem 8.25rem .375rem .75rem;
   align-items: center;
-  gap: 6px;
+  gap: .375rem;
 
-  border-radius: 18px 0px 0px 18px;
-  border: 1px solid var(--color-fondo-blanco);
+  border-radius: 1.125rem 0rem 0rem 1.125rem;
+  border: .0625rem solid var(--color-fondo-blanco);
   background: rgba(0, 0, 0, 0);
 }
 
 .footer__iconEmail {
-  padding-left: 12px;
-  padding-right: 6px;
-  font-size: 16px;
+  padding-left: .75rem;
+  padding-right: .375rem;
+  font-size: 1rem;
 }
 
 .footer__inputEmail {
   color: var(--color-fondo-blanco);
   font-family: Manrope;
-  font-size: 14px;
+  font-size: .875rem;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.375rem;
   background-color: inherit;
   outline: none;
   border: none;
@@ -764,16 +758,16 @@
 
 .footer__button {
   font-family: Manrope;
-  font-size: 14px;
+  font-size: .875rem;
   font-weight: 400;
   display: inline-flex;
-  padding: 7px 23.5px 7px 24.5px;
+  padding: .4375rem 1.4688rem .4375rem 1.5313rem;
   justify-content: center;
   align-items: center;
 
   cursor: pointer;
 
-  border-radius: 0px 18px 18px 0px;
+  border-radius: 0rem 1.125rem 1.125rem 0rem;
   background: var(--color-texto-boton);
   color: var(--color-fondo-boton);
 }
@@ -783,11 +777,11 @@
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  padding-left: 60px;
+  padding-left: 3.75rem;
 }
 
 .footer__rrssIcon {
-  font-size: 24px;
-  padding-top: 37px;
-  margin-right: 16px;
+  font-size: 1.5rem;
+  padding-top: 2.3125rem;
+  margin-right: 1rem;
 }

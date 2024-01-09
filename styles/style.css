@@ -845,13 +845,14 @@ body {
  
    .header__nav {
      position: fixed;
-     width: 100%;
+     width: 45%;
+    margin-right: 42rem;
      height: 100vh;
      background: #093931;
      right: -100%;
      top: 0;
      text-align: center;
-     padding: 6.25rem 0rem;
+     padding: 6rem 0rem;
      z-index: 100;
      transition: 0.8s;
    }

@@ -40,6 +40,8 @@ body { font-size: 100%;}
   background-color: var(--color-fondo-verde);
   height: 5.125rem;
   display: flex;
+  /*justify-content: space-between;*/
+  align-items: center;
 }
 
 .header__logo {
@@ -67,7 +69,9 @@ body { font-size: 100%;}
   cursor: pointer;
 }
 
-.header__nav-link {
+.header__nav-link,
+.header__nav-mostrar-menu,
+.header__nav-esconder-menu {
   text-decoration: none;
   color: var(--color-fondo-blanco);
 }
@@ -79,9 +83,27 @@ body { font-size: 100%;}
   border-bottom: .125rem solid var(--color-primario);
 }
 
-.header__nav-link:hover {
+.header__nav-link:hover,
+.header__nav-mostrar-menu:hover,
+.header__nav-esconder-menu:hover {
   color: var(--color-primario);
   font-weight: 700;
+}
+
+.header__nav-mostrar-menu,
+.header__nav-esconder-menu{
+  font-size: 1.875rem;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
+}
+
+.header__nav-mostrar-menu {
+  order: 1;
+}
+
+#check{
+  display: none;
 }
 
 /*1. BIENVENIDA*/
@@ -177,7 +199,7 @@ body { font-size: 100%;}
 
 /*2. SERVICIOS*/
 .servicios {
-  display: flex;
+  display: flex;  
   flex-wrap: nowrap;
   /*alinear*/
   align-items: center;
@@ -186,7 +208,7 @@ body { font-size: 100%;}
 }
 
 .servicios--article {
-  padding: 5.625rem 5rem;
+  width: 17.25rem;
 }
 
 .servicios h4 {
@@ -201,6 +223,9 @@ body { font-size: 100%;}
 .servicios figure {
   align-items: center;
   padding: 0rem 6.875rem;
+  width: 3.875rem;
+  height: 3.875rem;
+  flex-shrink: 0;
 }
 
 .servicios p {
@@ -219,6 +244,7 @@ body { font-size: 100%;}
   display: flex;
   justify-content: space-around;
   background-color: var(--color-fondo-blanco);
+  overflow: hidden;
 }
 
 .sectionFeaturedProducts__description {
@@ -407,6 +433,7 @@ body { font-size: 100%;}
   display: flex;
   justify-content: space-around;
   background-color: var(--color-fondo-blanco);
+  overflow: hidden;
 }
 
 .sectionJewelry__description {
@@ -784,4 +811,127 @@ body { font-size: 100%;}
   font-size: 1.5rem;
   padding-top: 2.3125rem;
   margin-right: 1rem;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+  /* GENERAL*/
+  * {
+      padding: 0;
+      margin: 0;
+      max-width: 100%;
+    }
+
+  /*0.HEADER*/
+
+  .header__nav-mostrar-menu,
+  .header__nav-esconder-menu {
+    display:block;
+  }
+
+  .header__nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #093931;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 6.25rem 0rem;
+    z-index: 100;
+    transition: 0.8s;
+  }
+
+  .header__nav-list {
+    display: block;
+    padding: 1.875rem;
+  }
+
+  .header__nav-list a { /*rev*/
+    display: flex;
+    gap: 1.25rem 0;
+  }
+
+  .header__nav-mostrar-menu
+  {
+  position: absolute;
+  top: 1.875rem;
+  right: 2.5rem;
+  }
+
+  .header__nav-esconder-menu {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+  }
+
+  #check:checked ~ .header__nav {
+    right: 0;
+  }
+
+  /*1.BIENVENIDA*/
+  .bienvenida {
+    display: block;
+  }
+
+  .bienvenida--text {
+    font-size: 4.5rem;
+    padding: 12.5rem 6.25rem;
+    width: 26.875rem;
+  }
+
+  .bienvenida--boton {
+    left: 6.875rem;
+  }
+
+  .aside--figure img,
+  .aside--figure-vd img {
+    display: none;
+  }
+ 
+  /*2.SERVICIOS*/
+  .servicios {
+    display: block;
+    height: 37.5rem;
+    justify-content: center;
+  }
+  .servicios--article {
+    padding: 1.25rem 6.25rem;
+    justify-content: center;
+  }
+  /*4.OUR COLLECTIONS*/
+  .collections {
+    height: 53.75rem;
+  }
+
+  .collections img {
+    width: 11.875rem;
+    height: 11.875rem;
+  }
+
+  .collections__products { 
+    display: flex;
+    justify-content: space-around;    
+  }
+
+  .collections__products div{
+    gap:0;
+  }
+
+  .collections__products article {
+    padding: 0rem .625rem 0rem 1.25rem;
+    margin: 2.1875rem;
+  }
+
+  .collections__products h3 {
+    font-size: 1rem;
+    top: 11.875rem;
+    left: 0rem;
+  }
+
+  .collections button {
+    top: 0rem;
+    left: 11.875rem;
+  }
 }

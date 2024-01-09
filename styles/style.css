@@ -836,73 +836,52 @@ body {
     max-width: 100%;
   }
   
-   /*0.HEADER*/
+  /*0.HEADER*/
 
-   .header__nav-mostrar-menu,
-   .header__nav-esconder-menu {
-     display:block;
-   }
- 
-   .header__nav {
-     position: fixed;
-     width: 45%;
-    margin-right: 42rem;
-     height: 100vh;
-     background: #093931;
-     right: -100%;
-     top: 0;
-     text-align: center;
-     padding: 6rem 0rem;
-     z-index: 100;
-     transition: 0.8s;
-   }
- 
-   .header__nav-list {
-     display: block;
-     padding: 1.875rem;
-   }
- 
-   .header__nav-list a { /*rev*/
-     display: flex;
-     gap: 1.25rem 0;
-   }
- 
-   .header__nav-mostrar-menu
-   {
-   position: absolute;
-   top: 1.875rem;
-   right: 2.5rem;
-   }
- 
-   .header__nav-esconder-menu {
-     position: absolute;
-     top: 2.5rem;
-     right: 2.5rem;
-   }
- 
-   #check:checked ~ .header__nav {
-     right: 0;
-   }
- 
-   /*1.BIENVENIDA*/
-   .bienvenida {
-     display: block;
-   }
- 
-   .bienvenida--text {
-     font-size: 4.5rem;
-     padding: 12.5rem 6.25rem;
-     width: 26.875rem;
-   }
- 
-   .bienvenida--boton {
-     left: 6.875rem;
-   }
- 
-   .aside--figure img,
-   .aside--figure-vd img {
-     display: none;
-   }
+  .header__nav-mostrar-menu,
+  .header__nav-esconder-menu {
+    display:block;
+  }
+
+  .header__nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #093931;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 6.25rem 0rem;
+    z-index: 100;
+    transition: 0.8s;
+  }
+
+  .header__nav-list {
+    display: block;
+    padding: 1.875rem;
+  }
+
+  .header__nav-list a { /*rev*/
+    display: flex;
+    gap: 1.25rem 0;
+  }
+
+  .header__nav-mostrar-menu
+  {
+  position: absolute;
+  top: 1.875rem;
+  right: 2.5rem;
+  }
+
+  .header__nav-esconder-menu {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+  }
+
+  #check:checked ~ .header__nav {
+    right: 0;
+  }
 
   /*2.SERVICIOS*/
   .servicios {

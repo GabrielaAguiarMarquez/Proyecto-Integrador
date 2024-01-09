@@ -54,15 +54,15 @@ body {
   font-size: 1.875rem;
   font-weight: 400;
   line-height: 2.875rem;
-  margin-top: 0.75rem;
-  padding: 0.625rem 8.125rem;
+  margin-top: .75rem;
+  padding: .625rem 8.125rem;
 }
 
 .header__nav {
   font-family: "Manrope";
-  font-size: 0.875rem;
+  font-size: .875rem;
   font-weight: 400;
-  padding: 2.1875rem 0.3125rem;
+  padding: 2.1875rem .3125rem;
   margin-left: 21.25rem;
 }
 
@@ -82,9 +82,9 @@ body {
 
 .header__nav-link--active {
   color: var(--color-primario);
-  padding-bottom: 0.625rem;
+  padding-bottom: .625rem;
   font-weight: 700;
-  border-bottom: 0.125rem solid var(--color-primario);
+  border-bottom: .125rem solid var(--color-primario);
 }
 
 .header__nav-link:hover,
@@ -95,7 +95,7 @@ body {
 }
 
 .header__nav-mostrar-menu,
-.header__nav-esconder-menu {
+.header__nav-esconder-menu{
   font-size: 1.875rem;
   cursor: pointer;
   display: none;
@@ -106,7 +106,7 @@ body {
   order: 1;
 }
 
-#check {
+#check{
   display: none;
 }
 
@@ -134,11 +134,11 @@ body {
 .bienvenida--boton {
   display: inline-flex;
   text-decoration: none;
-  padding: 0.75rem 3.6875rem;
+  padding: .75rem 3.6875rem;
   justify-content: center;
   align-items: center;
   border-radius: 1.625rem;
-  border: 0.0625rem solid var(--color-fondo-blanco);
+  border: .0625rem solid var(--color-fondo-blanco);
   /*"oculta" funcionalidad*/
   background-color: rgba(0, 0, 0, 0);
   color: var(--color-fondo-blanco);
@@ -152,7 +152,7 @@ body {
 }
 
 .bienvenida--boton:hover {
-  border: 0.0625rem solid var(--color-texto-boton);
+  border: .0625rem solid var(--color-texto-boton);
 }
 
 .aside--figure img {
@@ -160,7 +160,7 @@ body {
   height: 33.9375rem;
   object-fit: fill;
   flex-shrink: 0;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   position: relative;
   top: 5.25rem;
   left: 3.75rem;
@@ -176,8 +176,8 @@ body {
   flex-shrink: 0;
   border-radius: 7.5625rem 7.5625rem 0rem 0rem;
   background: lightgray 0px -1.1875rem / 100% 112.15% no-repeat;
-  box-shadow: 0rem 0.5rem 1.0625rem 0rem rgba(23, 26, 31, 0.15),
-    0rem 0rem 0.125rem 0rem rgba(23, 26, 31, 0.12);
+  box-shadow: 0rem .5rem 1.0625rem 0rem rgba(23, 26, 31, 0.15),
+    0rem 0rem .125rem 0rem rgba(23, 26, 31, 0.12);
 }
 
 .aside--boton {
@@ -188,19 +188,18 @@ body {
   display: flex;
   width: 3.25rem;
   height: 3.25rem;
-  padding: 0.6563rem;
+  padding: .6563rem;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
   border-radius: 1.625rem;
-  border: 0.0625rem solid #effdfa;
+  border: .0625rem solid #effdfa;
   background: rgba(0, 0, 0, 0);
 }
 
 .aside--boton:hover {
-  border: 0.0625rem solid var(--color-texto-boton);
+  border: .0625rem solid var(--color-texto-boton);
 }
-
 /*2. SERVICIOS*/
 .servicios {
   display: flex;
@@ -830,83 +829,79 @@ body {
 /* RESPONSIVE DESIGN */
 
 @media screen and (max-width: 768px) {
-  /*0.HEADER*/
-
-  .header {
-    width: 65%;
-    height: max-content;
+   /* GENERAL*/
+   * {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
   }
+  
+   /*0.HEADER*/
 
-  .divContainerBienvenida {
-    width: 65%;
-    height: max-content;
-  }
-
-  .header__nav-mostrar-menu,
-  .header__nav-esconder-menu {
-    display: block;
-  }
-
-  .header__nav {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #093931;
-    right: -100%;
-    top: 0;
-    text-align: center;
-    padding: 6.25rem 0rem;
-    z-index: 100;
-    transition: 0.8s;
-  }
-
-  .header__nav-list {
-    display: block;
-    padding: 1.875rem;
-  }
-
-  .header__nav-list a {
-    /*rev*/
-    display: flex;
-    gap: 1.25rem 0;
-  }
-
-  .header__nav-mostrar-menu {
-    position: absolute;
-    top: 1.875rem;
-    right: 2.5rem;
-  }
-
-  .header__nav-esconder-menu {
-    position: absolute;
-    top: 2.5rem;
-    right: 2.5rem;
-  }
-
-  #check:checked ~ .header__nav {
-    right: 0;
-  }
-
-  /*1.BIENVENIDA*/
-  .bienvenida {
-    display: block;
-  }
-
-  .bienvenida--text {
-    font-size: 4rem;
-    line-height: 1;
-    padding: 12.5rem 6.25rem;
-    width: 26.875rem;
-  }
-
-  .bienvenida--boton {
-    left: 6.875rem;
-  }
-
-  .aside--figure img,
-  .aside--figure-vd img {
-    display: none;
-  }
+   .header__nav-mostrar-menu,
+   .header__nav-esconder-menu {
+     display:block;
+   }
+ 
+   .header__nav {
+     position: fixed;
+     width: 100%;
+     height: 100vh;
+     background: #093931;
+     right: -100%;
+     top: 0;
+     text-align: center;
+     padding: 6.25rem 0rem;
+     z-index: 100;
+     transition: 0.8s;
+   }
+ 
+   .header__nav-list {
+     display: block;
+     padding: 1.875rem;
+   }
+ 
+   .header__nav-list a { /*rev*/
+     display: flex;
+     gap: 1.25rem 0;
+   }
+ 
+   .header__nav-mostrar-menu
+   {
+   position: absolute;
+   top: 1.875rem;
+   right: 2.5rem;
+   }
+ 
+   .header__nav-esconder-menu {
+     position: absolute;
+     top: 2.5rem;
+     right: 2.5rem;
+   }
+ 
+   #check:checked ~ .header__nav {
+     right: 0;
+   }
+ 
+   /*1.BIENVENIDA*/
+   .bienvenida {
+     display: block;
+   }
+ 
+   .bienvenida--text {
+     font-size: 4.5rem;
+     padding: 12.5rem 6.25rem;
+     width: 26.875rem;
+   }
+ 
+   .bienvenida--boton {
+     left: 6.875rem;
+   }
+ 
+   .aside--figure img,
+   .aside--figure-vd img {
+     display: none;
+   }
 
   /*2.SERVICIOS*/
   .servicios {

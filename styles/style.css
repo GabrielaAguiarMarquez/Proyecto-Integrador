@@ -882,6 +882,26 @@ body {
   #check:checked ~ .header__nav {
     right: 0;
   }
+  
+  /*1.BIENVENIDA*/
+  .bienvenida {
+    display: block;
+  }
+
+  .bienvenida--text {
+    font-size: 4.5rem;
+    padding: 12.5rem 6.25rem;
+    width: 26.875rem;
+  }
+
+  .bienvenida--boton {
+    left: 6.875rem;
+  }
+
+  .aside--figure img,
+  .aside--figure-vd img {
+    display: none;
+  }
 
   /*2.SERVICIOS*/
   .servicios {

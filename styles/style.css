@@ -829,13 +829,6 @@ body {
 /* RESPONSIVE DESIGN */
 
 @media screen and (max-width: 768px) {
-   /* GENERAL*/
-   * {
-    padding: 0;
-    margin: 0;
-    max-width: 100%;
-  }
-  
   /*0.HEADER*/
 
   .header__nav-mostrar-menu,

@@ -133,8 +133,56 @@
     outline: none;
     border: none;
     background-color: inherit; 
+    width: 100%
      /*quitar x*/
   }
+
+  /*2.PRODUCTS */
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+  }
+
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap:2px;
+    align-items:start;
+    padding-left: 7rem;
+    border-right: 1px solid #9AEFE2; /*no funciona rayita separadora*/
+  }
+
+  .nav ul li {
+    border-right: 1px solid #9AEFE2;
+  }
+
+  .nav a{
+    color: #0D554A;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 8px 0px;
+    display: flex;
+    width: 148.6px;    
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav__link-button {    
+    background-color: #0D554A;
+    border-radius: 19px;
+  }
+
+  .nav__link-button a {
+    color: #FFF;
+  }
+
+    
 
   /*-----------------------------------RESPONSIVE*/
 

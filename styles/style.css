@@ -44,7 +44,7 @@ body {
   background-color: var(--color-fondo-verde);
   height: 5.125rem;
   display: flex;
-  /*justify-content: space-between;*/
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -53,24 +53,23 @@ body {
   font-family: "Cormorant Garamond";
   font-size: 1.875rem;
   font-weight: 400;
-  line-height: 2.875rem;
-  margin-top: .75rem;
-  padding: .625rem 8.125rem;
+  padding-left: 8.125rem;
+  padding-right: 5rem;
+}
+
+.header__nav-list{
+  list-style: none;
+  display: flex;
+  gap:2.5rem;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 8rem;
 }
 
 .header__nav {
   font-family: "Manrope";
   font-size: .875rem;
   font-weight: 400;
-  padding: 2.1875rem .3125rem;
-  margin-left: 21.25rem;
-}
-
-.header__nav-list {
-  display: flex;
-  list-style: none;
-  gap: 2.3125rem;
-  cursor: pointer;
 }
 
 .header__nav-link,

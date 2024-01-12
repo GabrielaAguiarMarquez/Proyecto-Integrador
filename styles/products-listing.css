@@ -107,34 +107,33 @@
     font-style: normal;
     font-weight: 400;
     line-height: 5.125rem; 
-    padding-top: 90px;
-    padding-bottom: 25px;
+    padding-top: 5.625rem;
+    padding-bottom: 1.5625rem;
   }
 
   .search {
     display: flex;
-    padding: 12px 5px 11px 20px;
+    padding: .75rem .3125rem .6875rem 1.25rem;
     align-items: center;
-    gap: 8px;
-    border-radius: 26px;
-    border: 1px solid #F8F9FA;
+    gap: .5rem;
+    border-radius: 1.625rem;
+    border: .0625rem solid #F8F9FA;
     background: #FFF;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 12.5rem;
+    margin-right: 12.5rem;
       
   }
 
   .search input {
     color: #323842;
     font-family: 'Manrope';
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     outline: none;
     border: none;
     background-color: inherit; 
     width: 100%
-     /*quitar x*/
   }
 
   /*2.PRODUCTS */
@@ -149,38 +148,60 @@
   .nav ul {
     list-style: none;
     display: flex;
-    gap:2px;
     align-items:start;
     padding-left: 7rem;
-    border-right: 1px solid #9AEFE2; /*no funciona rayita separadora*/
   }
 
   .nav ul li {
     border-right: 1px solid #9AEFE2;
   }
 
-  .nav a{
+  .nav a {
     color: #0D554A;
     font-family: Manrope;
-    font-size: 14px;
+    font-size: .875rem;
     font-style: normal;
     font-weight: 400;
     text-decoration: none;
-    padding: 8px 0px;
+    padding: .5rem 0rem;
     display: flex;
-    width: 148.6px;    
+    width: 9.2875rem;    
     justify-content: center;
     align-items: center;
   }
 
   .nav__link-button {    
     background-color: #0D554A;
-    border-radius: 19px;
+    border-radius: 1.1875rem;
   }
 
   .nav__link-button a {
     color: #FFF;
   }
+
+  .nav span {
+    padding-right: 7rem;
+  }
+
+  .price__select {
+    width: 138px;
+    height: 36px;
+    border-radius: 4px 4px 0px 0px;
+    background: rgba(0, 0, 0, 0.00);
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  #price__select {
+    border: 0px solid #ddd; 
+    border-bottom: 1px solid #9095A0;;
+    outline: none;
+  }
+
 
     
 
@@ -241,10 +262,33 @@
  .OurProducts h1 {
     padding-left: 80px;
  }
+}
 
- /*.search input::placeholder {
-    visibility: hidden;
- }*/
+@media only screen and (max-width: 1074px){ 
+  /*2.PRODUCTS__NAV */
+
+  .nav ul {
+    padding-left: 4rem;
+  }
+
+  .nav a {
+    width: 130px;  
+  }
+}
+
+@media only screen and (max-width: 990px){ 
+
+  /*2.PRODUCTS__NAV */
  
+  .nav ul {
+    display: block;    
+    height: 1.875rem;
+  }
 
+  .nav {
+    gap: 15px;
+    height: 200px;
+    align-items:baseline;
+    padding-top: 60px;
+  }
 }

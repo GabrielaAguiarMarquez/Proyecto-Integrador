@@ -202,6 +202,60 @@
     outline: none;
   }
 
+  .products figure{
+    background: #FFF; 
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+  }
+
+  .cards {
+    width: 276px;
+    height: 404px;
+    margin-right: 23px;
+  }
+
+  .card {
+    width: 576px;
+    height: 826px;
+    margin-right: 23px;
+  }
+
+  .cards figcaption {
+    color: #171A1F;
+    font-family: Cormorant Garamond;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+  }
+
+  .cards p, .card p {
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+  }
+
+  .card figcaption {
+    color: #171A1F;
+    font-family: Cormorant Garamond;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 150% */
+  }
+
+  .cards__fila1, .cards__fila2, .cards__fila3, .cards__fila4 {
+    display: flex;
+    margin-left: 70px;
+    margin-top: 45px;
+  }
+
+
+
 
     
 

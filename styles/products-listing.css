@@ -153,7 +153,7 @@
   }
 
   .nav ul li {
-    border-right: 1px solid #9AEFE2;
+    border-right: .0625rem solid #9AEFE2;
   }
 
   .nav a {
@@ -184,80 +184,86 @@
   }
 
   .price__select {
-    width: 138px;
-    height: 36px;
-    border-radius: 4px 4px 0px 0px;
+    width: 8.625rem;
+    height: 2.25rem;
+    border-radius: .25rem .25rem 0rem 0rem;
     background: rgba(0, 0, 0, 0.00);
     color: #171A1F;
     font-family: Manrope;
-    font-size: 14px;
+    font-size: .875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 1.375rem;
   }
 
   #price__select {
-    border: 0px solid #ddd; 
-    border-bottom: 1px solid #9095A0;;
+    border: 0rem solid #ddd; 
+    border-bottom: .0625rem solid #9095A0;;
     outline: none;
+  }
+
+  .products {
+    height: 186.5625rem;
   }
 
   .products figure{
     background: #FFF; 
-    border-radius: 8px;
+    border-radius: .5rem;
     background: #FFF;
-    box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+    box-shadow: 0rem 0rem .0625rem 0rem rgba(23, 26, 31, 0.07), 0rem 0rem .125rem 0rem rgba(23, 26, 31, 0.12);
   }
 
   .cards {
-    width: 276px;
-    height: 404px;
-    margin-right: 23px;
+    width: 17.25rem;
+    height: 25.25rem;
+    margin-right: 1.4375rem;
   }
 
   .card {
-    width: 576px;
-    height: 826px;
-    margin-right: 23px;
+    width: 36rem;
+    height: 51.625rem;
+    margin-right: 1.4375rem;
   }
 
   .cards figcaption {
     color: #171A1F;
     font-family: Cormorant Garamond;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 36px; /* 150% */
+    line-height: 2.25rem; /* 150% */
+    padding-left: .9375rem;
   }
 
   .cards p, .card p {
     color: #171A1F;
     font-family: Manrope;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px; /* 162.5% */
+    line-height: 1.625rem; /* 162.5% */
+    padding-left: .9375rem;
   }
 
   .card figcaption {
     color: #171A1F;
     font-family: Cormorant Garamond;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 42px; /* 150% */
+    line-height: 2.625rem; /* 150% */
+    padding-left: .9375rem;
   }
 
-  .cards__fila1, .cards__fila2, .cards__fila3, .cards__fila4 {
+  .cards__fila1, .cards__fila2, .cards__fila3-4 {
     display: flex;
-    margin-left: 70px;
-    margin-top: 45px;
+    margin-left: 4.375rem;
+    margin-top: 2.8125rem;
   }
 
-
-
-
-    
+  .cards__sep {
+    margin-top: 1.125rem;
+  }    
 
   /*-----------------------------------RESPONSIVE*/
 
@@ -344,5 +350,32 @@
     height: 200px;
     align-items:baseline;
     padding-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 1074px){ 
+
+  /*2.PRODUCTS__NAV */
+  .cards__fila3-4 {
+    display: block;
+  }
+
+  .colum {
+    display: flex;
+  }
+
+  .colum figure {
+    margin-top: 35px;
+  }
+}
+
+@media only screen and (max-width: 546px){ 
+
+  .card, .cards {
+    margin-right: 10px;
+  }
+
+  .products {
+    margin-left: -40px;
   }
 }

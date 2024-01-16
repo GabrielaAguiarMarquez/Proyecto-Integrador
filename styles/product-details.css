@@ -488,6 +488,67 @@ font-weight: 400;
 line-height: 26px;
 }
 
+
+/* Section Other Products - You may also like*/
+
+.section-other-products {
+  margin: 3rem 0 3rem 8.25rem;
+}
+.section-other-products__container-cards {
+  display: flex;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+.section-other-products__container-card {
+  width: 17.5rem;
+height: 25.625rem;
+border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+overflow: hidden;
+
+}
+
+.section-other-products__title {
+  color: #0D554A;
+font-family: Cormorant Garamond;
+font-size: 2.5rem;
+font-weight: 600;
+line-height: 3.5rem; 
+}
+.section-other-products__img {
+  width: 17.25rem;
+height: 20rem;
+border-radius: 8px 8px 0 0;
+flex-shrink: 0;
+object-fit: cover;
+}
+.section-other-products__text {
+  padding: 12px 10px 12px 18px;
+}
+.section-other-products__subtitle {
+  color: #171A1F;
+font-family: Cormorant Garamond;
+font-size: 1.5rem;
+font-weight: 700;
+line-height: 2rem;
+}
+.section-other-products__price {
+  color: #171A1F;
+font-family: Manrope;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.625rem; 
+}
+
+@media screen and (max-width: 1254px) {
+  .section-other-products__container-cards {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 784px) {
   .main__about-us {
     top: 65rem;

@@ -203,7 +203,7 @@
   }
 
   .products {
-    height: 186.5625rem;
+    height: 136.25rem;
   }
 
   .products figure{
@@ -265,9 +265,163 @@
     margin-top: 1.125rem;
   }    
 
-  /*-----------------------------------RESPONSIVE*/
+  /*3.PAGINACION PRODUCTS */
 
-  @media only screen and (max-width: 960px){
+  .paginacion {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;  
+    margin-top: 4%; 
+    margin-inline: 37%;
+  }
+
+  .paginacion__ocultar {
+    display: none;
+    width: 0rem;
+  }
+
+  .paginacion a, .paginacion button {
+    display: flex;
+    width: 2.375rem;
+    height: 2.75rem;
+    padding: .5625rem 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding: .5rem;
+    text-decoration: none;
+  }
+
+  .paginacion a {
+    color: #9095A0;
+    font-family: Manrope;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem;
+  }
+
+  .paginacion button {
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  .pag_active, .paginacion a:hover {
+    color: #0D554A;
+    display: flex;
+    width: 2.5625rem;
+    height: 2.75rem;
+    border-radius: 1.8125rem;
+    border: .0625rem solid #0D554A;
+  }
+
+  /*4.SERVICIOS*/
+
+  .main__about-us {
+    position: relative;
+    height: 232px;    
+  }
+  
+  .section-about {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 114px;
+  }
+  
+  .section-about__container-information {
+    width: 17rem;
+  }
+  
+  .section-about__container-img {
+    text-align: center;
+  }
+
+  .article-about__img {
+    width: 3.875rem;
+    height: 3.875rem;
+  }
+    
+  .section-about__title {
+    color: #171A1F;
+    text-align: center;
+    font-family: Cormorant Garamond;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  
+  .section-about__text {
+    color: #9095A0;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  /*5.FOOTER*/
+/* 
+.footer {
+  width: 100%;
+  height: max-content;
+  padding: 1rem;
+  margin-left: 0.556rem;
+
+  flex-direction: column;
+}
+
+.footer__containerLogo {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.footer_logo {
+  font-size: 1.875rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+
+.footer__firtsLinks {
+  width: 90%;
+  text-align: center;
+}
+
+.footer__secondLinks {
+  width: 90%;
+  text-align: center;
+}
+
+.footer__links {
+  border: 1px solid var(--color-fondo-blanco);
+  padding: 0.625rem;
+}
+
+.footer__links:hover {
+  border: 1px solid var(--color-fondo-verde);
+  background-color: var(--color-primario);
+  color: var(--color-fondo-boton);
+  font-weight: 700;
+}
+
+.footer__containerContact {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.footer__containerRRSS {
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0 1rem;
+  line-height: -1;
+}*/
+
+
+/*-----------------------------------RESPONSIVE*/
+
+@media only screen and (max-width: 960px){
      /*0.HEADER*/
 
   .header__nav-mostrar-menu,
@@ -314,7 +468,7 @@
   #check:checked ~ .header__nav {
     right: 0;
   }
-  }
+}
 
 @media only screen and (max-width: 662px){
 
@@ -355,7 +509,7 @@
 
 @media only screen and (max-width: 1074px){ 
 
-  /*2.PRODUCTS__NAV */
+  /*2.PRODUCTS*/
   .cards__fila3-4 {
     display: block;
   }
@@ -367,7 +521,17 @@
   .colum figure {
     margin-top: 35px;
   }
+
+  .products {
+    height: 3000px;
+  }
 }
+
+@media only screen and (max-width: 1074px){
+  .products {
+    height: 3100px;
+  }
+ }
 
 @media only screen and (max-width: 546px){ 
 
@@ -377,5 +541,23 @@
 
   .products {
     margin-left: -40px;
+  }
+}
+
+@media only screen and (max-width: 467px){ 
+
+  .cards__fila1, .cards__fila2 {
+    display:block;
+  }
+
+  .cards__fila1 figure, .cards__fila2 figure {
+    margin-top: 2.8125rem;
+  }
+}
+
+@media only screen and (max-width: 470px){ 
+
+  .products {
+    height: 5760px;
   }
 }

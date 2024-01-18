@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Manrope&display=swap");
+:root {
+    --color-fondo-verde: #093931;
+    --color-fondo-blanco: #ffffff;
+    --color-primario: #f5d38e;
+    --color-secundario: #0d554a;
+    --color-terciario: #171a1f;
+}
+  
+  /*GENERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+  
+  html {
+    font-size: 100%;
+  }
+  body {
+    font-size: 100%;
+  }
+
+  /*0.HEADER*/
+.header {
+    background-color: var(--color-fondo-verde);
+    height: 5.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__logo {
+    color: var(--color-primario);
+    font-family: "Cormorant Garamond";
+    font-size: 1.875rem;
+    font-weight: 400;
+    padding-left: 8.125rem;
+    padding-right: 5rem;
+  }
+
+  .header__nav-list{
+    list-style: none;
+    display: flex;
+    gap:2.5rem;
+    align-items: center;
+    cursor: pointer;
+    padding-right: 8rem;
+}
+
+.header__nav {
+    font-family: "Manrope";
+    font-size: .875rem;
+    font-weight: 400;
+}
+  
+  .header__nav-link,
+  .header__nav-mostrar-menu,
+  .header__nav-esconder-menu {
+    text-decoration: none;
+    color: var(--color-fondo-blanco);
+  }
+  
+  .header__nav-link--active {
+    color: var(--color-primario);
+    padding-bottom: .625rem;
+    font-weight: 700;
+    border-bottom: .125rem solid var(--color-primario);
+  }
+  
+  .header__nav-link:hover,
+  .header__nav-mostrar-menu:hover,
+  .header__nav-esconder-menu:hover {
+    color: var(--color-primario);
+    font-weight: 700;
+  }
+  
+  .header__nav-mostrar-menu,
+  .header__nav-esconder-menu{
+    font-size: 1.875rem;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+  }
+  
+  .header__nav-mostrar-menu {
+    order: 1;
+  }
+  
+  #check{
+    display: none;
+  }
+
+  /*1.ORDER*/
+
+  .Order {
+    display: flex;
+    gap: 25px;
+    margin-left: 95px;
+    margin-right: 95px;
+    margin-top: 55px;
+    height: 683px;
+  }
+
+  .Order__summary {
+    width: 800px;
+    height: 528px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+  }
+
+  .Order__summary figure {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 15px;
+    gap: 50px;
+  }
+
+  .Order__summary-imgProduct {
+    width: 120px;
+    height: 120px;
+    border-radius: 4px;
+    background: url(<path-to-image>), lightgray -30px -72px / 150% 220% no-repeat;
+  }
+
+  .Order__summary h3 {
+    margin-left: 15px;
+    margin-top: 25px;
+    color: #171A1F;
+    font-family: "Cormorant Garamond";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+  }
+
+  .Order__summary h5 {
+    width: 214.13px;
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 157.143% */
+  }
+
+  .Order__summary figcaption p {
+    width: 214.13px;
+    color: #565E6C;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+  }
+
+  .Order__summary-precio {
+    width: 196.88px;
+    color: #171A1F;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 157.143% */
+  }
+
+  .Order__summary button {
+    width: 196.88px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .Order__payment {
+    padding: 15px;
+    width: 348px;
+    height: 583px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+    
+  }
+
+  .Order__payment-method h3 {
+    margin-top: 10px;
+    color: #171A1F;
+    font-family: "Cormorant Garamond";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+  }
+
+  .Order__payment-method p {
+    color: #379AE6;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .Order__payment-method img {
+    position: absolute;
+    padding-top: 15px;
+    padding-left: 10px;
+  }
+
+  #method-select {
+    width: 300px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #0D554A;
+    background: #F8F9FA;
+    color: #0D554A;
+    font-family: Manrope;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; 
+    margin-top: 5px;
+    margin-bottom: 35px;
+    padding-left: 50px;
+    cursor: pointer;
+    appearance: none;
+  }
+
+  .Order__payment-voucher h4, .Order__payment-summary-title {
+    color: #171A1F;
+    font-family: "Cormorant Garamond";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+  }
+
+  .Order__payment-voucher span {
+    display: flex;
+    gap: 2px;
+  }
+
+  .Order__payment-voucher input {
+    display: flex;
+    width: 220px;
+    padding: 7px 0px 6px 12px;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #9095A0;
+    background: #FFF;
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+  }
+
+  .Order__payment-voucher button {
+    display: inline-flex;
+    padding: 7px 17.5px 7px 18.5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #F2C66D;
+    color: #6B4A09;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+    border: none;
+  }
+
+  .Order__payment-voucher label {
+    color: #8F640C;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    display: flex;
+    width: 55px;
+    height: 28px;
+    padding: 4px 9px 4px 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    background: #FEF9EE;
+    margin-top: 8px;
+  }
+
+  .Order__payment-summary div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  .Order__payment-summary div p {
+    color: #171A1F;
+    font-family: 'Manrope';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+  }
+
+  .Order__payment-summary div h4 {
+    color: #171A1F;
+    text-align: right;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 157.143% */
+  }
+
+  .Order__payment-summary div h3 {
+    color: #E8502E;
+    text-align: right;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+  }
+
+  .Order__payment-summary button {
+    display: inline-flex;
+    padding: 9px 76px 9px 75px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    background: #0D554A;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    border: none;
+  }
+
+
+
+
+
+/*---------------------------------------RESPONSIVE*/
+
+@media only screen and (max-width: 960px){
+    /*0.HEADER*/
+
+ .header__nav-mostrar-menu,
+ .header__nav-esconder-menu {
+   display:block;
+ }
+
+ .header__nav {
+   position: fixed;
+   width: 100%;
+   height: 100vh;
+   background: #093931;
+   right: -100%;
+   top: 0;
+   text-align: center;
+   padding: 6.25rem 0rem;
+   z-index: 100;
+   transition: 0.8s;
+ }
+
+ .header__nav-list {
+   display: block;
+   padding: 1.875rem;
+ }
+
+ .header__nav-list a { /*rev*/
+   display: flex;
+   gap: 1.25rem 0;
+ }
+
+ .header__nav-mostrar-menu
+ {
+ position: absolute;
+ top: 1.875rem;
+ right: 2.5rem;
+ }
+
+ .header__nav-esconder-menu {
+   position: absolute;
+   top: 2.5rem;
+   right: 2.5rem;
+ }
+
+ #check:checked ~ .header__nav {
+   right: 0;
+ }
+}
+
+@media only screen and (max-width: 1080px){
+    /*1.ORDER*/
+    .Order {
+        display: block;
+        height: 1330px;
+    }
+    .Order__summary {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 630px){
+
+    .Order__summary {
+        height: 800px;
+    }
+
+    .Order__summary figure {
+        display: block;
+    }
+
+    .Order__summary-precio {
+        width: 10px;
+    }
+}
+
+@media only screen and (max-width: 378px){
+    .Order {
+        margin-left: 30px;
+        height: 1530px;
+    }
+
+    .Order__summary {
+        height: 830px;
+    }
+
+}

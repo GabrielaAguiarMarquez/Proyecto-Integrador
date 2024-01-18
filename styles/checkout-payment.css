@@ -343,6 +343,228 @@
     border: none;
   }
 
+  /* 2. YOU MAY ALSO LIKE */
+  .section-other-products {
+    margin-left: 90px;
+    height: 586px;
+  }
+  
+  .section-other-products__container-cards {
+    display: flex;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+  }
+  
+  .section-other-products__container-card {
+    width: 276px;
+    height: 410px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+    overflow: hidden;
+  }
+  
+  .section-other-products__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .section-other-products__header a {
+    display: flex;
+    color: #565E6C;
+    text-align: right;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    text-decoration: none;
+    margin-right: 180px;
+  }
+  
+  .section-other-products__title {
+    color: #0D554A;
+    font-family: Cormorant Garamond;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3.5rem; 
+  }
+  .section-other-products__img {
+    width: 276px;
+    height: 320px;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  .section-other-products__text {
+    padding: 12px;
+  }
+  .section-other-products__subtitle {
+    color: #171A1F;
+    font-family: "Cormorant Garamond";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+  }
+  
+  .section-other-products__price {
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+  }
+  
+
+/*3.FOOTER*/
+
+.footer {
+  display: flex;
+  height: 234px;
+  align-items: center;
+  background-color: #093931;
+  justify-content: space-around;
+}
+
+.info__web h1 {
+  color: #F5D38E;
+  font-family: "Cormorant Garamond";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px; 
+}
+
+.info__web figcaption {
+  margin-top: 70px;
+  display: flex;
+  align-items: end;
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.footer__containerLinks {
+  display: flex;  
+  margin-right: 45px;
+}
+
+.footer__containerLinks li {
+  list-style-type: none;  
+  padding-bottom: 25%;  
+}
+
+.footer__containerLinks ul {
+  padding-right: 45px;
+}
+
+.footer__containerLinks a {
+  text-decoration: none;
+  color: #FFF;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.footer__containerContact h3 {
+  color: #FFF;
+  font-family: "Cormorant Garamond";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+
+.footer__containerContact p {
+  color: #FAFAFB;
+  font-family: 'Manrope';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+
+.footer__containerContact {
+  padding-top: 33px;
+  padding-right: 55px;
+}
+
+.footer__contactEmail {
+  padding-top: 10px;
+  display: inline-flex;
+}
+
+.footer__contactEmail input{
+  display: inline-flex;
+  padding: 7px 132px 6px 12px;
+  align-items: center;
+  border-radius: 18px 0px 0px 18px;
+  border: 1px solid #FFF;
+  background: rgba(0, 0, 0, 0.00);
+  color: #FFF;
+  font-family: 'Manrope';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  outline: none;
+  position: relative;
+}
+
+.footer__contactEmail ::placeholder {
+  padding: 30px;
+}
+
+.Email {
+  display: flex;
+  align-items: center;
+}
+
+.footer__contactEmail img {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin-left: 13px;
+}
+
+.footer__contactEmail button {
+  display: inline-flex;
+  padding: 7px 23.5px 7px 24.5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 18px 18px 0px;
+  border: none;
+  background: #F2C66D;
+  color: #6B4A09;
+  font-family: 'Manrope';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10%;
+  margin-left: 286px;
+}
+
+.footer__icons img {
+  padding-left: 15px;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
 
 
 
@@ -402,7 +624,7 @@
     /*1.ORDER*/
     .Order {
         display: block;
-        height: 1330px;
+        height: 1200px;
     }
     .Order__summary {
         margin-bottom: 15px;
@@ -411,6 +633,10 @@
 }
 
 @media only screen and (max-width: 630px){
+
+    .Order {
+    height: 1500px;
+    }
 
     .Order__summary {
         height: 800px;
@@ -431,8 +657,65 @@
         height: 1530px;
     }
 
-    .Order__summary {
-        height: 830px;
+    .Order__payment {
+      height: 690px;
     }
 
 }
+
+@media only screen and (max-width: 1010px){
+  /* 2. YOU MAY ALSO LIKE */
+
+  .section-other-products__header {
+    display: block;
+  }
+
+  .section-other-products {
+    margin-left: 90px;
+    height: 2230px;
+  }
+  
+  .section-other-products__container-cards {
+    display: block;
+  }
+
+  .section-other-products__container-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 425px){
+  .section-other-products {
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 430px){
+  .section-other-products {
+    height: 2330px;
+  }
+}
+
+@media only screen and (max-width: 1037px){ 
+  /*FOOTER*/
+  .footer {
+    display: block;
+    justify-content: center;
+    height: 534px;
+    padding: 34px;
+  }
+
+  .footer__containerLinks {
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 467px){ 
+  .footer__contactEmail input{
+    padding: 7px 13px 6px 12px;
+  }
+  .footer__icons {
+    margin-left: 10px;
+  }
+}
+

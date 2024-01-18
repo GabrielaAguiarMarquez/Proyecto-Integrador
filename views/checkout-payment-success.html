@@ -1,1 +1,125 @@
 <!-- Sofi -> Payment method -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Payment</title>
+    <link rel="stylesheet" href="/styles/checkout-payment.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__logo">Darling.</h1>
+        <input type="checkbox" id="check">
+        <label for="check" class="header__nav-mostrar-menu"> &#8801 </label>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link header__nav-link--active">Shop</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Collection</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">About</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Contact</a>
+            </li>
+            <li class="header__nav-item header__nav-item--profile">
+              <a href="#" class="header__nav-link">
+                <img src="/Assets/1Home-Page/0Header/Profile1.png" alt="Perfil" />
+              </a>
+            </li>
+            <li class="header__nav-item header__nav-item--cart">
+              <a href="#">
+                <img src="/Assets/1Home-Page/0Header/Shopping cart 1.png" alt="CarritoCompras" />
+              </a>
+            </li>
+          </ul>
+          <label for="check" class="header__nav-esconder-menu"> &#215 </label>
+        </nav>
+    </header>
+
+    <section class="Order">
+        <section class="Order__summary">
+            <h3>Order summary</h3>
+            <figure>
+                <img class="Order__summary-imgProduct" src="/Assets/Checkout-payment/1Order-summary/1Luxury.png" alt="Luxury">
+                <figcaption>
+                    <h5>Luxury Charms Ring</h5>
+                    <p>Code: 78205</p>
+                </figcaption>
+                <p class="Order__summary-precio">$620.73</p>
+                <button><img src="/Assets/Checkout-payment/1Order-summary/botebasura.png" alt="boteBasura"></button>
+            </figure>
+            <figure>
+                <img class="Order__summary-imgProduct" src="/Assets/Checkout-payment/1Order-summary/2Exquisite.png" alt="Exquisite">
+                <figcaption>
+                    <h5>Exquisite Earrings</h5>
+                    <p>Code: 92701</p>
+                </figcaption>
+                <p class="Order__summary-precio">$125.28</p>
+                <button><img src="/Assets/Checkout-payment/1Order-summary/botebasura.png" alt="boteBasura"></button>
+            </figure>
+            <figure>
+                <img class="Order__summary-imgProduct" src="/Assets/Checkout-payment/1Order-summary/3Delights.png" alt="Delights">
+                <figcaption>
+                    <h5>Delights Earrings</h5>
+                    <p>Code: 78201</p>
+                </figcaption>
+                <p class="Order__summary-precio">$327.71</p>
+                <button><img src="/Assets/Checkout-payment/1Order-summary/botebasura.png" alt="boteBasura"></button>
+            </figure>
+        </section>
+
+        <form class="Order__payment">
+         <span class="Order__payment-method">
+            <h3>Payment method</h3>
+            <p>Change payment methods</p>
+            <img src="/Assets/Checkout-payment/2Payment-meto/mastercard.png" alt="Mastercard">
+            <select name="Metodos" id="method-select">                
+                <option value="">Mastercard      **** 5987</option>
+            </select>
+         </span>
+         <br>
+         <div class="Order__payment-voucher">
+            <h4>Voucher</h4>
+            <span>
+                <input type="text" placeholder="$15 OFF" />
+                <button>Apply</button> 
+            </span> 
+            <label for="etiquetaDescuento">$15 OFF</label>   
+         </div>
+         <br>
+         <div class="Order__payment-summary">
+            <h4 class="Order__payment-summary-title">Summary</h4>
+            <div>
+                <p>Subtotal</p>
+                <h4>$1073.72</h4>
+            </div> 
+            <div>
+                <p>Discount</p>
+                <h4>-$15</h4>
+            </div> 
+            <div>
+                <p>Fee</p>
+                <h4>$0</h4>
+            </div> 
+         <br>
+            <div>
+                <p>Total</p>
+                <h3>$1058.72</h3>
+            </div> 
+         <br>   
+         <button>Proceed to payment</button>
+         </div>
+        </form>
+    </section>
+    
+</body>
+</html>

@@ -362,64 +362,157 @@
   }
 
   /*5.FOOTER*/
-/* 
-.footer {
-  width: 100%;
-  height: max-content;
-  padding: 1rem;
-  margin-left: 0.556rem;
 
-  flex-direction: column;
-}
+  .footer {
+    display: flex;
+    height: 234px;
+    align-items: center;
+    background-color: #093931;
+    justify-content: space-around;
+  }
 
-.footer__containerLogo {
-  text-align: center;
-  padding-bottom: 1rem;
-}
+  .info__web h1 {
+    color: #F5D38E;
+    font-family: "Cormorant Garamond";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px; 
+  }
 
-.footer_logo {
-  font-size: 1.875rem;
-  margin-top: 0rem;
-  margin-bottom: 1rem;
-}
+  .info__web figcaption {
+    margin-top: 70px;
+    display: flex;
+    align-items: end;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
 
-.footer__firtsLinks {
-  width: 90%;
-  text-align: center;
-}
+  .footer__containerLinks {
+    display: flex;  
+    margin-right: 45px;
+  }
 
-.footer__secondLinks {
-  width: 90%;
-  text-align: center;
-}
+  .footer__containerLinks li {
+    list-style-type: none;  
+    padding-bottom: 25%;  
+  }
 
-.footer__links {
-  border: 1px solid var(--color-fondo-blanco);
-  padding: 0.625rem;
-}
+  .footer__containerLinks ul {
+    padding-right: 45px;
+  }
 
-.footer__links:hover {
-  border: 1px solid var(--color-fondo-verde);
-  background-color: var(--color-primario);
-  color: var(--color-fondo-boton);
-  font-weight: 700;
-}
+  .footer__containerLinks a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
 
-.footer__containerContact {
-  padding-top: 2rem;
-  text-align: center;
-}
+  .footer__containerContact h3 {
+    color: #FFF;
+    font-family: "Cormorant Garamond";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+  }
 
-.footer__containerRRSS {
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0;
-  margin: 0 1rem;
-  line-height: -1;
-}*/
+  .footer__containerContact p {
+    color: #FAFAFB;
+    font-family: 'Manrope';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+  }
+
+  .footer__containerContact {
+    padding-top: 33px;
+    padding-right: 55px;
+  }
+
+  .footer__contactEmail {
+    padding-top: 10px;
+    display: inline-flex;
+  }
+
+  .footer__contactEmail input{
+    display: inline-flex;
+    padding: 7px 132px 6px 12px;
+    align-items: center;
+    border-radius: 18px 0px 0px 18px;
+    border: 1px solid #FFF;
+    background: rgba(0, 0, 0, 0.00);
+    color: #FFF;
+    font-family: 'Manrope';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+    outline: none;
+    position: relative;
+  }
+
+  .footer__contactEmail ::placeholder {
+    padding: 30px;
+  }
+
+  .Email {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer__contactEmail img {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-left: 13px;
+  }
+
+  .footer__contactEmail button {
+    display: inline-flex;
+    padding: 7px 23.5px 7px 24.5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 18px 18px 0px;
+    border: none;
+    background: #F2C66D;
+    color: #6B4A09;
+    font-family: 'Manrope';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+  }
+
+  .footer__icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10%;
+    margin-left: 286px;
+  }
+
+  .footer__icons img {
+    padding-left: 15px;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
 
 
-/*-----------------------------------RESPONSIVE*/
+
+
+
+
+/*---------------------------------------RESPONSIVE*/
 
 @media only screen and (max-width: 960px){
      /*0.HEADER*/
@@ -561,3 +654,27 @@
     height: 5760px;
   }
 }
+
+@media only screen and (max-width: 1037px){ 
+  /*FOOTER*/
+  .footer {
+    display: block;
+    justify-content: center;
+    height: 534px;
+    padding: 34px;
+  }
+
+  .footer__containerLinks {
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 467px){ 
+  .footer__contactEmail input{
+    padding: 7px 13px 6px 12px;
+  }
+  .footer__icons {
+    margin-left: 10px;
+  }
+}
+

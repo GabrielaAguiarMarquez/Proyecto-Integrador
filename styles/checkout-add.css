@@ -1,0 +1,661 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Manrope&display=swap");
+:root {
+  --color-fondo-verde: #093931;
+  --color-fondo-blanco: #ffffff;
+  --color-primario: #f5d38e;
+  --color-secundario: #0d554a;
+  --color-terciario: #171a1f;
+  --color-detalles: #424955;
+}
+
+/*GENERAL*/
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+html {
+  font-size: 100%;
+}
+body {
+  font-size: 100%;
+}
+
+/*0.HEADER*/
+.header {
+  background-color: var(--color-fondo-verde);
+  height: 5.125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  color: var(--color-primario);
+  font-family: "Cormorant Garamond";
+  font-size: 1.875rem;
+  font-weight: 400;
+  padding-left: 8.125rem;
+  padding-right: 5rem;
+}
+
+.header__nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 8rem;
+}
+
+.header__nav {
+  font-family: "Manrope";
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.header__nav-link,
+.header__nav-mostrar-menu,
+.header__nav-esconder-menu {
+  text-decoration: none;
+  color: var(--color-fondo-blanco);
+}
+
+.header__nav-link--active {
+  color: var(--color-primario);
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+  border-bottom: 0.125rem solid var(--color-primario);
+}
+
+.header__nav-link:hover,
+.header__nav-mostrar-menu:hover,
+.header__nav-esconder-menu:hover {
+  color: var(--color-primario);
+  font-weight: 700;
+}
+
+.header__nav-mostrar-menu,
+.header__nav-esconder-menu {
+  font-size: 1.875rem;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
+}
+
+.header__nav-mostrar-menu {
+  order: 1;
+}
+
+#check {
+  display: none;
+}
+
+/* ============== MAIN =============== */
+
+/* Section: thanks-img - "Thank you for your purchase!" */
+
+.main__container-thanks-img {
+  padding-top: 3.375rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__thanks-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__image {
+  object-fit: cover;
+  width: 18.4375rem;
+  height: 18.4375rem;
+  border-radius: 100%;
+  padding-bottom: 24px;
+}
+.main__thanks-img_title {
+  color: #171a1f;
+  text-align: center;
+  font-family: "Cormorant Garamond";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem; 
+  padding-bottom: .75rem;
+}
+.main__thanks-img_text {
+  color: #9095a0;
+  font-family: Manrope;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+/* Section: main__container-purchase-order */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__container-purchase-order {
+  margin-bottom: 9.375rem;
+  width: 35rem;
+  height: max-content;
+  border-radius: .25rem;
+  background: #fff;
+  box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07),
+    0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+}
+.main__container-data_img {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.main__container-data {
+  display: flex;
+  gap: .75rem;
+}
+.main__data-img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.main__data-title {
+  color: #9095a0;
+  font-family: Manrope;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+.main__data-text {
+  color: #171a1f;
+  text-align: right;
+  font-family: Manrope;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.375rem; /* 157.143% */
+}
+.main__data-text--active {
+  color: #171a1f;
+  text-align: right;
+  font-family: "Cormorant Garamond";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.625rem;
+}
+.main__data-visa {
+  width: 2.875rem;
+  height: 2rem;
+  object-fit: fill;
+}
+
+.main__separator-center {
+  display: flex;
+  justify-content: center;
+}
+.main__separator {
+  width: 32rem;
+  stroke-width: .0625rem;
+  stroke: #dee1e6;
+}
+
+/* Section Order Line */
+
+.main__container-order-img {
+  display: flex;
+  justify-content: start;
+  width: 32rem;
+  height: 5.875rem;
+  border-radius: .25rem;
+  background: #fff;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.main__container-order-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1.5rem 1.3125rem 1.5rem;
+
+  overflow-y: scroll;
+  backdrop-filter: blur(5px);
+  margin: 0.4rem;
+}
+/* Se aplica al propio contenedor de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+/*  está haciendo referencia a la apariencia visual de esa parte desplazable de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background-color: #bcc1ca;
+  border-radius: 1rem;
+}
+/* Esta pseudoclase se aplica a la pista que rodea al pulgar y muestra el área no desplazable. */
+::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+}
+
+.main__order-title {
+  color: #171a1f;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.375rem;
+
+  padding-left: 1.5rem;
+  padding-top: 1.3125rem;
+}
+.main__order-img {
+  width: 5.875rem;
+  height: 5.875rem;
+  border-radius: .375rem;
+  object-fit: cover;
+}
+.main__order-img_title {
+  width: 133px;
+  color: #323842;
+  font-family: "Cormorant Garamond";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.625rem;
+}
+.main__order-price {
+  margin-left: 12rem;
+}
+.main__order-code {
+  color: #9095a0;
+  font-family: Manrope;
+  font-size: 0.6875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+.main__order-quantity {
+  color: #323842;
+  font-family: Manrope;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+
+  border-radius: 0.875rem;
+  background: #f3f4f6;
+  width: 2rem;
+  height: 1.75rem;
+  padding: 0.25rem 0.75rem 0.25rem 0.5rem;
+}
+
+.main__button {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+
+  padding: 0.5625rem 0.9375rem 0.5625rem 1rem;
+  border-radius: 1.375rem;
+  background: #0d554a;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-fondo-verde);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  color: var(--color-fondo-blanco);
+
+  height: 14.625rem;
+}
+
+.footer__containerLogo {
+  list-style: none;
+  cursor: pointer;
+}
+
+.footer_logo {
+  color: var(--color-primario);
+  font-family: Cormorant Garamond;
+  font-size: 1.875rem;
+  font-weight: 400;
+  margin-top: 3rem;
+  margin-bottom: 5.8125rem;
+}
+
+.footer__copyright {
+  font-size: var(--tamaño-enlaces);
+  font-weight: var(--peso-secundario);
+}
+
+.footer__firtsLinks {
+  cursor: pointer;
+  list-style: none;
+  font-family: Manrope;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.footer__secondLinks {
+  cursor: pointer;
+  list-style: none;
+  font-family: Manrope;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.footer__links {
+  padding-bottom: 0.75rem;
+}
+
+.footer__links--hover:hover {
+  color: var(--color-precio-destacado);
+}
+
+.footer__contactTitle {
+  font-family: Cormorant Garamond;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.footer__contactText {
+  font-family: Manrope;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 2;
+  padding-bottom: 1rem;
+}
+
+.footer__contactEmail {
+  width: 100%;
+  display: flex;
+}
+
+.footer__barEmail {
+  display: inline-flex;
+  width: 10.5625rem;
+  height: 1.875rem;
+  padding: 0.4375rem 8.25rem 0.375rem 0.75rem;
+  align-items: center;
+  gap: 0.375rem;
+
+  border-radius: 1.125rem 0rem 0rem 1.125rem;
+  border: 0.0625rem solid var(--color-fondo-blanco);
+  background: rgba(0, 0, 0, 0);
+}
+
+.footer__iconEmail {
+  padding-left: 0.75rem;
+  padding-right: 0.375rem;
+  font-size: 1rem;
+  color: var(--color-fondo-blanco);
+}
+input[type="email"]::placeholder {
+  color: var(--color-fondo-blanco);
+}
+.footer__inputEmail {
+  color: var(--color-fondo-blanco);
+  font-family: Manrope;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  background-color: inherit;
+  outline: none;
+  border: none;
+}
+
+.footer__button {
+  font-family: Manrope;
+  font-size: 0.875rem;
+  font-weight: 400;
+  display: inline-flex;
+  padding: 0.4375rem 1.4688rem 0.4375rem 1.5313rem;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  border-radius: 0rem 1.125rem 1.125rem 0rem;
+  background: #f2c66d;
+  color: #6b4a09;
+}
+
+.footer__containerRRSS {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding-left: 3.75rem;
+}
+
+.footer__rrssIcon {
+  font-size: 1.5rem;
+  padding-top: 2.3125rem;
+  margin-right: 1rem;
+}
+
+.footer__rrssIcon {
+  transition: all 0.2s ease-in-out;
+}
+
+.footer__rrssIcon:hover {
+  transform: scale(1.1);
+  color: var(--color-precio-destacado);
+}
+
+@media screen and (max-width: 960px) {
+  .header__nav-mostrar-menu,
+  .header__nav-esconder-menu {
+    display: block;
+  }
+
+  .header__nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #093931;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 6.25rem 0rem;
+    z-index: 100;
+    transition: 0.8s;
+  }
+
+  .header__nav-list {
+    display: block;
+    padding: 1.875rem;
+  }
+
+  .header__nav-list a {
+    /*rev*/
+    display: flex;
+    gap: 1.25rem 0;
+  }
+
+  .header__nav-mostrar-menu {
+    position: absolute;
+    top: 1.875rem;
+    right: 2.5rem;
+  }
+
+  .header__nav-esconder-menu {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+  }
+
+  #check:checked ~ .header__nav {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+    height: max-content;
+    padding: 0;
+    margin-left: 0;
+
+    flex-direction: column;
+  }
+
+  .footer__containerLogo {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .footer_logo {
+    font-size: 1.875rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer__firtsLinks {
+    width: 90%;
+    text-align: center;
+  }
+
+  .footer__secondLinks {
+    width: 90%;
+    text-align: center;
+  }
+
+  .footer__links {
+    border: 1px solid var(--color-fondo-blanco);
+    padding: 0.625rem;
+  }
+
+  .footer__links:hover {
+    border: 1px solid var(--color-fondo-verde);
+    background-color: var(--color-primario);
+    color: var(--color-fondo-boton);
+    font-weight: 700;
+  }
+
+  .footer__containerContact {
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  .footer__containerRRSS {
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0 1rem;
+    line-height: -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    width: 100%;
+    height: max-content;
+
+    flex-direction: column;
+  }
+
+  .footer__containerLogo {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .footer_logo {
+    font-size: 1.875rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer__firtsLinks {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__secondLinks {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__links {
+    border: none;
+    border-bottom: 1px solid var(--color-fondo-blanco);
+    width: 80%;
+    padding: 0.625rem;
+  }
+
+  .footer__links:hover {
+    border: 1px solid var(--color-fondo-verde);
+    background-color: var(--color-primario);
+    color: var(--color-fondo-boton);
+    font-weight: 700;
+  }
+
+  .footer__containerContact {
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  .footer__containerRRSS {
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0 1rem;
+    line-height: -1;
+  }
+
+  .footer__contactEmail {
+    width: 19%;
+  }
+
+  .footer__barEmail {
+    display: inline-flex;
+    width: 100%;
+    height: 1.2rem;
+    padding: 0.45rem 8.25rem 0.375rem 0.75rem;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 2.4rem;
+  }
+
+  .footer__iconEmail {
+    padding-left: 0.75rem;
+    padding-right: 0.375rem;
+    font-size: 1rem;
+  }
+
+  .footer__inputEmail {
+    font-size: 0.7rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    background-color: inherit;
+    outline: none;
+    border: none;
+  }
+
+  .footer__button {
+    font-size: 0.7rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.6rem;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    border-radius: 0rem 1.125rem 1.125rem 0rem;
+    background: #f2c66d;
+    color: #6b4a09;
+  }
+}

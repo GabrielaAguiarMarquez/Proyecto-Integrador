@@ -516,3 +516,15 @@ console.log(productosPorTipo(listaProductos, "Aretes"));
 console.log(productosPorTipo(listaProductos, "Gargantilla"));
 console.log(productosPorTipo(listaProductos, "Prendedor"));
 console.log(productosPorTipo(listaProductos, "Juego de joyas"));
+
+//3.1 Escribir una función que realice la búsqueda de productos por nombre, reciba como parámetro un array de productos y un término de búsqueda (es decir, una cadena de caracteres) y retorne un array con todos los productos cuyos nombres contengan los caracteres del segundo parámetro. Luego, llamar la función pasándole como argumentos datos de prueba y mostrar el resultado en la consola del navegador.
+
+
+const terminos = prompt("Ingrese el término de búsqueda: ").toLowerCase();
+
+function busquedaProductos(products, busquedaTerm) {
+  return products.filter(product => product.nombre.toLowerCase().includes(busquedaTerm));
+}
+const resultadosBusqueda = busquedaProductos(listaProductos, terminos);
+console.log(resultadosBusqueda);
+

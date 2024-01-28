@@ -528,3 +528,35 @@ function busquedaProductos(products, busquedaTerm) {
 const resultadosBusqueda = busquedaProductos(listaProductos, terminos);
 console.log(resultadosBusqueda);
 
+//5. Crear una función que calcule el total a pagar de una compra, reciba como parámetros un array de productos donde cada producto, tenga como propiedades la cantidad y precio unitario del producto y devuelva el valor que corresponda a la sumatoria de la cantidad por el precio de cada producto. Ejecutar la función con datos de prueba y mostrar el resultado en la consola del navegador.
+
+const calcularTotalPago = (productos) => {
+  let total = 0;
+  for (const producto of productos) {
+    total += producto.cantidad * producto.precio;
+  }
+  return total;
+}
+
+const productosCompra = [
+  {
+    id: 21,
+    nombre: "Shimmering Stones",
+    cantidad: 1,
+    precio: 168.76,
+  },
+  {
+    id: 17,
+    nombre: "Blissful Bloom Ring",
+    cantidad: 2,
+    precio: 620.73,
+  },
+];
+
+const totalPago = calcularTotalPago(productosCompra);
+console.log(`El total a pagar es: ${totalPago}`);
+
+
+
+
+

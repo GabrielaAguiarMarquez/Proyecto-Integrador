@@ -189,14 +189,14 @@ body {
 
 .section-product__code {
   color: #323842;
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
 }
 
 .section-product__price {
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-size: 40px;
   font-weight: 600;
   line-height: 56px;
@@ -204,7 +204,7 @@ body {
 
 .section-product__color-product {
   color: var(--color-detalles);
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-size: 16px;
   font-weight: 700;
   line-height: 26px;
@@ -235,7 +235,7 @@ body {
 
 .section-product__size {
   color: var(--color-detalles);
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-size: 16px;
   font-weight: 700;
   line-height: 26px;
@@ -243,7 +243,7 @@ body {
 
 .section-product__question {
   color: var(--color-detalles);
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-size: 12px;
   font-weight: 500;
   line-height: 20px;
@@ -259,7 +259,7 @@ body {
   padding: 4px 8px;
 
   color: #565e6c;
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -279,7 +279,7 @@ body {
 .section-product__required-quantity {
   color: #424955;
 
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-size: 16px;
   font-weight: 700;
   line-height: 26px;
@@ -297,7 +297,7 @@ body {
 
   color: var(--color-terciario);
 
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -333,7 +333,7 @@ body {
 .section-product__text-button {
   color: var(--color-secundario);
 
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -349,7 +349,7 @@ body {
 
   color: #fff;
 
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -381,7 +381,7 @@ body {
 
   color: var(--color-terciario);
 
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -403,7 +403,7 @@ body {
 }
 .section-description__subtitle {
   color: #323842;
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.625rem;
@@ -420,7 +420,7 @@ body {
 }
 .section-description__text {
   color: #323842;
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.75rem;
@@ -482,7 +482,7 @@ line-height: 28px;
 .section-about__text {
   color: #9095A0;
 text-align: center;
-font-family: Manrope;
+font-family: 'Manrope';
 font-size: 16px;
 font-weight: 400;
 line-height: 26px;
@@ -536,7 +536,7 @@ line-height: 2rem;
 }
 .section-other-products__price {
   color: #171A1F;
-font-family: Manrope;
+font-family: 'Manrope';
 font-size: 1rem;
 font-weight: 400;
 line-height: 1.625rem; 
@@ -569,7 +569,7 @@ line-height: 68px;
   padding-top: 12px;
   width: 264px;
   color: #FFF;
-font-family: Manrope;
+font-family: 'Manrope';
 font-size: 16px;
 font-weight: 400;
 line-height: 26px;
@@ -592,21 +592,21 @@ border-radius: 8px 0 0 8px;
   padding: 36px 36px 60px 59px;
 
   color: #FFF;
-font-family: Manrope;
+font-family: 'Manrope';
 font-size: 16px;
 font-weight: 400;
 line-height: 26px; 
 }
 .section-testimony__person {
   color: #FFF;
-font-family: Manrope;
+font-family: 'Manrope';
 font-size: 20px;
 font-weight: 700;
 line-height: 30px; 
 }
 .section-testimony__country {
   color: #FFF;
-font-family: Manrope;
+font-family: 'Manrope';
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -665,7 +665,7 @@ line-height: 26px;
 .footer__firtsLinks {
   cursor: pointer;
   list-style: none;
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
@@ -674,7 +674,7 @@ line-height: 26px;
 .footer__secondLinks {
   cursor: pointer;
   list-style: none;
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
@@ -695,7 +695,7 @@ line-height: 26px;
 }
 
 .footer__contactText {
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 2;
@@ -731,7 +731,7 @@ input[type="email"]::placeholder {
 }
 .footer__inputEmail {
   color: var(--color-fondo-blanco);
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.375rem;
@@ -741,7 +741,7 @@ input[type="email"]::placeholder {
 }
 
 .footer__button {
-  font-family: Manrope;
+  font-family: 'Manrope';
   font-size: 0.875rem;
   font-weight: 400;
   display: inline-flex;

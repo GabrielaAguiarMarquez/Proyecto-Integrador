@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/form-payment-method.css">
+    <title>Payment Method</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header__logo">Darling.</h1>
+        <input type="checkbox" id="check">
+        <label for="check" class="header__nav-mostrar-menu"> &#8801 </label>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link header__nav-link--active">Shop</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Collection</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">About</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Contact</a>
+            </li>
+            <li class="header__nav-item header__nav-item--profile">
+              <a href="#" class="header__nav-link">
+                <img src="/Assets/1Home-Page/0Header/Profile1.png" alt="Perfil" />
+              </a>
+            </li>
+            <li class="header__nav-item header__nav-item--cart">
+              <a href="#">
+                <img src="/Assets/1Home-Page/0Header/Shopping cart 1.png" alt="CarritoCompras" />
+              </a>
+            </li>
+          </ul>
+          <label for="check" class="header__nav-esconder-menu"> &#215 </label>
+        </nav>
+      </header>
+
+    <main class="main">
+        <section class="main__form">
+            <section class="main__form-description">
+                <h1 class="main__title">Información personal</h1>
+                <p class="main__text">Completa los datos del formulario para realiza el pago.</p>
+            </section>
+    
+            <form class="main__form-container" id="usuarioForm" onsubmit="recibirForm(event)" class="form_payment">
+    
+                <!-- Correo -->
+                <label for="email">Correo electrónico</label>
+                <input class="form__input" type="email" name="email">
+    
+                <!-- Nombre tarjeta -->
+                <label for="">Nombre en la tarjeta</label>
+                <input class="form__input" type="text" name="name" id="">
+    
+                <!-- Numero tarjeta-->
+                <label for="number">Número de la tarjeta</label>
+                        <input class="form__input form__input-img" type="number" name="number">
+                        <div class="main__images">
+                            <img class="main__form-img" src="/Assets/form-payment-method/Visa_Logo.png" alt="visa">
+                            <img class="main__form-img" src="/Assets/form-payment-method/MasterCard_Logo.svg.png" alt="master-card">
+                            <img class="main__form-img main__form-img--adjustment" src="/Assets/form-payment-method/ameriEx_logo.png" alt="american-express">
+                        </div> 
+    
+                <div class="main__form-date">
+                    <!-- Fecha caducidad-->
+                    <label class="main__date-container" for="date">
+                        Fecha de caducidad
+                        <input class="form__input" type="month" name="date">
+                    </label>
+    
+                    <!-- CVV-->
+                    <label class="main__date-container" for="cvv">
+                        CVV
+                        <input class="form__input" type="number" name="cvv">
+                    </label>
+                
+                </div>
+    
+                <!-- Guardar los datos -->
+                <button class="main__button" type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <ul class="footer__containerLogo">
+          <li class="footer_logo">Darling.</li>
+          <li class="footer__copyright">© 2022 Brand, Inc.</li>
+        </ul>
+    
+        <div class="footer__containerLinks"></div>
+    
+        <ul class="footer__firtsLinks">
+          <li class="footer__links footer__links--hover">Shop</li>
+          <li class="footer__links footer__links--hover">Collections</li>
+          <li class="footer__links footer__links--hover">About</li>
+        </ul>
+    
+        <ul class="footer__secondLinks footer__secondLinks--hover">
+          <li class="footer__links footer__links--hover">Contact</li>
+          <li class="footer__links footer__links--hover">Privacy</li>
+          <li class="footer__links footer__links--hover">Terms</li>
+        </ul>
+    
+        <section class="footer__containerContact">
+          <h3 class="footer__contactTitle">Subscribe to our newsletter</h3>
+          <p class="footer__contactText">
+            For product announcements and exclusive insights
+          </p>
+    
+          <form class="footer__contactEmail">
+            <span class="footer__barEmail">
+                <i class="fa-regular fa-envelope footer__iconEmail"></i>
+              <input class="footer__inputEmail" type="email" placeholder="Input your email" />
+            </span>
+            <button class="footer__button">Subscribe</button>
+          </form>
+    
+          <ul class="footer__containerRRSS">
+            <li class="footer__rrssIcon"><i class="fa-brands fa-twitter"></i></li>
+            <li class="footer__rrssIcon">
+              <i class="fa-brands fa-facebook"></i>
+            </li>
+            <li class="footer__rrssIcon">
+              <i class="fa-brands fa-linkedin"></i>
+            </li>
+            <li class="footer__rrssIcon"><i class="fa-brands fa-youtube"></i></li>
+          </ul>
+        </section>
+      </footer>
+
+    <script src="/scripts/form-payment-method.js"></script>
+</body>
+
+</html>

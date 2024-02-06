@@ -51,22 +51,24 @@
             <h1>Our Products</h1>
             <span class="search">
                 <img src="/Assets/2Our-Products/1Search/Icono-Search.png" alt="iconSearch">
-                <input type="text" placeholder="Find jewelry you like">
+                <input id="promptBus" type="text" placeholder="Find jewelry you like">
             </span>
         </section>
         
         <section class="products">
           <nav class="nav">
             <ul>
-              <li class="nav__link-button"><a href="">All</a></li>
-              <li><a href="">Rings</a></li>
-              <li><a href="">Bracelets</a></li>
-              <li><a href="">Necklaces</a></li>
-              <li><a href="">Earrings</a></li>
+              <li class="nav__link-button"><a id="btnAll" href="">All</a></li>
+              <li><a id="btnRing">Rings</a></li>
+              <li><a id="btnBracelets" href="">Bracelets</a></li>
+              <li><a id="btNecklaces" href="">Necklaces</a></li>
+              <li><a id="btnEarrings">Earrings</a></li>
             </ul>    
             <span>
               <select class="price__select" name="price" id="price__select">
                 <option value="">Sort by price</option>
+                <option value="ascendente">Ascendente</option>
+                <option value="descendente">Descendente</option>
               </select> 
             </span>                        
           </nav>
@@ -252,6 +254,7 @@
               <img src="/Assets/2Our-Products/4Footer/Logo youtube 2.png" alt="logoYoutube">
             </figure>
           </section>
-        </footer>        
+        </footer>      
+        <script src="/scripts/products-listing.js"></script>  
     </body>
   </html>

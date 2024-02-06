@@ -206,10 +206,9 @@
     height: 136.25rem;
   }
 
-  .products figure{
+  .products article{
     background: #FFF; 
     border-radius: .5rem;
-    background: #FFF;
     box-shadow: 0rem 0rem .0625rem 0rem rgba(23, 26, 31, 0.07), 0rem 0rem .125rem 0rem rgba(23, 26, 31, 0.12);
   }
 
@@ -218,14 +217,27 @@
     height: 25.25rem;
     margin-right: 1.4375rem;
   }
+  .cards img {
+    width: 17.25rem;
+    height: 20rem;
+    margin-right: 1.4375rem;
+    border-radius: 5px 5px 0 0;
+  }
 
-  .card {
-    width: 36rem;
-    height: 51.625rem;
+  .section__card--active {
+    width: 38rem;
+    height: 25.25rem;
     margin-right: 1.4375rem;
   }
 
-  .cards figcaption {
+  .section__card--active img {
+    object-fit: cover;
+    width: 38rem;
+    height: 320px;
+    margin-right: 1.4375rem;
+  }
+
+  .cards h2 {
     color: #171A1F;
     font-family: Cormorant Garamond;
     font-size: 1.5rem;
@@ -235,7 +247,7 @@
     padding-left: .9375rem;
   }
 
-  .cards p, .card p {
+  .cards span, .section__card--active span {
     color: #171A1F;
     font-family: Manrope;
     font-size: 1rem;
@@ -245,7 +257,7 @@
     padding-left: .9375rem;
   }
 
-  .card figcaption {
+  .card h2 {
     color: #171A1F;
     font-family: Cormorant Garamond;
     font-size: 1.75rem;
@@ -255,7 +267,7 @@
     padding-left: .9375rem;
   }
 
-  .cards__fila1, .cards__fila2, .cards__fila3-4 {
+  /* .cards__fila1, .cards__fila2, .cards__fila3-4 {
     display: flex;
     margin-left: 4.375rem;
     margin-top: 2.8125rem;
@@ -263,7 +275,16 @@
 
   .cards__sep {
     margin-top: 1.125rem;
-  }    
+  }     */
+
+  .section__products-listing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
 
   /*3.PAGINACION PRODUCTS */
 

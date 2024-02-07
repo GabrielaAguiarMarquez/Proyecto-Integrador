@@ -137,25 +137,74 @@
   }
 
   /*2.PRODUCTS */
+  .products__nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10rem;
+  }
+  .products__list-container {
+    list-style: none;
+    display: flex;
+    gap: .5rem;
+  }
+  .products__btn {
+    font-family: 'Manrope';
+    font-size: 14px;
+    color: var(--color-secundario);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-right: .0625rem solid #9AEFE2;
+    width: 148.6px;
+height: 38px;
+  }
+  .products__btn--end {
+    border-right: 0;
+  }
+  .products__btn--active {
+    background-color: var(--color-secundario);
+    color: white;
+    border-radius: 1.9rem;
+    font-family: 'Manrope';
+    font-size: .875rem;
+    text-align: center;
+    width: 9.2875rem;
+    cursor: pointer;
+    padding: .5rem 0rem;
+  }
 
-  .nav {
+/* Estilos del select */
+.product__sort-price {
+  width: 10rem;
+  height: 2.25rem;
+  background: transparent;
+  outline: none;
+
+  font-family: 'Manrope';
+  font-size: .875rem;
+  color: var(--color-terciario);
+
+  border: 0;
+  border-bottom: 1px solid #9095A0;
+}
+  
+  /* .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10rem;
+    background-color: lightcoral;
   }
-
   .nav ul {
     list-style: none;
     display: flex;
     align-items:start;
     padding-left: 7rem;
   }
-
   .nav ul li {
     border-right: .0625rem solid #9AEFE2;
   }
-
   .nav a {
     color: #0D554A;
     font-family: Manrope;
@@ -169,21 +218,15 @@
     justify-content: center;
     align-items: center;
   }
-
   .nav__link-button {    
     background-color: #0D554A;
     border-radius: 1.1875rem;
   }
-
   .nav__link-button a {
     color: #FFF;
-  }
+  } */
 
-  .nav span {
-    padding-right: 7rem;
-  }
-
-  .price__select {
+  /* .price__select {
     width: 8.625rem;
     height: 2.25rem;
     border-radius: .25rem .25rem 0rem 0rem;
@@ -200,10 +243,9 @@
     border: 0rem solid #ddd; 
     border-bottom: .0625rem solid #9095A0;;
     outline: none;
-  }
+  } */
 
   .products {
-    /* height: 2180px; */
     height: 100%;
   }
 
@@ -226,7 +268,7 @@
   }
 
   .section__card--active {
-    width: 38rem;
+    width: 36.99rem;
     height: 25.25rem;
     margin-right: 1.4375rem;
   }

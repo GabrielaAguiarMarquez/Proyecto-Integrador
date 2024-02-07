@@ -56,106 +56,55 @@
         </section>
         
         <section class="products">
-          <nav class="nav">
-            <ul>
+
+          <nav class="products__nav">
+            <ul class="products__list-container">
+              <li class="products__list-btn">
+                <button id="all" class="products__btn products__btn--active">All</button>
+              </li>
+              <li class="products__list-btn">
+                <button id="rings" class="products__btn">Rings</button>
+              </li>
+              <li class="products__list-btn">
+                <button id="bracelets" class="products__btn">Bracelets</button>
+              </li>
+              <li class="products__list-btn">
+                <button id="necklaces" class="products__btn">Necklaces</button>
+              </li>
+              <li class="products__list-btn">
+                <button id="earrings" class="products__btn products__btn--end">Earrings</button>
+              </li>
+            </ul>
+
+            <select class="product__sort-price" name="price" id="sortPrice">
+              <option value="">Sort by price</option>
+              <option value="ascendant">Ascendant</option>
+              <option value="descendant">Descendant</option>
+            </select> 
+          </nav>
+
+          <!-- <nav class="nav">
+             <ul>
               <li class="nav__link-button"><a id="btnAll" href="">All</a></li>
               <li><a id="btnRing">Rings</a></li>
               <li><a id="btnBracelets" href="">Bracelets</a></li>
               <li><a id="btNecklaces" href="">Necklaces</a></li>
               <li><a id="btnEarrings">Earrings</a></li>
-            </ul>    
+            </ul>   
             <span>
               <select class="price__select" name="price" id="price__select">
                 <option value="">Sort by price</option>
-                <option value="ascendente">Ascendente</option>
-                <option value="descendente">Descendente</option>
+                <option value="descendant">Descendant</option>
+                <option value="ascendant">Ascendant</option>
               </select> 
             </span>                        
           </nav>
-          <br/>
+          <br/> -->
 
           <section class="section__products-listing" id="productsListing">
             <!-- Aqui se imprimen las cards de productos -->
           </section>
-          
-          <!-- <div class="cards__fila1">
-            <figure class="cards">
-              <img src="/Assets/2Our-Products/2Products_img/Img 1-a page 2.png" alt="LuxuryGems">
-              <figcaption>Luxury Gems Necklace</figcaption>
-              <p>$168.76</p>
-            </figure>
-            <figure class="cards">
-              <img src="/Assets/2Our-Products/2Products_img/Img 2-a page 2.png" alt="AuroraRing">
-              <figcaption>Aurora Ring</figcaption>
-              <p>$125.28</p>
-            </figure>
-            <figure class="cards">
-              <img src="/Assets/2Our-Products/2Products_img/Img 3-a page 2.png" alt="ReflectionsNecklace">
-              <figcaption>Reflections Necklace</figcaption>
-              <p>$620.73</p>
-            </figure>
-            <figure class="cards">
-              <img src="/Assets/2Our-Products/2Products_img/Img 4-a page 2.png" alt="DreamyInfinityRing">
-              <figcaption>Dreamy Infinity Ring</figcaption>
-              <p>$327.71</p>
-            </figure>
-          </div>
-          <div class="cards__fila2">
-            <figure class="cards">
-              <img src="/Assets/2Our-Products/2Products_img/Img 1-b page 2.png" alt="OpulentJewelsRing">
-              <figcaption>Opulent Jewels Ring</figcaption>
-              <p>$168.76</p>
-            </figure>
-            <figure class="cards">
-              <img src="/Assets/2Our-Products/2Products_img/Img 2-b page 2.png" alt="SereneSolitaireEarrings">
-              <figcaption>Serene Solitaire Earrings</figcaption>
-              <p>$168.76</p>
-            </figure>
-            <figure class="cards">
-              <img src="/Assets/2Our-Products/2Products_img/Img 3-b page 2.png" alt="TimelessHaloEarrings">
-              <figcaption>Timeless Halo Earrings</figcaption>
-              <p>$620.73</p>
-            </figure>
-            <figure class="cards">
-              <img src="/Assets/2Our-Products/2Products_img/Img 4-b page 2.png" alt="ExquisiteEarrings">
-              <figcaption>Exquisite Earrings</figcaption>
-              <p>$327.71</p>
-            </figure>
-          </div>     
-          <div class="cards__fila3-4">
-            <div>
-              <figure class="card">
-                <img src="/Assets/2Our-Products/2Products_img/Img 1-2-c-c-d-d page 2.png" alt="TimelessEleganceRing">
-                <figcaption>Timeless Elegance Ring</figcaption>
-                <p>$168.76</p>
-              </figure>  
-            </div>            
-            <div class="colum">
-              <figure class="cards">
-                <img src="/Assets/2Our-Products/2Products_img/Img 3-c page 2.png" alt="LuxuryCharmsRing">
-                <figcaption>Luxury Charms Ring</figcaption>
-                <p>$620.73</p>
-              </figure>
-              <figure class="cards cards__sep">
-                <img src="/Assets/2Our-Products/2Products_img/Img 3-d page 2.png" alt="SparklingRing">
-                <figcaption>Sparkling Ring </figcaption>
-                <p>$620.73</p>
-              </figure>              
-            </div>    
-            <div class="colum">
-              <figure class="cards">
-                <img src="/Assets/2Our-Products/2Products_img/Img 4-c page 2.png" alt="BlissfulBloomRing">
-                <figcaption>Blissful Bloom Ring</figcaption>
-                <p>$620.73</p>
-              </figure>
-              <figure class="cards cards__sep">
-                <img src="/Assets/2Our-Products/2Products_img/Img 4-d page 2.png" alt="GlimmeringRing">
-                <figcaption>Glimmering Ring</figcaption>
-                <p>$620.73</p>
-              </figure>
-            </div>            
-          </div> -->
-          <br>
+
           <section class="paginacion">            
               <button>
                 <img src="/Assets/2Our-Products/3Paginacion/flechaizq.png" alt="flechaizq">

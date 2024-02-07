@@ -39,7 +39,7 @@
         </li>
         <li class="header__nav-item header__nav-item--cart">
           <a href="#">
-            <img src="/Assets/1Home-Page/0Header/Shopping cart 1.png" alt="CarritoCompras" />
+            <img id="btnCart" src="/Assets/1Home-Page/0Header/Shopping cart 1.png" alt="CarritoCompras" />
           </a>
         </li>
       </ul>
@@ -85,7 +85,11 @@
 
         <article class="section-product__container-product-specifications">
 
-          <section class="section-product__containerPrice">
+           <!-- <section id="contenedor" class="contenedor"> 
+              Aqui se imprimen la card del producto
+          </section> -->
+
+         <section class="section-product__containerPrice">
             <h1 class="section-product__title">Luxury Charms Ring</h1>
 
             <p class="section-product__code">Code: 78205</p>
@@ -132,7 +136,7 @@
           </section>
 
           <section class="section-product__container-buy">
-            <button class="section-product__add-buy">
+            <button id="btnAddToCart" class="section-product__add-buy">
               <img class="section-product__cart-buy" src="/Assets/product-details/Add shopping cart.svg"
                 alt="Add shopping cart">
               <span class="section-product__text-button">
@@ -355,6 +359,72 @@
       </ul>
     </section>
   </footer>
+  <!-- MODAL CART -->
+  <div class="modalCart hidden">
+    <section>
+    <span class="container__Header-Modal">
+      <h1>Yor Cart</h1>
+      <button id="closeModal" class="cerrarX">X</button>
+    </span>      
+      <!--products-->!
+      <section id="container-products" class="container-products">
+        <figure>
+          <img class="cards" src="/Assets/Checkout-payment/1Order-summary/1Luxury.png" alt="Luxury">
+          <span class="infoProduct">
+            <h3 class="nameProduct">Luxury Charms Ring</h3>
+            <p class="code">Code: 78205</p>
+            <p class="precio">$620.73</p>
+          </span>          
+          <span class="infoEdit">
+            <button class="btnEditPedido"><img src="/Assets/Cart/editPedido.png" alt="btnEditPedido"></button>
+            <p>x1</p>
+          </span>
+        </figure>
+        <figure>
+            <img class="cards" src="/Assets/Checkout-payment/1Order-summary/2Exquisite.png" alt="Exquisite">
+            <span class="infoProduct">
+            <h3 class="nameProduct">Exquisite Earrings</h3>
+            <p class="code">Code: 92701</p>
+            <p class="precio">$125.28</p>
+          </span>
+          <span class="infoEdit">
+            <button class="btnEditPedido"><img src="/Assets/Cart/editPedido.png" alt="btnEditPedido"></button>
+            <p>x1</p>
+          </span>
+        </figure>
+        <figure>
+          <img class="cards" src="/Assets/Checkout-payment/1Order-summary/3Delights.png" alt="Delights">
+          <span class="infoProduct">
+            <h3 class="nameProduct">Delights Earrings</h3>
+            <p class="code">Code: 92701</p>
+            <p class="precio">$327.71</p>
+          </span>
+          <span class="infoEdit">
+            <button class="btnEditPedido"><img src="/Assets/Cart/editPedido.png" alt="btnEditPedido"></button>
+            <p>x1</p>
+          </span>
+        </figure>
+        <div class="totalContinue">
+          <span>
+            <h1>Total:</h1>
+            <p>$621.75</p>
+          </span>
+          <button>Continue to check out</button>
+        </div>
+      </section>
+    </section>
+  </div>
+  <!--<div id="contenedorCompra">
+    <div class="informacionCompra" id="informacionCompra">
+        <h2>Cesta</h2>
+        <p class="x" id="x">x</p>
+    </div>
+
+    <div class="productosCompra" id="productosCompra"></div>
+    <div class="total" id="total"></div>
+    <button>Finalizar Compra</button>
+</div>-->
+  <script src="../scripts/modalCart.js"></script>
 
 </body>
 

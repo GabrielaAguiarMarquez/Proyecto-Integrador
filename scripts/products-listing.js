@@ -8,9 +8,9 @@ const listaProductos = [
     nombre: "Radiance Necklace",
     codigo: "#A0001",
     precio: 168.76,
-    tipo: "Juego de joyas",
+    tipo: "Bracelets",
     imagen: ["../Assets/1Home-Page/3Productos/Image 1.png"],
-    descripcion: "Juego de oro 6 piezas",
+    descripcion: "Juego de brazaletes de oro",
     stock: {
       cantidadDorado: 20,
       cantidadPlateado: 30,
@@ -22,7 +22,7 @@ const listaProductos = [
     nombre: "Exquisite Earrings",
     codigo: "#A0002",
     precio: 125.28,
-    tipo: "Aretes",
+    tipo: "Earrings",
     imagen: ["../Assets/1Home-Page/3Productos/Image 2.png"],
     descripcion: "Aretes baño de oro",
     stock: {
@@ -36,7 +36,7 @@ const listaProductos = [
     nombre: "Glamour Necklace",
     codigo: "#A0003",
     precio: 620.73,
-    tipo: "Gargantilla",
+    tipo: "Necklaces",
     imagen: ["../Assets/1Home-Page/3Productos/Image 3.png"],
     descripcion: "Gargantilla con baño de oro",
     stock: {
@@ -50,7 +50,7 @@ const listaProductos = [
     nombre: "Blissful Bloom Ring",
     codigo: "#A0017",
     precio: 620.73,
-    tipo: "Anillo",
+    tipo: "Rings",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 4-c page 2.png"],
     descripcion: "Anillo de floración dichosa",
     stock: {
@@ -84,7 +84,7 @@ const listaProductos = [
     nombre: "Shimmering Ring",
     codigo: "#A0005",
     precio: 168.76,
-    tipo: "Anillo",
+    tipo: "Rings",
     imagen: ["../Assets/1Home-Page/jewelry/Jewelry 1.jpg"],
     descripcion: "Anillo brillante con piedra rubi.",
     stock: {
@@ -118,7 +118,7 @@ const listaProductos = [
     nombre: "Elegance Earrings",
     codigo: "#A0006",
     precio: 620.73,
-    tipo: "Aretes",
+    tipo: "Earrings",
     imagen: ["../Assets/1Home-Page/jewelry/Jewelry 1.jpg"],
     descripcion: "Aretes delicados elegantes",
     stock: {
@@ -132,7 +132,7 @@ const listaProductos = [
     nombre: "Luxury Charms Brooch",
     codigo: "#A0007",
     precio: 327.71,
-    tipo: "Prendedor",
+    tipo: "Bracelets",
     imagen: ["../Assets/1Home-Page/jewelry/Jewelry 4.jpg"],
     descripcion: "Prendedores de lujo",
     stock: {
@@ -147,7 +147,7 @@ const listaProductos = [
     nombre: "Luxury Gems Necklace",
     codigo: "#A0008",
     precio: 168.76,
-    tipo: "Gargantilla",
+    tipo: "Necklaces",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 1-a page 2.png"],
     descripcion: "Gargantilla con dije de diamante",
     stock: {
@@ -161,8 +161,10 @@ const listaProductos = [
     nombre: "Timeless Elegance Ring",
     codigo: "#A0016",
     precio: 168.76,
-    tipo: "Anillo",
-    imagen: ["../Assets/2Our-Products/2Products_img/Img 1-2-c-c-d-d page 2.png"],
+    tipo: "Rings",
+    imagen: [
+      "../Assets/2Our-Products/2Products_img/Img 1-2-c-c-d-d page 2.png",
+    ],
     descripcion: "Tres anillos con piedras incrustadas",
     stock: {
       cantidadRoseGold: {
@@ -195,7 +197,7 @@ const listaProductos = [
     nombre: "Reflections Necklace",
     codigo: "#A0010",
     precio: 620.73,
-    tipo: "Gargantilla",
+    tipo: "Necklaces",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 3-a page 2.png"],
     descripcion: "Gargantilla resplandeciente con baño de oro",
     stock: {
@@ -209,7 +211,7 @@ const listaProductos = [
     nombre: "Dreamy Infinity Ring",
     codigo: "#A0011",
     precio: 327.71,
-    tipo: "Anillo",
+    tipo: "Rings",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 4-a page 2.png"],
     descripcion: "Anillo con gema de amatista",
     stock: {
@@ -243,7 +245,7 @@ const listaProductos = [
     nombre: "Opulent Jewels Ring",
     codigo: "#A0012",
     precio: 168.76,
-    tipo: "Anillo",
+    tipo: "Rings",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 1-b page 2.png"],
     descripcion: "Anillo de joyas opulentas",
     stock: {
@@ -277,7 +279,7 @@ const listaProductos = [
     nombre: "Serene Solitaire Earrings",
     codigo: "#A0013",
     precio: 168.76,
-    tipo: "Aretes",
+    tipo: "Earrings",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 2-b page 2.png"],
     descripcion: "Pendientes Solitario Sereno",
     stock: {
@@ -291,7 +293,7 @@ const listaProductos = [
     nombre: "Timeless Halo Earrings",
     codigo: "#A0014",
     precio: 620.73,
-    tipo: "Aretes",
+    tipo: "Earrings",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 3-b page 2.png"],
     descripcion: "Aretes de oro con opalo azul",
     stock: {
@@ -305,7 +307,7 @@ const listaProductos = [
     nombre: "Luxury Charms Ring",
     codigo: "78205",
     precio: 620.73,
-    tipo: "Anillo",
+    tipo: "Rings",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 3-c page 2.png"],
     descripcion: "Anillo de encantos de lujo",
     stock: {
@@ -339,7 +341,7 @@ const listaProductos = [
     nombre: "Aurora Ring",
     codigo: "#A0009",
     precio: 125.28,
-    tipo: "Anillo",
+    tipo: "Rings",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 2-a page 2.png"],
     descripcion: "Anillos de brillantes",
     stock: {
@@ -373,7 +375,7 @@ const listaProductos = [
     nombre: "Delights",
     codigo: "#A0004",
     precio: 620.73,
-    tipo: "Aretes",
+    tipo: "Earrings",
     imagen: ["../Assets/1Home-Page/3Productos/Image 4.png"],
     descripcion: "Aretes con forma de delfín",
     stock: {
@@ -387,7 +389,7 @@ const listaProductos = [
     nombre: "Sparkling Ring",
     codigo: "#A0018",
     precio: 620.73,
-    tipo: "Anillo",
+    tipo: "Rings",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 3-d page 2.png"],
     descripcion: "Anillo de diamantes",
     stock: {
@@ -421,7 +423,7 @@ const listaProductos = [
     nombre: "Glimmering Ring",
     codigo: "#A0019",
     precio: 620.73,
-    tipo: "Anillo",
+    tipo: "Rings",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 4-d page 2.png"],
     descripcion: "Anillo de oro con diamantes incrustados",
     stock: {
@@ -456,8 +458,10 @@ const listaProductos = [
     nombre: "Exquisite Ornaments",
     codigo: "#A0020",
     precio: 125.28,
-    tipo: "Aretes",
-    imagen: ["../Assets/Checkout-payment/3YouMay-Like/2Exquisite Ornaments.jpg"],
+    tipo: "Earrings",
+    imagen: [
+      "../Assets/Checkout-payment/3YouMay-Like/2Exquisite Ornaments.jpg",
+    ],
     descripcion: "Aretes con baño de oro e incrustraciones de lujo",
     stock: {
       cantidadDorado: 30,
@@ -470,8 +474,8 @@ const listaProductos = [
     nombre: "Shimmering Stones",
     codigo: "#A0021",
     precio: 168.76,
-    tipo: "Anillo",
-    imagen:["../Assets/Checkout-payment/3YouMay-Like/1Shimmering Stones.jpg"],
+    tipo: "Rings",
+    imagen: ["../Assets/Checkout-payment/3YouMay-Like/1Shimmering Stones.jpg"],
     descripcion: "",
     stock: {
       cantidadRoseGold: {
@@ -502,89 +506,94 @@ const listaProductos = [
 ];
 
 // Capturar Id del contenedor de las cards
-const cardsContainer = document.getElementById('productsListing');
+const cardsContainer = document.getElementById("productsListing");
 // Imprimir las cards de los productos en el html
 const listaImpresa = (container, lista) => {
   container.innerHTML = "";
-  lista.forEach(item => {
+  lista.forEach((item) => {
     let cardActive = "";
-      if (item.id === 9) {
-          cardActive = "section__card--active";
-      }
-      container.innerHTML += `
+    if (item.id === 9) {
+      cardActive = "section__card--active";
+    }
+    container.innerHTML += `
         <article class="cards ${cardActive}" data-click="card"">
           <img src="${item.imagen[0]}" alt="${item.nombre}" data-click="card">
           <h2 data-click="card">${item.nombre}</h2>
           <span data-click="card">$${item.precio}</span>
         </article>
-      `
-  })
-
-}
+      `;
+  });
+};
 // Pasamos los parametros a la funcion y le decimos cuantas cards mostrar en el inicio:
 listaImpresa(cardsContainer, listaProductos.slice(0, 15));
 
-
 /* ======================================== Inicio de las Funciones =========================================== */
 
-// Convertir los nombres de los productos a minuscula
-listaProductos.forEach((producto) => {
-  producto.nombre = producto.nombre.toLowerCase();
-});
+/* 1. FILTRO TIPO */
 
-
-// 2.1 Escribir una función que reciba como parámetros un array de productos y el nombre de un tipo de producto, que utilice la función de array que permita filtrar la lista por la categoría o tipo y devuelva el array resultante.
-
-const productosPorTipo = (productos, tipo) => {
-  return productos.filter((producto) => {
-    return producto.tipo === tipo;
-  });
+// Traer botones por el id
+const all = document.getElementById("all");
+const rings = document.getElementById("rings");
+const bracelets = document.getElementById("bracelets");
+const necklaces = document.getElementById("necklaces");
+const earrings = document.getElementById("earrings");
+// Regresesar los productos por defecto, al clickear 'ALL'
+const productosPorDefecto = () => {
+  listaImpresa(cardsContainer, listaProductos.slice(0, 15));
+};
+// Concatenamos dos funciones para que nos filtre el producto pasando solamente 'tipo' como parametro
+const filtrarProductos = (tipo) => {
+  const productosPorTipo = (productos, tipo) => {
+    return productos.filter((producto) => {
+      return producto.tipo === tipo;
+    });
+  };
+  const productosFiltrados = productosPorTipo(listaProductos, tipo);
+  // Aqui se imprime las cards filtradaas
+  listaImpresa(cardsContainer, productosFiltrados);
 };
 
-// 2.2 Luego, llamar la función pasándole como argumentos la lista de productos declarado en el ítem anterior y cualquier tipo de accesorio que exista en la lista y, por último, mostrar el resultado en la consola del navegador.
+// Escuchamos el evento y asignamos funciones:
 
-console.log('Productos tipo anillo:');
-console.log(productosPorTipo(listaProductos, "Anillo"));
+all.addEventListener("click", () => {
+  productosPorDefecto();
+});
+rings.addEventListener("click", () => {
+  filtrarProductos("Rings");
+});
+earrings.addEventListener("click", () => {
+  filtrarProductos("Earrings");
+});
+necklaces.addEventListener("click", () => {
+  filtrarProductos("Necklaces");
+});
+bracelets.addEventListener("click", () => {
+  filtrarProductos("Bracelets");
+});
 
-console.log('Productos tipo aretes:');
-console.log(productosPorTipo(listaProductos, "Aretes"));
+/* 2. FILTRO NOMBRE */
 
-console.log('Productos tipo gargantilla:');
-console.log(productosPorTipo(listaProductos, "Gargantilla"));
-
-console.log('Productos tipo prendedor:');
-console.log(productosPorTipo(listaProductos, "Prendedor"));
-
-console.log('Productos tipo juego de joyas:');
-console.log(productosPorTipo(listaProductos, "Juego de joyas"));
-
-//3.1 Escribir una función que realice la búsqueda de productos por nombre, reciba como parámetro un array de productos y un término de búsqueda (es decir, una cadena de caracteres) y retorne un array con todos los productos cuyos nombres contengan los caracteres del segundo parámetro.
-
-const terminos = document.getElementById("promptBus");
-
-terminos.addEventListener("keydown", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    const promptBusInput = document.getElementById("promptBus").value;
-    console.log(promptBusInput);
-
-    // Llamada a la función `busquedaProductos` dentro del evento `keydown`
-    const resultadosBusqueda = busquedaProductos(listaProductos, promptBusInput);
-    console.log("Resultados de la búsqueda por nombre:");
-    console.log(resultadosBusqueda);
+// Definimos la función:
+const busquedaProductos = (lista, palabra) => {
+  return lista.filter((item) => {
+    return item.nombre.toLowerCase().includes(palabra.toLowerCase());
+  });
+};
+// Capturamos el Id del Input
+const input = document.getElementById("promptBus");
+// Escuchamos el evento enter y llamamos a la función. Damos como parametro: array y valor input. Devuelve la lista de las cards con los terminos de buqueda impresa
+input.addEventListener("keydown", (e) => {
+  if (e.keyCode === 13) {
+    const termino = input.value;
+    const resultado = busquedaProductos(listaProductos, termino);
+    listaImpresa(cardsContainer, resultado);
   }
 });
 
-function busquedaProductos(products, busquedaTerm) {
-  return products.filter((product) => product.nombre.includes(busquedaTerm.toLowerCase()));
-}
+/* 3. PRECIO ASCENDENTE Y DESCENDENTE */
 
-
- //4.1 Crear una función que ordene un array de productos por precios de manera ascendente y descendente y retorne el array resultante.
-
- const productosPorPrecio = (ascendente = true) => {
-  const productosCopia = Array.from(listaProductos);
-
+const productosPorPrecio = (productos, ascendente = true) => {
+  const productosCopia = Array.from(productos);
   productosCopia.sort((primerElem, segundoElem) => {
     return ascendente
       ? primerElem.precio - segundoElem.precio
@@ -594,43 +603,19 @@ function busquedaProductos(products, busquedaTerm) {
   return productosCopia;
 };
 
-const price__select = document.getElementById("price__select");
+const select = document.getElementById("sortPrice");
 
-price__select.addEventListener("change", (event) => {
-  const orden = event.target.value;
+select.addEventListener("change", (e) => {
+  const eleccionUser = e.target.value;
 
-  const productosOrdenados = productosPorPrecio(orden === "ascendente");
-
-  console.log(productosOrdenados);
-});
-
-
-/*5.1 Crear una función que calcule el total a pagar de una compra, reciba como parámetros un array de productos donde cada producto, tenga como propiedades la cantidad y precio unitario del producto y devuelva el valor que corresponda a la sumatoria de la cantidad por el precio de cada producto.
-
-const calcularTotalPago = (productos) => {
-  let total = 0;
-  for (const producto of productos) {
-    total += producto.cantidad * producto.precio;
+  if (eleccionUser === "ascendant") {
+    return listaImpresa(
+      cardsContainer,
+      productosPorPrecio(listaProductos, true)
+    );
   }
-  return total;
-};
-
-const productosCompra = [
-  {
-    id: 21,
-    nombre: "Shimmering Stones",
-    cantidad: 1,
-    precio: 168.76,
-  },
-  {
-    id: 17,
-    nombre: "Blissful Bloom Ring",
-    cantidad: 2,
-    precio: 620.73,
-  },
-];
-
-// 5.2 Ejecutar la función con datos de prueba y mostrar el resultado en la consola del navegador.
-
-const totalPago = calcularTotalPago(productosCompra);
-console.log(`El total a pagar es: ${totalPago}`);*/
+  return listaImpresa(
+    cardsContainer,
+    productosPorPrecio(listaProductos, false)
+  );
+});

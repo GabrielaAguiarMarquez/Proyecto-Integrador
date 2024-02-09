@@ -516,7 +516,7 @@ const listaImpresa = (container, lista) => {
       cardActive = "section__card--active";
     }
     container.innerHTML += `
-        <article class="cards ${cardActive}" data-click="card"">
+        <article class="cards ${cardActive}" id=${item.id}>
           <img src="${item.imagen[0]}" alt="${item.nombre}" data-click="card">
           <h2 data-click="card">${item.nombre}</h2>
           <span data-click="card">$${item.precio}</span>
@@ -618,4 +618,17 @@ select.addEventListener("change", (e) => {
     cardsContainer,
     productosPorPrecio(listaProductos, false)
   );
+});
+
+// Redericcionar las cards a la pagina de detalle-de-producto
+
+const cards = document.querySelectorAll(".cards");
+
+cards.forEach((card) => {
+  card.addEventListener("click", (e) => {
+    const productId = e.target.closest(".cards").id;
+
+    document.location.href = `/views/product-details.html?id=${productId}`;
+
+  });
 });

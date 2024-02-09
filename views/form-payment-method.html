@@ -20,7 +20,7 @@
               <a href="#" class="header__nav-link">Home</a>
             </li>
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link header__nav-link--active">Shop</a>
+              <a href="#" class="header__nav-link">Shop</a>
             </li>
             <li class="header__nav-item">
               <a href="#" class="header__nav-link">Collection</a>
@@ -65,8 +65,9 @@
     
                 <!-- Numero tarjeta-->
                 <label for="number">Número de la tarjeta</label>
-                        <input class="form__input form__input-img" type="number" name="number">
                         <div class="main__images">
+                        
+                        <input class="form__input form__input-img" type="number" name="number">
                             <img class="main__form-img" src="/Assets/form-payment-method/Visa_Logo.png" alt="visa">
                             <img class="main__form-img" src="/Assets/form-payment-method/MasterCard_Logo.svg.png" alt="master-card">
                             <img class="main__form-img main__form-img--adjustment" src="/Assets/form-payment-method/ameriEx_logo.png" alt="american-express">
@@ -86,59 +87,69 @@
                     </label>
                 
                 </div>
-    
+                <!-- FORM DATOS USUARIO-->
+                <div class="formCustomer">
+                  <h1> <span><i class="fa-solid fa-circle-user"></i></span> Customer information</h1>
+                 
+                  <label for="nameCustomer">Full name</label>
+                  <input type="text" name="nameCustomer">
+  
+                  
+                  <label for="numberPhone">Phone number</label>
+                   <input type="number" name="numberPhone" id="">
+  
+                  
+                   <label for="address">Address</label>
+                    <input type="text" name="address">
+                </div>
+            
                 <!-- Guardar los datos -->
                 <button class="main__button" type="submit">Submit</button>
             </form>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-        <ul class="footer__containerLogo">
-          <li class="footer_logo">Darling.</li>
-          <li class="footer__copyright">© 2022 Brand, Inc.</li>
-        </ul>
-    
-        <div class="footer__containerLinks"></div>
-    
+      <figure class="info__web">
+        <h1>Darling.</h1>
+        <figcaption>© 2022 Brand, Inc.</figcaption>
+      </figure>
+  
+      <div class="footer__containerLinks">
         <ul class="footer__firtsLinks">
-          <li class="footer__links footer__links--hover">Shop</li>
-          <li class="footer__links footer__links--hover">Collections</li>
-          <li class="footer__links footer__links--hover">About</li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">Collections</a></li>
+          <li><a href="">About</a></li>
         </ul>
     
-        <ul class="footer__secondLinks footer__secondLinks--hover">
-          <li class="footer__links footer__links--hover">Contact</li>
-          <li class="footer__links footer__links--hover">Privacy</li>
-          <li class="footer__links footer__links--hover">Terms</li>
+        <ul class="footer__secondLinks">
+          <li><a href="">Contact</a></li>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Terms</a></li>
         </ul>
-    
-        <section class="footer__containerContact">
-          <h3 class="footer__contactTitle">Subscribe to our newsletter</h3>
-          <p class="footer__contactText">
-            For product announcements and exclusive insights
-          </p>
-    
-          <form class="footer__contactEmail">
-            <span class="footer__barEmail">
-                <i class="fa-regular fa-envelope footer__iconEmail"></i>
-              <input class="footer__inputEmail" type="email" placeholder="Input your email" />
-            </span>
-            <button class="footer__button">Subscribe</button>
-          </form>
-    
-          <ul class="footer__containerRRSS">
-            <li class="footer__rrssIcon"><i class="fa-brands fa-twitter"></i></li>
-            <li class="footer__rrssIcon">
-              <i class="fa-brands fa-facebook"></i>
-            </li>
-            <li class="footer__rrssIcon">
-              <i class="fa-brands fa-linkedin"></i>
-            </li>
-            <li class="footer__rrssIcon"><i class="fa-brands fa-youtube"></i></li>
-          </ul>
-        </section>
-      </footer>
+      </div>      
+      
+      <section class="footer__containerContact">
+        <h3>Subscribe to our newsletter</h3>
+        <p>For product announcements and exclusive insights</p>
+  
+        <div class="footer__contactEmail">
+          <span class="Email">
+            <img src="/Assets/2Our-Products/4Footer/Mail.png" alt="emailIcon">
+            <input type="email" placeholder="Input your email" />
+          </span>    
+          <button>Subscribe</button>          
+        </div>
+
+        <figure class="footer__icons">
+          <img src="/Assets/2Our-Products/4Footer/Logo twitter 2.png" alt="logoTwitter">
+          <img src="/Assets/2Our-Products/4Footer/Logo facebook 2.png" alt="logoFb">
+          <img src="/Assets/2Our-Products/4Footer/Logo linkedin 2.png" alt="logoLink">
+          <img src="/Assets/2Our-Products/4Footer/Logo youtube 2.png" alt="logoYoutube">
+        </figure>
+      </section>
+    </footer>     
 
     <script src="/scripts/form-payment-method.js"></script>
 </body>

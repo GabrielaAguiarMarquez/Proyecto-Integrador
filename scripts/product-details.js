@@ -1,3 +1,4 @@
+
   // Obtener el ID del producto de la URL
   const urlParams = new URLSearchParams(document.location.search);
   const productId = urlParams.get('id');

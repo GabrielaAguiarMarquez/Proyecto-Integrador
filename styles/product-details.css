@@ -12,7 +12,7 @@
 * {
   margin: 0;
   padding: 0;
-  max-width: 100%;
+  box-sizing: border-box;
 }
 
 html {
@@ -115,7 +115,6 @@ body {
 .show{
   display: flex;
 }
-
 
 .modalCart section {    
   width: 440px;
@@ -304,6 +303,17 @@ body {
   color: var(--color-detalles);
 }
 
+
+/* Contenedor de la card en el Js */
+
+.section__products-details {
+  width: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+} 
+
 /* Imagenes */
 
 .section-product {
@@ -336,8 +346,9 @@ body {
 }
 
 .section-product__ring-img {
-  width: 477px;
-  height: 636px;
+  width: 29.8125rem;
+  height: 39.75rem;
+  object-fit: cover;
   border-radius: .5rem;
 }
 
@@ -354,9 +365,9 @@ body {
 }
 
 /* Especificaciones de los productos */
-.section-product__container-product-specifications {
+/* .section-product__container-product-specifications {
   margin-left: 32px;
-}
+} */
 
 .section-product__title {
   color: var(--color-secundario);
@@ -488,6 +499,7 @@ body {
 .section-product__container-buy {
   display: flex;
   gap: 20px;
+  flex-direction: column;
 }
 .section-product__add-buy {
   width: 240px;
@@ -574,7 +586,7 @@ body {
 .section-description {
   border-radius: .5rem;
   background: #fafafb;
-  width: 1176px;
+  width: 70rem;
 }
 .section-description__container-information {
   margin: 3rem 4.5rem 2.875rem;
@@ -725,9 +737,8 @@ line-height: 1.625rem;
 
 .section-testimony {
   background: #093931;
-  height: 32rem;
-  padding: 132px 132px 0px 75px;
-
+  height: 35rem;
+  padding: 8.25rem 0px 8.25rem 4.6875rem;
   display: flex;
   overflow: hidden;
 }

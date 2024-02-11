@@ -2,11 +2,10 @@
 
 //Array de Productos
 const listaProductos = [
-  // Productos en el index
   {
     id: 1,
     nombre: "Radiance Necklace",
-    codigo: "#A0001",
+    codigo: "78205",
     precio: 168.76,
     tipo: "Bracelets",
     imagen: ["../Assets/1Home-Page/3Productos/Image 1.png"],
@@ -20,7 +19,7 @@ const listaProductos = [
   {
     id: 2,
     nombre: "Exquisite Earrings",
-    codigo: "#A0002",
+    codigo: "34892",
     precio: 125.28,
     tipo: "Earrings",
     imagen: ["../Assets/1Home-Page/3Productos/Image 2.png"],
@@ -34,7 +33,7 @@ const listaProductos = [
   {
     id: 3,
     nombre: "Glamour Necklace",
-    codigo: "#A0003",
+    codigo: "61937",
     precio: 620.73,
     tipo: "Necklaces",
     imagen: ["../Assets/1Home-Page/3Productos/Image 3.png"],
@@ -48,7 +47,7 @@ const listaProductos = [
   {
     id: 4,
     nombre: "Blissful Bloom Ring",
-    codigo: "#A0017",
+    codigo: "20548",
     precio: 620.73,
     tipo: "Rings",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 4-c page 2.png"],
@@ -82,7 +81,7 @@ const listaProductos = [
   {
     id: 5,
     nombre: "Shimmering Ring",
-    codigo: "#A0005",
+    codigo: "75392",
     precio: 168.76,
     tipo: "Rings",
     imagen: ["../Assets/1Home-Page/jewelry/Jewelry 1.jpg"],
@@ -116,7 +115,7 @@ const listaProductos = [
   {
     id: 6,
     nombre: "Elegance Earrings",
-    codigo: "#A0006",
+    codigo: "48201",
     precio: 620.73,
     tipo: "Earrings",
     imagen: ["../Assets/1Home-Page/jewelry/Jewelry 1.jpg"],
@@ -130,7 +129,7 @@ const listaProductos = [
   {
     id: 7,
     nombre: "Luxury Charms Brooch",
-    codigo: "#A0007",
+    codigo: "93726",
     precio: 327.71,
     tipo: "Bracelets",
     imagen: ["../Assets/1Home-Page/jewelry/Jewelry 4.jpg"],
@@ -141,11 +140,10 @@ const listaProductos = [
       cantidadRosa: 10,
     },
   },
-  // Products-listing
   {
     id: 8,
     nombre: "Luxury Gems Necklace",
-    codigo: "#A0008",
+    codigo: "15689",
     precio: 168.76,
     tipo: "Necklaces",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 1-a page 2.png"],
@@ -159,7 +157,7 @@ const listaProductos = [
   {
     id: 9,
     nombre: "Timeless Elegance Ring",
-    codigo: "#A0016",
+    codigo: "24057",
     precio: 168.76,
     tipo: "Rings",
     imagen: [
@@ -195,7 +193,7 @@ const listaProductos = [
   {
     id: 10,
     nombre: "Reflections Necklace",
-    codigo: "#A0010",
+    codigo: "80936",
     precio: 620.73,
     tipo: "Necklaces",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 3-a page 2.png"],
@@ -209,7 +207,7 @@ const listaProductos = [
   {
     id: 11,
     nombre: "Dreamy Infinity Ring",
-    codigo: "#A0011",
+    codigo: "57291",
     precio: 327.71,
     tipo: "Rings",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 4-a page 2.png"],
@@ -243,7 +241,7 @@ const listaProductos = [
   {
     id: 12,
     nombre: "Opulent Jewels Ring",
-    codigo: "#A0012",
+    codigo: "69348",
     precio: 168.76,
     tipo: "Rings",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 1-b page 2.png"],
@@ -277,7 +275,7 @@ const listaProductos = [
   {
     id: 13,
     nombre: "Serene Solitaire Earrings",
-    codigo: "#A0013",
+    codigo: "40182",
     precio: 168.76,
     tipo: "Earrings",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 2-b page 2.png"],
@@ -291,7 +289,7 @@ const listaProductos = [
   {
     id: 14,
     nombre: "Timeless Halo Earrings",
-    codigo: "#A0014",
+    codigo: "92837",
     precio: 620.73,
     tipo: "Earrings",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 3-b page 2.png"],
@@ -305,7 +303,7 @@ const listaProductos = [
   {
     id: 15,
     nombre: "Luxury Charms Ring",
-    codigo: "78205",
+    codigo: "36519",
     precio: 620.73,
     tipo: "Rings",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 3-c page 2.png"],
@@ -339,7 +337,7 @@ const listaProductos = [
   {
     id: 16,
     nombre: "Aurora Ring",
-    codigo: "#A0009",
+    codigo: "74028",
     precio: 125.28,
     tipo: "Rings",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 2-a page 2.png"],
@@ -373,7 +371,7 @@ const listaProductos = [
   {
     id: 17,
     nombre: "Delights",
-    codigo: "#A0004",
+    codigo: "51963",
     precio: 620.73,
     tipo: "Earrings",
     imagen: ["../Assets/1Home-Page/3Productos/Image 4.png"],
@@ -387,7 +385,7 @@ const listaProductos = [
   {
     id: 18,
     nombre: "Sparkling Ring",
-    codigo: "#A0018",
+    codigo: "83715",
     precio: 620.73,
     tipo: "Rings",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 3-d page 2.png"],
@@ -421,7 +419,7 @@ const listaProductos = [
   {
     id: 19,
     nombre: "Glimmering Ring",
-    codigo: "#A0019",
+    codigo: "28574",
     precio: 620.73,
     tipo: "Rings",
     imagen: ["../Assets/2Our-Products/2Products_img/Img 4-d page 2.png"],
@@ -452,11 +450,10 @@ const listaProductos = [
       },
     },
   },
-  // Checkout-payment-success
   {
     id: 20,
     nombre: "Exquisite Ornaments",
-    codigo: "#A0020",
+    codigo: "61487",
     precio: 125.28,
     tipo: "Earrings",
     imagen: [
@@ -472,7 +469,7 @@ const listaProductos = [
   {
     id: 21,
     nombre: "Shimmering Stones",
-    codigo: "#A0021",
+    codigo: "93746",
     precio: 168.76,
     tipo: "Rings",
     imagen: ["../Assets/Checkout-payment/3YouMay-Like/1Shimmering Stones.jpg"],

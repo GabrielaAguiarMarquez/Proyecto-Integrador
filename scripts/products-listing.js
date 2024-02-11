@@ -118,7 +118,7 @@ const listaProductos = [
     codigo: "48201",
     precio: 620.73,
     tipo: "Earrings",
-    imagen: ["../Assets/1Home-Page/jewelry/Jewelry 1.jpg"],
+    imagen: ["../Assets/1Home-Page/jewelry/EleganceEarrings.jpg"],
     descripcion: "Aretes delicados elegantes",
     stock: {
       cantidadDorado: 50,

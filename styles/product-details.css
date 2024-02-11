@@ -346,8 +346,9 @@ body {
 }
 
 .section-product__ring-img {
-  width: 477px;
-  height: 636px;
+  width: 29.8125rem;
+  height: 39.75rem;
+  object-fit: cover;
   border-radius: .5rem;
 }
 

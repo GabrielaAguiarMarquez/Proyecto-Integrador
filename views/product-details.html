@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/styles/product-details.css">
+  <link rel="stylesheet" href="/styles/modal.css">
   <title>Product Details</title>
 </head>
 
@@ -50,14 +51,8 @@
   <main class="main">
 
     <section class="main__container">
-      <nav class="main__nav">
-        <ul class="main__nav-list">
-          <li><a class="main__nav-link" href="">Home<span class="main__link-arrows"> <i
-                  class="fa-solid fa-angle-right"></i></span></a></li>
-          <li><a class="main__nav-link" href="">Shop<span class="main__link-arrows"> <i
-                  class="fa-solid fa-angle-right"></i> </span></a></li>
-          <li><a class="main__nav-link" href="">Luxury Charms</a></li>
-        </ul>
+      <nav class="main__nav" id="navShop">
+        <!-- Aqui se pega la navegacion de la lista -->
       </nav>
 
       <!-- Section products -->
@@ -254,72 +249,31 @@
       </ul>
     </section>
   </footer>
-  <!-- MODAL CART -->
-  <div class="modalCart hidden">
-    <section>
-    <span class="container__Header-Modal">
-      <h1>Yor Cart</h1>
-      <button id="closeModal" class="cerrarX">X</button>
-    </span>      
-      <!--products-->!
-      <section id="container-products" class="container-products">
-        <figure>
-          <img class="cards" src="/Assets/Checkout-payment/1Order-summary/1Luxury.png" alt="Luxury">
-          <span class="infoProduct">
-            <h3 class="nameProduct">Luxury Charms Ring</h3>
-            <p class="code">Code: 78205</p>
-            <p class="precio">$620.73</p>
-          </span>          
-          <span class="infoEdit">
-            <button class="btnEditPedido"><img src="/Assets/Cart/editPedido.png" alt="btnEditPedido"></button>
-            <p>x1</p>
-          </span>
-        </figure>
-        <figure>
-            <img class="cards" src="/Assets/Checkout-payment/1Order-summary/2Exquisite.png" alt="Exquisite">
-            <span class="infoProduct">
-            <h3 class="nameProduct">Exquisite Earrings</h3>
-            <p class="code">Code: 92701</p>
-            <p class="precio">$125.28</p>
-          </span>
-          <span class="infoEdit">
-            <button class="btnEditPedido"><img src="/Assets/Cart/editPedido.png" alt="btnEditPedido"></button>
-            <p>x1</p>
-          </span>
-        </figure>
-        <figure>
-          <img class="cards" src="/Assets/Checkout-payment/1Order-summary/3Delights.png" alt="Delights">
-          <span class="infoProduct">
-            <h3 class="nameProduct">Delights Earrings</h3>
-            <p class="code">Code: 92701</p>
-            <p class="precio">$327.71</p>
-          </span>
-          <span class="infoEdit">
-            <button class="btnEditPedido"><img src="/Assets/Cart/editPedido.png" alt="btnEditPedido"></button>
-            <p>x1</p>
-          </span>
-        </figure>
-        <div class="totalContinue">
-          <span>
-            <h1>Total:</h1>
-            <p>$621.75</p>
-          </span>
-          <button>Continue to check out</button>
-        </div>
-      </section>
-    </section>
-  </div>
-  <!--<div id="contenedorCompra">
-    <div class="informacionCompra" id="informacionCompra">
-        <h2>Cesta</h2>
-        <p class="x" id="x">x</p>
-    </div>
 
-    <div class="productosCompra" id="productosCompra"></div>
-    <div class="total" id="total"></div>
-    <button>Finalizar Compra</button>
-</div>-->
-  <script src="../scripts/modalCart.js"></script>
+  <!-- MODAL CART -->
+  <section class="section__modal-container hidden">
+    <section class="section__modal-cart">
+      <div class="section__description">
+        <h1 class="section__modal-title">Your cart</h1>
+        <button id="closeModal" class="section__modal-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="tamanno_container">
+        <article id="containerCart">
+          <!-- Aqui pegamos los detalles del modal -->
+        </article>
+      </div>
+      
+        <section class="section__total-products" id="containerTotal">
+          <hr class="section__products-details-separator">
+          <div class="section__products-details-total">
+            <p class="section__products-details-titleTotal">Total:</p>
+            <h4 class="section__products-details-total">$0.00</h4>
+          </div>
+          <button class="section__products-details-btn">Continue to check out</button>
+        </section>
+    </section>
+  </section>
   <script src="../scripts/product-details.js"></script>
 </body>
 

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/checkout-add.css">
   <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles/modal.css">
   <title>Purchase confirmation</title>
 </head>
 
@@ -18,13 +19,13 @@
     <nav class="header__nav">
       <ul class="header__nav-list">
         <li class="header__nav-item">
-          <a href="/index.html" class="header__nav-link">Home</a>
+          <a href="#" class="header__nav-link">Home</a>
         </li>
         <li class="header__nav-item">
-          <a href="./products-listing.html" class="header__nav-link">Shop</a>
+          <a href="#" class="header__nav-link header__nav-link--active">Shop</a>
         </li>
         <li class="header__nav-item">
-          <a href="./products-listing.html" class="header__nav-link">Collection</a>
+          <a href="#" class="header__nav-link">Collection</a>
         </li>
         <li class="header__nav-item">
           <a href="#" class="header__nav-link">About</a>
@@ -33,13 +34,13 @@
           <a href="#" class="header__nav-link">Contact</a>
         </li>
         <li class="header__nav-item header__nav-item--profile">
-          <a href="./form-payment-method.html" class="header__nav-link">
+          <a href="#" class="header__nav-link">
             <img src="/Assets/1Home-Page/0Header/Profile1.png" alt="Perfil" />
           </a>
         </li>
         <li class="header__nav-item header__nav-item--cart">
-          <a href="#" class="header__nav-link--active">
-            <img src="/Assets/1Home-Page/0Header/Shopping cart 1.png" alt="CarritoCompras" />
+          <a href="#">
+            <img id="btnCart" src="/Assets/1Home-Page/0Header/Shopping cart 1.png" alt="CarritoCompras" />
           </a>
         </li>
       </ul>
@@ -206,6 +207,20 @@
       </ul>
     </section>
   </footer>
+
+   <!-- MODAL CART -->
+   <section class="section__modal-container hidden">
+    <section class="section__modal-cart">
+      <div class="section__description">
+        <h1 class="section__modal-title">Your cart</h1>
+        <button id="closeModal" class="section__modal-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+        <div id="containerCart">
+          <!-- Aqui pegamos los detalles del modal -->
+        </div>
+    </section>
+  </section>
+  <script src="/scripts/script.js"></script>
 </body>
 
 </html>

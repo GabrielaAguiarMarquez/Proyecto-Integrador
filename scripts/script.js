@@ -1,5 +1,5 @@
 // 1.1 Declarar una lista de los productos con los siguientes datos: id, nombre, código, precio unitario, tipo de accesorio (anillo, brazalete, collar, aretes, etc.), imágenes, descripción, cantidad en stock por color y/o talla.
-const listaProductos = [
+const listProducts = [
   // Productos en el index
   {
     id: 1,
@@ -500,99 +500,155 @@ const listaProductos = [
 ];
 
 // Convertir los nombres de los productos a minuscula
-listaProductos.forEach((producto) => {
-  producto.nombre = producto.nombre.toLowerCase();
-});
+// listProducts.forEach((producto) => {
+//   producto.nombre = producto.nombre.toLowerCase();
+// });
 
 
 // 2.1 Escribir una función que reciba como parámetros un array de productos y el nombre de un tipo de producto, que utilice la función de array que permita filtrar la lista por la categoría o tipo y devuelva el array resultante.
 
-const productosPorTipo = (productos, tipo) => {
-  return productos.filter((producto) => {
-    return producto.tipo === tipo;
-  });
-};
+// const productosPorTipo = (productos, tipo) => {
+//   return productos.filter((producto) => {
+//     return producto.tipo === tipo;
+//   });
+// };
 
 // 2.2 Luego, llamar la función pasándole como argumentos la lista de productos declarado en el ítem anterior y cualquier tipo de accesorio que exista en la lista y, por último, mostrar el resultado en la consola del navegador.
 
-console.log('Productos tipo anillo:');
-console.log(productosPorTipo(listaProductos, "Anillo"));
+// console.log('Productos tipo anillo:');
+// console.log(productosPorTipo(listProducts, "Anillo"));
 
-console.log('Productos tipo aretes:');
-console.log(productosPorTipo(listaProductos, "Aretes"));
+// console.log('Productos tipo aretes:');
+// console.log(productosPorTipo(listProducts, "Aretes"));
 
-console.log('Productos tipo gargantilla:');
-console.log(productosPorTipo(listaProductos, "Gargantilla"));
+// console.log('Productos tipo gargantilla:');
+// console.log(productosPorTipo(listProducts, "Gargantilla"));
 
-console.log('Productos tipo prendedor:');
-console.log(productosPorTipo(listaProductos, "Prendedor"));
+// console.log('Productos tipo prendedor:');
+// console.log(productosPorTipo(listProducts, "Prendedor"));
 
-console.log('Productos tipo juego de joyas:');
-console.log(productosPorTipo(listaProductos, "Juego de joyas"));
+// console.log('Productos tipo juego de joyas:');
+// console.log(productosPorTipo(listProducts, "Juego de joyas"));
 
 //3.1 Escribir una función que realice la búsqueda de productos por nombre, reciba como parámetro un array de productos y un término de búsqueda (es decir, una cadena de caracteres) y retorne un array con todos los productos cuyos nombres contengan los caracteres del segundo parámetro.
 
-const terminos = prompt("Ingrese el término de búsqueda: ");
+// const terminos = prompt("Ingrese el término de búsqueda: ");
 
-function busquedaProductos(products, busquedaTerm) {
-  return products.filter((product) =>
-    product.nombre.includes(busquedaTerm.toLowerCase())
-  );
-}
+// function busquedaProductos(products, busquedaTerm) {
+//   return products.filter((product) =>
+//     product.nombre.includes(busquedaTerm.toLowerCase())
+//   );
+// }
 
 // 3.2 Luego, llamar la función pasándole como argumentos datos de prueba y mostrar el resultado en la consola del navegador.
 
-const resultadosBusqueda = busquedaProductos(listaProductos, terminos);
-console.log('Resultados de la busqueda por nombre: ')
-console.log(resultadosBusqueda);
+// const resultadosBusqueda = busquedaProductos(listProducts, terminos);
+// console.log('Resultados de la busqueda por nombre: ')
+// console.log(resultadosBusqueda);
 
 // 4.1 Crear una función que ordene un array de productos por precios de manera ascendente y descendente y retorne el array resultante.
 
-const productosPorPrecio = (productos, ascendente = true) => {
-  const productosCopia = Array.from(productos);
+// const productosPorPrecio = (productos, ascendente = true) => {
+//   const productosCopia = Array.from(productos);
 
-  productosCopia.sort((primerElem, segundoElem) => {
-    return ascendente
-      ? primerElem.precio - segundoElem.precio
-      : segundoElem.precio - primerElem.precio;
-  });
+//   productosCopia.sort((primerElem, segundoElem) => {
+//     return ascendente
+//       ? primerElem.precio - segundoElem.precio
+//       : segundoElem.precio - primerElem.precio;
+//   });
 
-  return productosCopia;
-};
+//   return productosCopia;
+// };
 
 // 4.2 Ejecutar la función y mostrar el resultado en consola.
 
-console.log("Orden ascendente:");
-console.log(productosPorPrecio(listaProductos, true));
-console.log("Orden descendente:");
-console.log(productosPorPrecio(listaProductos, false));
+// console.log("Orden ascendente:");
+// console.log(productosPorPrecio(listProducts, true));
+// console.log("Orden descendente:");
+// console.log(productosPorPrecio(listProducts, false));
 
 //5.1 Crear una función que calcule el total a pagar de una compra, reciba como parámetros un array de productos donde cada producto, tenga como propiedades la cantidad y precio unitario del producto y devuelva el valor que corresponda a la sumatoria de la cantidad por el precio de cada producto.
 
-const calcularTotalPago = (productos) => {
-  let total = 0;
-  for (const producto of productos) {
-    total += producto.cantidad * producto.precio;
-  }
-  return total;
-};
+// const calcularTotalPago = (productos) => {
+//   let total = 0;
+//   for (const producto of productos) {
+//     total += producto.cantidad * producto.precio;
+//   }
+//   return total;
+// };
 
-const productosCompra = [
-  {
-    id: 21,
-    nombre: "Shimmering Stones",
-    cantidad: 1,
-    precio: 168.76,
-  },
-  {
-    id: 17,
-    nombre: "Blissful Bloom Ring",
-    cantidad: 2,
-    precio: 620.73,
-  },
-];
+// const productosCompra = [
+//   {
+//     id: 21,
+//     nombre: "Shimmering Stones",
+//     cantidad: 1,
+//     precio: 168.76,
+//   },
+//   {
+//     id: 17,
+//     nombre: "Blissful Bloom Ring",
+//     cantidad: 2,
+//     precio: 620.73,
+//   },
+// ];
 
 // 5.2 Ejecutar la función con datos de prueba y mostrar el resultado en la consola del navegador.
 
-const totalPago = calcularTotalPago(productosCompra);
-console.log(`El total a pagar es: ${totalPago}`);
+// const totalPago = calcularTotalPago(productosCompra);
+// console.log(`El total a pagar es: ${totalPago}`);
+
+
+/*VISUALIZACION CART*/
+const cartButton = document.getElementById("btnCart");
+const modal = document.querySelector(".section__modal-container");
+const closeButton = document.getElementById("closeModal");
+
+const toggleModal = (button, modal) => {
+    button.addEventListener("click", () => {
+        // modal.classList.toggle("hidden");
+        modal.classList.toggle("show");
+    })
+}
+
+toggleModal(cartButton, modal);
+toggleModal(closeButton, modal);
+
+
+// Capturar Id del contenedor de las cards
+const productsListing = document.getElementById("productsListing");
+const containerCart = document.getElementById('containerCart')
+
+// Imprimir las cards de los productos en el html
+const printedList = (containerModal, lista) => {
+  
+      containerModal.innerHTML = "";
+      containerModal.innerHTML = `
+      <section class="section__purchase-details">
+      <figure class="section__products-details-container">
+        <img class="section__products-details-img" src="${lista[0].imagen[0]}" alt="${lista[0].nombre}">
+        <figcaption>
+          <div class="section__products-details-textContainer">
+            <h3 class="section__products-details-title">${lista[0].nombre}</h3>
+            <i class="section__products-details-edit fa-solid fa-pencil"></i>
+          </div>
+          <p class="section__products-details-code">Code: ${lista[0].codigo}</p>
+          <div class="section__products-details-priceContainer">
+            <h4 class="section__products-details-price">$${lista[0].precio}</h4>
+            <p class="section__products-details-counter">x1</p>
+          </div>
+        </figcaption>
+      </figure>
+      <hr class="section__products-details-separator">
+    </section>
+    <section class="section__total-products">
+      <hr class="section__products-details-separator">
+      <div class="section__products-details-total">
+        <p class="section__products-details-titleTotal">Total:</p>
+        <h4 class="section__products-details-total">$621.75</h4>
+      </div>
+      <button class="section__products-details-btn">Continue to check out</button>
+    </section>
+      `;  
+};
+// Pasamos los parametros a la funcion y le decimos cuantas cards mostrar en el inicio:
+printedList(containerCart, listProducts);

@@ -7,6 +7,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shop</title>
+        <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/styles/modal.css">
         <link rel="stylesheet" href="/styles/products-listing.css">
     </head>
 
@@ -39,7 +41,7 @@
                 </li>
                 <li class="header__nav-item header__nav-item--cart">
                   <a href="#">
-                    <img src="/Assets/1Home-Page/0Header/Shopping cart 1.png" alt="CarritoCompras" />
+                    <img id="btnCart" src="/Assets/1Home-Page/0Header/Shopping cart 1.png" alt="CarritoCompras" />
                   </a>
                 </li>
               </ul>
@@ -83,46 +85,28 @@
             </select> 
           </nav>
 
-          <!-- <nav class="nav">
-             <ul>
-              <li class="nav__link-button"><a id="btnAll" href="">All</a></li>
-              <li><a id="btnRing">Rings</a></li>
-              <li><a id="btnBracelets" href="">Bracelets</a></li>
-              <li><a id="btNecklaces" href="">Necklaces</a></li>
-              <li><a id="btnEarrings">Earrings</a></li>
-            </ul>   
-            <span>
-              <select class="price__select" name="price" id="price__select">
-                <option value="">Sort by price</option>
-                <option value="descendant">Descendant</option>
-                <option value="ascendant">Ascendant</option>
-              </select> 
-            </span>                        
-          </nav>
-          <br/> -->
-
           <section class="section__products-listing" id="productsListing">
             <!-- Aqui se imprimen las cards de productos -->
           </section>
 
-          <section class="paginacion">            
-              <button>
+          <section class="section__paginacion">            
+              <button class="section__paginacion-btn">
                 <img src="/Assets/2Our-Products/3Paginacion/flechaizq.png" alt="flechaizq">
               </button>
-              <a href="">1</a>
-              <a href="" class="pag_active">2</a>
-              <a href="">3</a>
+              <a class="section__paginacion-num" href="">1</a>
+              <a class="section__paginacion-num" href="" class="pag_active">2</a>
+              <a class="section__paginacion-num" href="">3</a>
               <div class="paginacion__ocultar">
-                <a href="">4</a>
-                <a href="">5</a>
-                <a href="">6</a>
-                <a href="">7</a>
-                <a href="">8</a>
-                <a href="">9</a>
+                <a class="section__paginacion-num" href="">4</a>
+                <a class="section__paginacion-num" href="">5</a>
+                <a class="section__paginacion-num" href="">6</a>
+                <a class="section__paginacion-num" href="">7</a>
+                <a class="section__paginacion-num" href="">8</a>
+                <a class="section__paginacion-num" href="">9</a>
               </div>
               <img src="/Assets/2Our-Products/3Paginacion/trespuntos.png" alt="trespuntos">
-              <a href="">10</a>
-              <button>
+              <a class="section__paginacion-num">10</a>
+              <button class="section__paginacion-btn">
                 <img src="/Assets/2Our-Products/3Paginacion/flechader.png" alt=flechader"">
               </button>           
           </section>
@@ -209,6 +193,32 @@
             </figure>
           </section>
         </footer>      
+
+ <!-- MODAL CART -->
+ <section class="section__modal-container hidden">
+  <section class="section__modal-cart">
+    <div class="section__description">
+      <h1 class="section__modal-title">Your cart</h1>
+      <button id="closeModal" class="section__modal-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="tamanno_container">
+      <article id="containerCart">
+        <!-- Aqui pegamos los detalles del modal -->
+      </article>
+    </div>
+    
+      <section class="section__total-products" id="containerTotal">
+        <hr class="section__products-details-separator">
+        <div class="section__products-details-total">
+          <p class="section__products-details-titleTotal">Total:</p>
+          <h4 class="section__products-details-total">$0.00</h4>
+        </div>
+        <button class="section__products-details-btn">Continue to check out</button>
+      </section>
+  </section>
+</section>
+
         <script src="/scripts/products-listing.js"></script>  
     </body>
   </html>

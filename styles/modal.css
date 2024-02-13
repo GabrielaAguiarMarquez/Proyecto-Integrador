@@ -1,0 +1,173 @@
+
+
+/*MODAL CART*/
+#btnCart {
+    cursor: pointer;
+  }
+  
+  .section__modal-container {
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #05050549;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  .show {
+    display: flex;
+  }
+  
+  .section__modal-cart {
+    width: 29%;
+    height: 100%;
+    background-color: white;
+    padding: 1.6rem;
+  }
+  
+  .section__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section__modal-title {
+    font-family: Cormorant Garamond;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0d554a;
+  }
+  .tamanno_container {
+    height: 22rem; 
+    overflow-y: auto;
+  }
+  .tamanno_container::-webkit-scrollbar {
+    width: .4rem;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+  .tamanno_container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: .3125rem;
+  }
+
+
+  .section__purchase-details {
+    margin-top: .8rem;
+  }
+  .section__products-details-container {
+    height: 5.875rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section__products-details-img {
+    width: 5.875rem;
+    border-radius: .375rem;
+    height: 5.875rem;
+    object-fit: cover;
+  }
+  
+  .section__products-details-textContainer, .section__products-details-priceContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 14.6rem;
+  }
+  .section__products-details-title {
+    font-family: 'Cormorant Garamond';
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+  }
+  .section__products-details-edit {
+    color: #9095a0;
+  }
+  
+  .section__products-details-code {
+    font-family: 'Manrope';
+  font-size: .6875rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  text-align: left;
+  color: #9095A0;
+  }
+  
+  .section__products-details-price {
+    font-family: Manrope;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #171A1F;
+  }
+  .section__products-details-counter {
+    font-family: 'Manrope';
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  color: #171A1F;
+  }
+  
+  .section__products-details-separator {
+    margin: .8rem 0;
+    color: #DEE1E6;
+  opacity: .3;
+  }
+  
+  .section__total-products {
+    margin-top: 7%;
+  }
+  .section__products-details-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section__products-details-titleTotal {
+    font-family: 'Manrope';
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  color: #171A1F;
+  }
+  .section__products-details-total {
+    font-family: 'Cormorant Garamond';
+  font-size: 20px;
+  font-weight: 700;
+  text-align: right;
+  color: #171A1F;
+  }
+  .section__products-details-btn {
+    cursor: pointer;
+    background-color: var(--color-secundario);
+    width: 100%;
+  height: 3.25rem;
+  margin-top: 1rem;
+  position: relative;
+  top: 78%;
+  
+  border-radius: 26px;
+  border: none;
+  
+  font-family: 'Manrope';
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-fondo-blanco);
+  }
+  
+  
+  .section__modal-close {
+    width: 24px;
+    height: 24px;
+    color: #323842;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+  }

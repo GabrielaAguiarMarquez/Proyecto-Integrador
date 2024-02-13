@@ -1,7 +1,5 @@
-// 1.1 Declarar una lista de los productos con los siguientes datos: id, nombre, código, precio unitario, tipo de accesorio (anillo, brazalete, collar, aretes, etc.), imágenes, descripción, cantidad en stock por color y/o talla.
-
 //Array de Productos
-const listaProductos = [
+const listProducts = [
   {
     id: 1,
     nombre: "Radiance Necklace",
@@ -502,10 +500,28 @@ const listaProductos = [
   },
 ];
 
+//VISUALIZACION CART
+const cartButton = document.getElementById("btnCart");
+const modal = document.querySelector(".section__modal-container");
+const closeButton = document.getElementById("closeModal");
+
+const toggleModal = (button, modal) => {
+    button.addEventListener("click", () => {
+        // modal.classList.toggle("hidden");
+        modal.classList.toggle("show");
+    })
+}
+
+toggleModal(cartButton, modal);
+toggleModal(closeButton, modal);
+
+
 // Capturar Id del contenedor de las cards
-const cardsContainer = document.getElementById("productsListing");
+const productsListing = document.getElementById("productsListing");
+const containerCart = document.getElementById('containerCart')
+
 // Imprimir las cards de los productos en el html
-const listaImpresa = (container, lista) => {
+const printedList = (container, containerModal, lista) => {
   container.innerHTML = "";
   lista.forEach((item) => {
     let cardActive = "";
@@ -519,10 +535,35 @@ const listaImpresa = (container, lista) => {
           <span data-click="card">$${item.precio}</span>
         </article>
       `;
+
+
+      containerModal.innerHTML = "";
+      containerModal.innerHTML = `
+      <section class="section__purchase-details">
+      <figure class="section__products-details-container">
+        <img class="section__products-details-img" src="${item.imagen[0]}" alt="${item.nombre}">
+        <figcaption>
+          <div class="section__products-details-textContainer">
+            <h3 class="section__products-details-title">${item.nombre}</h3>
+            <i class="section__products-details-edit fa-solid fa-pencil"></i>
+          </div>
+          <p class="section__products-details-code">Code: ${item.codigo}</p>
+          <div class="section__products-details-priceContainer">
+            <h4 class="section__products-details-price">$${item.precio}</h4>
+            <p class="section__products-details-counter">x1</p>
+          </div>
+        </figcaption>
+      </figure>
+      <hr class="section__products-details-separator">
+    </section>
+      `;  
   });
+
+
 };
 // Pasamos los parametros a la funcion y le decimos cuantas cards mostrar en el inicio:
-listaImpresa(cardsContainer, listaProductos.slice(0, 15));
+printedList(productsListing, containerCart, listProducts.slice(0, 15));
+
 
 /* ======================================== Inicio de las Funciones =========================================== */
 
@@ -536,7 +577,7 @@ const necklaces = document.getElementById("necklaces");
 const earrings = document.getElementById("earrings");
 // Regresesar los productos por defecto, al clickear 'ALL'
 const productosPorDefecto = () => {
-  listaImpresa(cardsContainer, listaProductos.slice(0, 15));
+  printedList(productsListing, listProducts.slice(0, 15));
 };
 // Concatenamos dos funciones para que nos filtre el producto pasando solamente 'tipo' como parametro
 const filtrarProductos = (tipo) => {
@@ -545,9 +586,9 @@ const filtrarProductos = (tipo) => {
       return producto.tipo === tipo;
     });
   };
-  const productosFiltrados = productosPorTipo(listaProductos, tipo);
+  const productosFiltrados = productosPorTipo(listProducts, tipo);
   // Aqui se imprime las cards filtradaas
-  listaImpresa(cardsContainer, productosFiltrados);
+  printedList(productsListing, productosFiltrados);
 };
 
 // Escuchamos el evento y asignamos funciones:
@@ -582,8 +623,8 @@ const input = document.getElementById("promptBus");
 input.addEventListener("keydown", (e) => {
   if (e.keyCode === 13) {
     const termino = input.value;
-    const resultado = busquedaProductos(listaProductos, termino);
-    listaImpresa(cardsContainer, resultado);
+    const resultado = busquedaProductos(listProducts, termino);
+    printedList(productsListing, resultado);
   }
 });
 
@@ -606,14 +647,14 @@ select.addEventListener("change", (e) => {
   const eleccionUser = e.target.value;
 
   if (eleccionUser === "ascendant") {
-    return listaImpresa(
-      cardsContainer,
-      productosPorPrecio(listaProductos, true)
+    return printedList(
+      productsListing,
+      productosPorPrecio(listProducts, true)
     );
   }
-  return listaImpresa(
-    cardsContainer,
-    productosPorPrecio(listaProductos, false)
+  return printedList(
+    productsListing,
+    productosPorPrecio(listProducts, false)
   );
 });
 

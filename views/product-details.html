@@ -1,4 +1,3 @@
-<!-- Gaby -> Product details -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,10 +21,10 @@
           <a href="/index.html" class="header__nav-link">Home</a>
         </li>
         <li class="header__nav-item">
-          <a href="./products-listing.html" class="header__nav-link">Shop</a>
+          <a href="./products-listing.html" class="header__nav-link header__nav-link--active">Shop</a>
         </li>
         <li class="header__nav-item">
-          <a href="" class="header__nav-link header__nav-link--active">Collection</a>
+          <a href="#" class="header__nav-link">Collection</a>
         </li>
         <li class="header__nav-item">
           <a href="#" class="header__nav-link">About</a>
@@ -56,11 +55,9 @@
       </nav>
 
       <!-- Section products -->
-        <section class="section__products-details" id="productDetails">
-          <!-- Aqui se imprimen las imagenes de los productos -->
-        </section>
-
-
+      <section class="section__products-details" id="productDetails">
+        <!-- Aqui se imprimen las imagenes de los productos -->
+      </section>
 
       <!-- Section product information -->
       <section class="section-description">
@@ -231,7 +228,7 @@
 
       <form class="footer__contactEmail">
         <span class="footer__barEmail">
-            <i class="fa-regular fa-envelope footer__iconEmail"></i>
+          <i class="fa-regular fa-envelope footer__iconEmail"></i>
           <input class="footer__inputEmail" type="email" placeholder="Input your email" />
         </span>
         <button class="footer__button">Subscribe</button>
@@ -263,15 +260,15 @@
           <!-- Aqui pegamos los detalles del modal -->
         </article>
       </div>
-      
-        <section class="section__total-products" id="containerTotal">
-          <hr class="section__products-details-separator">
-          <div class="section__products-details-total">
-            <p class="section__products-details-titleTotal">Total:</p>
-            <h4 class="section__products-details-total">$0.00</h4>
-          </div>
-          <button class="section__products-details-btn">Continue to check out</button>
-        </section>
+
+      <section class="section__total-products" id="containerTotal">
+        <hr class="section__products-details-separator">
+        <div class="section__products-details-total">
+          <p class="section__products-details-titleTotal">Total:</p>
+          <h4 class="section__products-details-total">$0.00</h4>
+        </div>
+        <button class="section__products-details-btn">Continue to check out</button>
+      </section>
     </section>
   </section>
   <script src="../scripts/product-details.js"></script>

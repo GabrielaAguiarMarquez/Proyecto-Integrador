@@ -2,172 +2,172 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/form-payment-method.css">
-    <title>Payment Method</title>
-    <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/styles/modal.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/form-payment-method.css">
+  <title>Payment Method</title>
+  <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles/modal.css">
 </head>
 
 <body>
+  <header class="header">
+    <h1 class="header__logo">Darling.</h1>
+    <input type="checkbox" id="check">
+    <label for="check" class="header__nav-mostrar-menu"> &#8801 </label>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="/index.html" class="header__nav-link">Home</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="./products-listing.html" class="header__nav-link">Shop</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="./product-details.html" class="header__nav-link">Collection</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">About</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">Contact</a>
+        </li>
+        <li class="header__nav-item header__nav-item--profile">
+          <a href="./form-payment-method.html" class="header__nav-link  header__nav-link--active">
+            <img src="/Assets/1Home-Page/0Header/Profile1.png" alt="Perfil" />
+          </a>
+        </li>
+        <li class="header__nav-item header__nav-item--cart">
+          <a href="#">
+            <img id="btnCart" src="/Assets/1Home-Page/0Header/Shopping cart 1.png" alt="CarritoCompras" />
+          </a>
+        </li>
+      </ul>
+      <label for="check" class="header__nav-esconder-menu"> &#215 </label>
+    </nav>
+  </header>
 
-    <header class="header">
-        <h1 class="header__logo">Darling.</h1>
-        <input type="checkbox" id="check">
-        <label for="check" class="header__nav-mostrar-menu"> &#8801 </label>
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a href="/index.html" class="header__nav-link">Home</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="./products-listing.html" class="header__nav-link">Shop</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="./product-details.html" class="header__nav-link">Collection</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">About</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Contact</a>
-            </li>
-            <li class="header__nav-item header__nav-item--profile">
-              <a href="./form-payment-method.html" class="header__nav-link  header__nav-link--active" >
-                <img src="/Assets/1Home-Page/0Header/Profile1.png" alt="Perfil" />
-              </a>
-            </li>
-            <li class="header__nav-item header__nav-item--cart">
-              <a href="#">
-                <img id="btnCart" src="/Assets/1Home-Page/0Header/Shopping cart 1.png" alt="CarritoCompras" />
-              </a>
-            </li>
-          </ul>
-          <label for="check" class="header__nav-esconder-menu"> &#215 </label>
-        </nav>
-      </header>
+  <main class="main">
+    <section class="main__form">
+      <section class="main__form-description">
+        <h1 class="main__title">Información personal</h1>
+        <p class="main__text">Completa los datos del formulario para realiza el pago.</p>
+      </section>
 
-    <main class="main">
-        <section class="main__form">
-            <section class="main__form-description">
-                <h1 class="main__title">Información personal</h1>
-                <p class="main__text">Completa los datos del formulario para realiza el pago.</p>
-            </section>
-    
-            <form class="main__form-container" id="usuarioForm" onsubmit="recibirForm(event)" class="form_payment">
-    
-                <!-- Correo -->
-                <label for="email">Correo electrónico</label>
-                <input class="form__input" type="email" name="email">
-    
-                <!-- Nombre tarjeta -->
-                <label for="">Nombre en la tarjeta</label>
-                <input class="form__input" type="text" name="name" id="">
-    
-                <!-- Numero tarjeta-->
-                <label for="number">Número de la tarjeta</label>
-                        <div class="main__images">
-                        
-                        <input class="form__input form__input-img" type="number" name="number">
-                            <img class="main__form-img" src="/Assets/form-payment-method/Visa_Logo.png" alt="visa">
-                            <img class="main__form-img" src="/Assets/form-payment-method/MasterCard_Logo.svg.png" alt="master-card">
-                            <img class="main__form-img main__form-img--adjustment" src="/Assets/form-payment-method/ameriEx_logo.png" alt="american-express">
-                        </div> 
-    
-                <div class="main__form-date">
-                    <!-- Fecha caducidad-->
-                    <label class="main__date-container" for="date">
-                        Fecha de caducidad
-                        <input class="form__input" type="month" name="date">
-                    </label>
-    
-                    <!-- CVV-->
-                    <label class="main__date-container" for="cvv">
-                        CVV
-                        <input class="form__input" type="number" name="cvv">
-                    </label>
-                
-                </div>
-                <!-- FORM DATOS USUARIO-->
-                <div class="formCustomer">
-                  <h1> <span><i class="fa-solid fa-circle-user"></i></span> Customer information</h1>
-                 
-                  <label for="nameCustomer">Full name</label>
-                  <input type="text" name="nameCustomer">
-  
-                  
-                  <label for="numberPhone">Phone number</label>
-                   <input type="number" name="numberPhone" id="">
-  
-                  
-                   <label for="address">Address</label>
-                    <input type="text" name="address">
-                </div>
-            
-                <!-- Guardar los datos -->
-                <button class="main__button" type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
+      <form class="main__form-container" id="usuarioForm" onsubmit="recibirForm(event)" class="form_payment">
 
-    <!-- Footer -->
-    <footer class="footer">
-      <figure class="info__web">
-        <h1>Darling.</h1>
-        <figcaption>© 2022 Brand, Inc.</figcaption>
-      </figure>
-  
-      <div class="footer__containerLinks">
-        <ul class="footer__firtsLinks">
-          <li><a href="">Shop</a></li>
-          <li><a href="">Collections</a></li>
-          <li><a href="">About</a></li>
-        </ul>
-    
-        <ul class="footer__secondLinks">
-          <li><a href="">Contact</a></li>
-          <li><a href="">Privacy</a></li>
-          <li><a href="">Terms</a></li>
-        </ul>
-      </div>      
-      
-      <section class="footer__containerContact">
-        <h3>Subscribe to our newsletter</h3>
-        <p>For product announcements and exclusive insights</p>
-  
-        <div class="footer__contactEmail">
-          <span class="Email">
-            <img src="/Assets/2Our-Products/4Footer/Mail.png" alt="emailIcon">
-            <input type="email" placeholder="Input your email" />
-          </span>    
-          <button>Subscribe</button>          
+        <!-- Correo -->
+        <label for="email">Correo electrónico</label>
+        <input class="form__input" type="email" name="email">
+
+        <!-- Nombre tarjeta -->
+        <label for="">Nombre en la tarjeta</label>
+        <input class="form__input" type="text" name="name" id="">
+
+        <!-- Numero tarjeta-->
+        <label for="number">Número de la tarjeta</label>
+        <div class="main__images">
+
+          <input class="form__input form__input-img" type="number" name="number">
+          <img class="main__form-img" src="/Assets/form-payment-method/Visa_Logo.png" alt="visa">
+          <img class="main__form-img" src="/Assets/form-payment-method/MasterCard_Logo.svg.png" alt="master-card">
+          <img class="main__form-img main__form-img--adjustment" src="/Assets/form-payment-method/ameriEx_logo.png"
+            alt="american-express">
         </div>
 
-        <figure class="footer__icons">
-          <img src="/Assets/2Our-Products/4Footer/Logo twitter 2.png" alt="logoTwitter">
-          <img src="/Assets/2Our-Products/4Footer/Logo facebook 2.png" alt="logoFb">
-          <img src="/Assets/2Our-Products/4Footer/Logo linkedin 2.png" alt="logoLink">
-          <img src="/Assets/2Our-Products/4Footer/Logo youtube 2.png" alt="logoYoutube">
-        </figure>
-      </section>
-    </footer>
+        <div class="main__form-date">
+          <!-- Fecha caducidad-->
+          <label class="main__date-container" for="date">
+            Fecha de caducidad
+            <input class="form__input" type="month" name="date">
+          </label>
 
-           <!-- MODAL CART -->
-   <section class="section__modal-container hidden">
+          <!-- CVV-->
+          <label class="main__date-container" for="cvv">
+            CVV
+            <input class="form__input" type="number" name="cvv">
+          </label>
+
+        </div>
+        <!-- FORM DATOS USUARIO-->
+        <div class="formCustomer">
+          <h1> <span><i class="fa-solid fa-circle-user"></i></span> Customer information</h1>
+
+          <label for="nameCustomer">Full name</label>
+          <input type="text" name="nameCustomer">
+
+
+          <label for="numberPhone">Phone number</label>
+          <input type="number" name="numberPhone" id="">
+
+
+          <label for="address">Address</label>
+          <input type="text" name="address">
+        </div>
+
+        <!-- Guardar los datos -->
+        <button class="main__button" type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <figure class="info__web">
+      <h1>Darling.</h1>
+      <figcaption>© 2022 Brand, Inc.</figcaption>
+    </figure>
+
+    <div class="footer__containerLinks">
+      <ul class="footer__firtsLinks">
+        <li><a href="">Shop</a></li>
+        <li><a href="">Collections</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+
+      <ul class="footer__secondLinks">
+        <li><a href="">Contact</a></li>
+        <li><a href="">Privacy</a></li>
+        <li><a href="">Terms</a></li>
+      </ul>
+    </div>
+
+    <section class="footer__containerContact">
+      <h3>Subscribe to our newsletter</h3>
+      <p>For product announcements and exclusive insights</p>
+
+      <div class="footer__contactEmail">
+        <span class="Email">
+          <img src="/Assets/2Our-Products/4Footer/Mail.png" alt="emailIcon">
+          <input type="email" placeholder="Input your email" />
+        </span>
+        <button>Subscribe</button>
+      </div>
+
+      <figure class="footer__icons">
+        <img src="/Assets/2Our-Products/4Footer/Logo twitter 2.png" alt="logoTwitter">
+        <img src="/Assets/2Our-Products/4Footer/Logo facebook 2.png" alt="logoFb">
+        <img src="/Assets/2Our-Products/4Footer/Logo linkedin 2.png" alt="logoLink">
+        <img src="/Assets/2Our-Products/4Footer/Logo youtube 2.png" alt="logoYoutube">
+      </figure>
+    </section>
+  </footer>
+
+  <!-- MODAL CART -->
+  <section class="section__modal-container hidden">
     <section class="section__modal-cart">
       <div class="section__description">
         <h1 class="section__modal-title">Your cart</h1>
         <button id="closeModal" class="section__modal-close"><i class="fa-solid fa-xmark"></i></button>
       </div>
-        <div id="containerCart">
-          <!-- Aqui pegamos los detalles del modal -->
-        </div>
+      <div id="containerCart">
+        <!-- Aqui pegamos los detalles del modal -->
+      </div>
     </section>
   </section>
 
-  <script src="/scripts/script.js"></script> 
-    <script src="/scripts/form-payment-method.js"></script>
+  <script src="/scripts/script.js"></script>
+  <script src="/scripts/form-payment-method.js"></script>
 </body>
 
 </html>

@@ -506,19 +506,18 @@ const modal = document.querySelector(".section__modal-container");
 const closeButton = document.getElementById("closeModal");
 
 const toggleModal = (button, modal) => {
-    button.addEventListener("click", () => {
-        // modal.classList.toggle("hidden");
-        modal.classList.toggle("show");
-    })
-}
+  button.addEventListener("click", () => {
+    // modal.classList.toggle("hidden");
+    modal.classList.toggle("show");
+  });
+};
 
 toggleModal(cartButton, modal);
 toggleModal(closeButton, modal);
 
-
 // Capturar Id del contenedor de las cards
 const productsListing = document.getElementById("productsListing");
-const containerCart = document.getElementById('containerCart')
+const containerCart = document.getElementById("containerCart");
 
 // Imprimir las cards de los productos en el html
 const printedList = (container, containerModal, lista) => {
@@ -536,9 +535,8 @@ const printedList = (container, containerModal, lista) => {
         </article>
       `;
 
-
-      containerModal.innerHTML = "";
-      containerModal.innerHTML = `
+    containerModal.innerHTML = "";
+    containerModal.innerHTML = `
       <section class="section__purchase-details">
       <figure class="section__products-details-container">
         <img class="section__products-details-img" src="${item.imagen[0]}" alt="${item.nombre}">
@@ -556,14 +554,11 @@ const printedList = (container, containerModal, lista) => {
       </figure>
       <hr class="section__products-details-separator">
     </section>
-      `;  
+      `;
   });
-
-
 };
 // Pasamos los parametros a la funcion y le decimos cuantas cards mostrar en el inicio:
 printedList(productsListing, containerCart, listProducts.slice(0, 15));
-
 
 /* ======================================== Inicio de las Funciones =========================================== */
 
@@ -577,7 +572,7 @@ const necklaces = document.getElementById("necklaces");
 const earrings = document.getElementById("earrings");
 // Regresesar los productos por defecto, al clickear 'ALL'
 const productosPorDefecto = () => {
-  printedList(productsListing, listProducts.slice(0, 15));
+  printedList(productsListing, containerCart, listProducts.slice(0, 15));
 };
 // Concatenamos dos funciones para que nos filtre el producto pasando solamente 'tipo' como parametro
 const filtrarProductos = (tipo) => {
@@ -587,8 +582,7 @@ const filtrarProductos = (tipo) => {
     });
   };
   const productosFiltrados = productosPorTipo(listProducts, tipo);
-  // Aqui se imprime las cards filtradaas
-  printedList(productsListing, productosFiltrados);
+  printedList(productsListing, containerCart, productosFiltrados);
 };
 
 // Escuchamos el evento y asignamos funciones:
@@ -624,7 +618,7 @@ input.addEventListener("keydown", (e) => {
   if (e.keyCode === 13) {
     const termino = input.value;
     const resultado = busquedaProductos(listProducts, termino);
-    printedList(productsListing, resultado);
+    printedList(productsListing, containerCart, resultado);
   }
 });
 
@@ -649,17 +643,18 @@ select.addEventListener("change", (e) => {
   if (eleccionUser === "ascendant") {
     return printedList(
       productsListing,
+      containerCart,
       productosPorPrecio(listProducts, true)
     );
   }
   return printedList(
     productsListing,
+    containerCart,
     productosPorPrecio(listProducts, false)
   );
 });
 
 // Redericcionar las cards a la pagina de detalle-de-producto
-
 const cards = document.querySelectorAll(".cards");
 
 cards.forEach((card) => {
@@ -667,6 +662,5 @@ cards.forEach((card) => {
     const productId = e.target.closest(".cards").id;
 
     document.location.href = `/views/product-details.html?id=${productId}`;
-
   });
 });

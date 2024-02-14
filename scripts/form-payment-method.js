@@ -11,14 +11,14 @@ const recibirForm = (evento) => {
 
   // Convertir los datos del formulario a un objeto JSON
   const json = {
-    email: formData.get('email'),
-    name: formData.get('name'),
-    number: formData.get('number'),
-    date: formData.get('date'),
-    cvv: formData.get('cvv'),
-    nameCustomer: formData.get('nameCustomer'),
-    numberPhone: formData.get('numberPhone'),
-    address: formData.get('address'),
+    email: formData.get("email"),
+    name: formData.get("name"),
+    number: formData.get("number"),
+    date: formData.get("date"),
+    cvv: formData.get("cvv"),
+    nameCustomer: formData.get("nameCustomer"),
+    numberPhone: formData.get("numberPhone"),
+    address: formData.get("address"),
   };
 
   // Validar que todos los campos estén llenos
@@ -34,8 +34,17 @@ const recibirForm = (evento) => {
   ) {
     // Si todos los campos están llenos, reiniciar el formulario y agregar el nuevo método de pago
     formulario.reset();
-    agregarMetodo(json.email, json.name, json.number, json.date, json.cvv, json.nameCustomer, json.numberPhone, json.address);
-    console.log('Método de pago: ', listaMetodosPago);
+    agregarMetodo(
+      json.email,
+      json.name,
+      json.number,
+      json.date,
+      json.cvv,
+      json.nameCustomer,
+      json.numberPhone,
+      json.address
+    );
+    console.log("Método de pago: ", listaMetodosPago);
   } else {
     // Si no todos los campos están llenos, mostrar una alerta
     alert("Rellene todos los campos");
@@ -43,7 +52,16 @@ const recibirForm = (evento) => {
 };
 
 // Función para agregar un nuevo método de pago al array
-const agregarMetodo = (email, name, number, date, cvv, nameCustomer, numberPhone, address) => {
+const agregarMetodo = (
+  email,
+  name,
+  number,
+  date,
+  cvv,
+  nameCustomer,
+  numberPhone,
+  address
+) => {
   const metodoPago = {
     email,
     name,
@@ -66,11 +84,11 @@ const expresiones = {
   email: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/,
   numberPhone: /^\d{7,14}$/, // 7 a 14 números
   number: /^\d{14,16}$/, // 14 a 16 números
-  date: /^\d{4}-\d{2}$/ // Formato YYYY-MM-DD
+  date: /^\d{4}-\d{2}$/, // Formato YYYY-MM-DD
 };
 
 // Obtener todos los inputs del formulario
-const inputs = document.querySelectorAll('#usuarioForm input');
+const inputs = document.querySelectorAll("#usuarioForm input");
 
 // Función para validar cada campo del formulario
 const validarCampos = (e) => {
@@ -82,7 +100,7 @@ const validarCampos = (e) => {
     relleno[campo] = true;
   } else {
     relleno[campo] = false;
-    alert("Error de relleno")
+    alert("Error de relleno");
   }
 };
 
@@ -100,6 +118,6 @@ const relleno = {
 
 // Agregar eventos de 'keyup' y 'blur' a cada input para validar su contenido
 inputs.forEach((input) => {
-  input.addEventListener('keyup', validarCampos);
-  input.addEventListener('blur', validarCampos);
+  input.addEventListener("keyup", validarCampos);
+  input.addEventListener("blur", validarCampos);
 });

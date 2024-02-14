@@ -729,6 +729,11 @@ input[type="email"]::placeholder {
   color: var(--color-precio-destacado);
 }
 
+.card-container {
+  display: flex; 
+  flex-direction: column;
+}
+
 @media screen and (max-width: 999px) {
   .footer {
     top: 86rem;

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles/product-details.css">
+  <link rel="stylesheet" href="/styles/modal.css">
+  <title>Product Details</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__logo">Darling.</h1>
+    <input type="checkbox" id="check">
+    <label for="check" class="header__nav-mostrar-menu"> &#8801 </label>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="/index.html" class="header__nav-link">Home</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="./products-listing.html" class="header__nav-link header__nav-link--active">Shop</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">Collection</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">About</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">Contact</a>
+        </li>
+        <li class="header__nav-item header__nav-item--profile">
+          <a href="./form-payment-method.html" class="header__nav-link">
+            <img src="/Assets/1Home-Page/0Header/Profile1.png" alt="Perfil" />
+          </a>
+        </li>
+        <li class="header__nav-item header__nav-item--cart">
+          <a href="#">
+            <img id="btnCart" src="/Assets/1Home-Page/0Header/Shopping cart 1.png" alt="CarritoCompras" />
+          </a>
+        </li>
+      </ul>
+      <label for="check" class="header__nav-esconder-menu"> &#215 </label>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <section class="main__container">
+      <nav class="main__nav" id="navShop">
+        <!-- Aqui se pega la navegacion de la lista -->
+      </nav>
+
+      <!-- Section products -->
+      <section class="section__products-details" id="productDetails">
+        <!-- Aqui se imprimen las imagenes de los productos -->
+      </section>
+
+      <!-- Section product information -->
+      <section class="section-description">
+        <article class="section-description__container-information">
+          <p class="section-description__subtitle">Description</p>
+          <div>
+            <h2 class="section-description__title">Exquisite Elegance and Timeless Charm</h2>
+            <p class="section-description__text">Lorem esse et culpa proident duis mollit nisi proident elit pariatur
+              elit sit consectetur et do proident ea voluptate deserunt. Consequat dolore qui aute magna voluptate enim
+              qui id cillum enim excepteur occaecat culpa deserunt eu.Culpa labore incididunt labore proident eu anim
+              in.</p>
+          </div>
+        </article>
+        <figure class="section-description__container-video">
+          <img class="section-description__video-img" src="/Assets/product-details/video.png"
+            alt="Video: Exquisite Elegance and Timeless Charm">
+          </figcaption>
+        </figure>
+      </section>
+    </section>
+
+    <!-- Section about us -->
+    <section class="main__about-us">
+      <section class="section-about">
+
+        <article class="section-about__container-information">
+          <figure class="section-about__container-img">
+            <img class="section-about__img" src="/Assets/product-details/Delivery time 3.svg" alt="Delivery">
+            <figcaption class="section-about__container-text">
+              <h6 class="section-about__title">Delivery</h6>
+              <p class="section-about__text">
+                Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
+              </p>
+            </figcaption>
+            </img>
+          </figure>
+        </article>
+
+        <article class="section-about__container-information">
+          <figure class="section-about__container-img">
+            <img class="section-about__img" src="/Assets/product-details/Love message 3.svg" alt="Customer care">
+            <figcaption class="section-about__container-text">
+              <h6 class="section-about__title">Customer care</h6>
+              <p class="section-about__text">
+                Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d
+              </p>
+            </figcaption>
+            </img>
+          </figure>
+        </article>
+
+        <article class="section-about__container-information">
+          <figure class="section-about__container-img">
+            <img class="section-about__img" src="/Assets/product-details/Lock landscape 3.svg" alt="Payment security">
+            <figcaption class="section-about__container-text">
+              <h6 class="section-about__title">Payment security</h6>
+              <p class="section-about__text">Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d</p>
+            </figcaption>
+            </img>
+          </figure>
+      </section>
+      </article>
+
+      <!-- Section Other Products -->
+      <section class="section-other-products">
+        <h1 class="section-other-products__title">You may also like</h1>
+        <section class="section-other-products__container-cards">
+          <figure class="section-other-products__container-card">
+            <img class="section-other-products__img" src="/Assets/product-details/card-1.jpg" alt="Radiance Necklace">
+            <figcaption class="section-other-products__text">
+              <h5 class="section-other-products__subtitle">Radiance Necklace</h5>
+              <p class="section-other-products__price">$168.76</p>
+            </figcaption>
+          </figure>
+
+          <figure class="section-other-products__container-card">
+            <img class="section-other-products__img" src="/Assets/product-details/card-2.jpg" alt="Exquisite Earrings">
+            <figcaption class="section-other-products__text">
+              <h5 class="section-other-products__subtitle">Exquisite Earrings</h5>
+              <p class="section-other-products__price">$125.28</p>
+            </figcaption>
+          </figure>
+
+          <figure class="section-other-products__container-card">
+            <img class="section-other-products__img" src="/Assets/product-details/card-3.jpg" alt="Glamour Necklace">
+            <figcaption class="section-other-products__text">
+              <h5 class="section-other-products__subtitle">Glamour Necklace</h5>
+              <p class="section-other-products__price">$620.73</p>
+            </figcaption>
+          </figure>
+
+          <figure class="section-other-products__container-card">
+            <img class="section-other-products__img" src="/Assets/product-details/card-4.jpg" alt="Delights Earrings">
+            <figcaption class="section-other-products__text">
+              <h5 class="section-other-products__subtitle">Delights Earrings</h5>
+              <p class="section-other-products__price">$327.71</p>
+            </figcaption>
+          </figure>
+
+          <figure class="section-other-products__container-card">
+            <img class="section-other-products__img" src="/Assets/product-details/card-5.jpg" alt="Dreamy Necklace">
+            <figcaption class="section-other-products__text">
+              <h5 class="section-other-products__subtitle">Dreamy Necklace</h5>
+              <p class="section-other-products__price">$327.71</p>
+            </figcaption>
+          </figure>
+        </section>
+      </section>
+
+      <!-- Section Testimony -->
+      <section class="section-testimony">
+        <article class="section-testimony__description">
+          <h2 class="section-testimony__title">From the people</h2>
+          <p class="section-testimony__text">
+            We love hearing from our customers!
+            <br>
+            You’re the reason we’re here and the reason we do what we do.
+          </p>
+        </article>
+        <figure class="section-testimony__container-img">
+          <img class="section-testimony__img" src="/Assets/product-details/testimony.jpg"
+            alt="Testimony of Anna Fernández">
+          <figcaption class="section-testimony__testimony">
+            <p class="section-testimony__text">The ring itself is stunning, with a beautiful design that catches the
+              light and sparkles from every angle. The quality of the materials used is evident, as the ring feels
+              substantial and durable. The gemstone is exquisite, with a vibrant color and exceptional clarity.</p>
+            <p class="section-testimony__person">Anna Fernandez</p>
+            <p class="section-testimony__country">USA</p>
+
+            <div class="section-testimony__container-arrows">
+              <i class="section-testimony__arrow fa-solid fa-angle-left"></i>
+              <i class="section-testimony__arrow fa-solid fa-angle-right"></i>
+            </div>
+
+          </figcaption>
+        </figure>
+      </section>
+      <hr>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <ul class="footer__containerLogo">
+      <li class="footer_logo">Darling.</li>
+      <li class="footer__copyright">© 2022 Brand, Inc.</li>
+    </ul>
+
+    <div class="footer__containerLinks"></div>
+
+    <ul class="footer__firtsLinks">
+      <li class="footer__links footer__links--hover">Shop</li>
+      <li class="footer__links footer__links--hover">Collections</li>
+      <li class="footer__links footer__links--hover">About</li>
+    </ul>
+
+    <ul class="footer__secondLinks footer__secondLinks--hover">
+      <li class="footer__links footer__links--hover">Contact</li>
+      <li class="footer__links footer__links--hover">Privacy</li>
+      <li class="footer__links footer__links--hover">Terms</li>
+    </ul>
+
+    <section class="footer__containerContact">
+      <h3 class="footer__contactTitle">Subscribe to our newsletter</h3>
+      <p class="footer__contactText">
+        For product announcements and exclusive insights
+      </p>
+
+      <form class="footer__contactEmail">
+        <span class="footer__barEmail">
+          <i class="fa-regular fa-envelope footer__iconEmail"></i>
+          <input class="footer__inputEmail" type="email" placeholder="Input your email" />
+        </span>
+        <button class="footer__button">Subscribe</button>
+      </form>
+
+      <ul class="footer__containerRRSS">
+        <li class="footer__rrssIcon"><i class="fa-brands fa-twitter"></i></li>
+        <li class="footer__rrssIcon">
+          <i class="fa-brands fa-facebook"></i>
+        </li>
+        <li class="footer__rrssIcon">
+          <i class="fa-brands fa-linkedin"></i>
+        </li>
+        <li class="footer__rrssIcon"><i class="fa-brands fa-youtube"></i></li>
+      </ul>
+    </section>
+  </footer>
+
+  <!-- MODAL CART -->
+  <section class="section__modal-container hidden">
+    <section class="section__modal-cart">
+      <div class="section__description">
+        <h1 class="section__modal-title">Your cart</h1>
+        <button id="closeModal" class="section__modal-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="tamanno_container">
+        <article id="containerCart" class="card-container">
+          <!-- Aqui pegamos los detalles del modal -->
+        </article>
+      </div>
+
+      <section class="section__total-products" id="containerTotal">
+        <hr class="section__products-details-separator">
+        <div class="section__products-details-total">
+          <p class="section__products-details-titleTotal">Total:</p>
+          <h4 class="section__products-details-total">$0.00</h4>
+        </div>
+        <button class="section__products-details-btn">Continue to check out</button>
+      </section>
+    </section>
+  </section>
+  <script src="../scripts/product-details.js"></script>
+</body>
+
+</html>

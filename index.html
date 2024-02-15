@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="/styles/style.css" />
+  <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles/modal.css">
+  <meta name="theme-color" content="#093931" />
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__logo">Darling.</h1>
+    <input type="checkbox" id="check">
+    <label for="check" class="header__nav-mostrar-menu"> &#8801 </label>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="./index.html" class="header__nav-link header__nav-link--active">Home</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="./views/products-listing.html" class="header__nav-link">Shop</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">Collection</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">About</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">Contact</a>
+        </li>
+        <li class="header__nav-item header__nav-item--profile">
+          <a href="/views/form-payment-method.html" class="header__nav-link">
+            <img src="/Assets/1Home-Page/0Header/Profile1.png" alt="Perfil" />
+          </a>
+        </li>
+        <li class="header__nav-item header__nav-item--cart">
+          <a href="#">
+            <img id="btnCart" src="/Assets/1Home-Page/0Header/Shopping cart 1.png" alt="CarritoCompras" />
+          </a>
+        </li>
+      </ul>
+      <label for="check" class="header__nav-esconder-menu"> &#215 </label>
+    </nav>
+  </header>
+
+  <div class="divContainerBienvenida">
+    <section class="bienvenida">
+      <header>
+        <h1 class="bienvenida--text">
+          Sparkle & Shine: Exquisite Elegance Unveiled
+        </h1>
+        <button class="bienvenida--boton">Shop now</button>
+      </header>
+
+      <aside>
+        <figure class="aside--figure">
+          <img src="/Assets/1Home-Page/1Bienvenida/Image 1.jpg" alt="Img1inicio" />
+        </figure>
+
+        <figure class="aside--figure-vd">
+          <img src="/Assets/1Home-Page/1Bienvenida/home_products 1.jpg" alt="Img2Video" />
+        </figure>
+        <button class="aside--boton">
+          <img src="/Assets/1Home-Page/1Bienvenida/Icon Button 1.png" alt="PlayVideo" />
+        </button>
+      </aside>
+    </section>
+    <br />
+    <section class="servicios">
+      <article class="servicios--article">
+        <figure>
+          <img src="/Assets/1Home-Page/2Servicios/Delivery time 1.png" alt="Delivery" />
+        </figure>
+        <h4>Delivery</h4>
+        <p>Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d</p>
+      </article>
+
+      <article class="servicios--article">
+        <figure>
+          <img src="/Assets/1Home-Page/2Servicios/Love message 1.png" alt="CustomerCare" />
+        </figure>
+        <h4>Customer care</h4>
+        <p>Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d</p>
+      </article>
+
+      <article class="servicios--article">
+        <figure>
+          <img src="/Assets/1Home-Page/2Servicios/Lock landscape 1.png" alt="PaymentSecurity" />
+        </figure>
+        <h4>Payment security</h4>
+        <p>Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d</p>
+      </article>
+    </section>
+    <br />
+    <br />
+
+  </div>
+  <!-- Featured Products -->
+  <section class="sectionFeaturedProducts">
+    <div class="sectionFeaturedProducts__description">
+      <h2 class="sectionFeaturedProducts__title">Featured Products</h2>
+      <p class="sectionFeaturedProducts__text">
+        Quis Lorem laborum quis esse officia ad commodo commodo anim est et
+        nulla
+      </p>
+      <button class="sectionFeaturedProducts__button sectionFeaturedProducts__button--hover">
+        <span class="sectionFeaturedProducts__buttonText sectionFeaturedProducts__buttonText--hover">Shop now</span>
+      </button>
+    </div>
+
+    <section class="sectionFeaturedProducts__cards">
+      <article class="sectionFeaturedProducts__card">
+        <figure class="sectionFeaturedProducts__containerImg">
+          <img class="sectionFeaturedProducts__img" src="/Assets/1Home-Page/3Productos/Image 1.png"
+            alt="Radiance Necklace" />
+        </figure>
+
+        <div class="sectionFeaturedProducts__containerProducts">
+          <h3 class="sectionFeaturedProducts__products">Radiance Necklace</h3>
+          <p class="sectionFeaturedProducts__price">$168.76</p>
+        </div>
+      </article>
+
+      <article class="sectionFeaturedProducts__card">
+        <figure class="sectionFeaturedProducts__containerImg">
+          <img class="sectionFeaturedProducts__img" src="/Assets/1Home-Page/3Productos/Image 2.png"
+            alt="Exquisite Earrings" />
+        </figure>
+
+        <div class="sectionFeaturedProducts__containerProducts">
+          <h3 class="sectionFeaturedProducts__products">Exquisite Earrings</h3>
+          <p class="sectionFeaturedProducts__price">$125.28</p>
+        </div>
+      </article>
+
+      <article class="sectionFeaturedProducts__card">
+        <figure class="sectionFeaturedProducts__containerImg">
+          <img class="sectionFeaturedProducts__img" src="/Assets/1Home-Page/3Productos/Image 3.png"
+            alt="Glamour Necklace" />
+        </figure>
+
+        <div class="sectionFeaturedProducts__containerProducts">
+          <h3 class="sectionFeaturedProducts__products">Glamour Necklace</h3>
+          <p class="sectionFeaturedProducts__price">$620.73</p>
+        </div>
+      </article>
+
+      <article class="sectionFeaturedProducts__card">
+        <figure class="sectionFeaturedProducts__containerImg">
+          <img class="sectionFeaturedProducts__img" src="/Assets/1Home-Page/3Productos/Image 4.png" alt="Delights" />
+        </figure>
+
+        <div class="sectionFeaturedProducts__containerProducts">
+          <h3 class="sectionFeaturedProducts__products">Delights</h3>
+          <p class="sectionFeaturedProducts__price">$327.71</p>
+        </div>
+      </article>
+    </section>
+  </section>
+
+  <section class="collections">
+    <h2>Our Collections</h2>
+    <br />
+    <section class="collections__products">
+      <div>
+        <article>
+          <h3>Luxurious Lustre</h3>
+          <img src="/Assets/1Home-Page/4Collections/1Luxurious.png" alt="Img1 Luxurious" />
+        </article>
+
+        <article>
+          <h3>Blissful Baubles</h3>
+          <img src="/Assets/1Home-Page/4Collections/4Blissful.png" alt="Img4 Blissful" />
+        </article>
+      </div>
+
+      <div class="collections__products-mov">
+        <article>
+          <h3>Radiant Reflections</h3>
+          <img src="/Assets/1Home-Page/4Collections/2Radiant.png" alt="Img2 Radiant" />
+        </article>
+
+        <article>
+          <h3>Timeless Treasures</h3>
+          <img src="/Assets/1Home-Page/4Collections/5Timeless.png" alt="Img5 Timeless" />
+        </article>
+      </div>
+
+      <div>
+        <article>
+          <h3>Majestic Mementos</h3>
+          <img src="/Assets/1Home-Page/4Collections/3Majestic.png" alt="Img3 Majestic" />
+        </article>
+
+        <article>
+          <h3>Divine Diamonds</h3>
+          <img src="/Assets/1Home-Page/4Collections/6Divine.png" alt="Img6 Divine" />
+        </article>
+      </div>
+    </section>
+    <button>Shop now</button>
+  </section>
+
+  <!-- Secciones de Gaby -->
+
+  <!-- Our selectio of jewerlry -->
+  <section class="sectionJewelry">
+    <div class="sectionJewelry__description">
+      <h2 class="sectionJewelry__title">Our Selection of Jewelry</h2>
+      <p class="sectionJewelry__text">
+        Nulla ad magna exercitation elit reprehenderit cupidatat veniam velit
+        aliqu
+      </p>
+      <button class="sectionJewelry__buttom sectionJewelry__buttom--hover">
+        <span class="sectionJewelry__buttomTextsectionJewelry__buttomText--hover">Shop now</span>
+      </button>
+    </div>
+
+    <section class="sectionJewelry__cards">
+      <article class="sectionJewelry__card">
+        <figure class="sectionJewelry__containerImg">
+          <img class="sectionJewelry__img" src="/Assets/1Home-Page/jewelry/Jewelry 1.jpg" alt="Shimmering Ring" />
+        </figure>
+
+        <div class="sectionJewelry__containerProducts">
+          <h3 class="sectionJewelry__products">Shimmering Ring</h3>
+          <p class="sectionJewelry__price">$168.76</p>
+        </div>
+      </article>
+
+      <article class="sectionJewelry__card">
+        <figure class="sectionJewelry__containerImg">
+          <img class="sectionJewelry__img" src="/Assets/1Home-Page/jewelry/Jewelry 2.jpg" alt="Exquisite Earrings" />
+        </figure>
+
+        <div class="sectionJewelry__containerProducts">
+          <h3 class="sectionJewelry__products">Exquisite Earrings</h3>
+          <p class="sectionJewelry__price">$125.28</p>
+        </div>
+      </article>
+
+      <article class="sectionJewelry__card">
+        <figure class="sectionJewelry__containerImg">
+          <img class="sectionJewelry__img" src="/Assets/1Home-Page/jewelry/Jewelry 3.jpg" alt="Elegance Earrings" />
+        </figure>
+
+        <div class="sectionJewelry__containerProducts">
+          <h3 class="sectionJewelry__products">Elegance Earrings</h3>
+          <p class="sectionJewelry__price">$620.73</p>
+        </div>
+      </article>
+
+      <article class="sectionJewelry__card">
+        <figure class="sectionJewelry__containerImg">
+          <img class="sectionJewelry__img" src="/Assets/1Home-Page/jewelry/Jewelry 4.jpg" alt="Luxury Charms Brooch" />
+        </figure>
+
+        <div class="sectionJewelry__containerProducts">
+          <h3 class="sectionJewelry__products">Luxury Charms Brooch</h3>
+          <p class="sectionJewelry__price">$327.71</p>
+        </div>
+      </article>
+    </section>
+  </section>
+
+  <!-- Our Story -->
+  <section class="sectionStory">
+    <h2 class="sectionStory__title">Our story</h2>
+    <figure class="sectionStory__containerImg">
+      <img class="sectionStory__img" src="/Assets/1Home-Page/story/story.jpg" alt="Our story video" />
+      <i class="fa-regular fa-circle-play sectionStory__icon"></i>
+    </figure>
+  </section>
+
+  <!-- From the people -->
+  <section class="sectionTestimony">
+    <div class="sectionTestimony__description">
+      <h2 class="sectionTestimony__title">From the people</h2>
+      <p class="sectionTestimony__text">
+        We love hearing from our
+        <br />
+        customers!
+        <br />
+        You’re the reason we’re here and the reason we do what we do.
+      </p>
+    </div>
+
+    <article class="sectionTestimony__people">
+      <figure class="sectionTestimony__containerImg">
+        <img class="sectionTestimony__img" src="/Assets/1Home-Page/testimony/testimony.jpg"
+          alt="Testimony of Anna Fernandez" />
+      </figure>
+      <div class="sectionTestimony__containerTestimony">
+        <p class="sectionTestimony__testimony">
+          The ring itself is stunning, with a beautiful design that catches
+          the light and sparkles from every angle. The quality of the
+          materials used is evident, as the ring feels substantial and
+          durable. The gemstone is exquisite, with a vibrant color and
+          exceptional clarity.
+        </p>
+        <p class="sectionTestimony__person">Anna Fernandez</p>
+        <p class="sectionTestimony__country">USA</p>
+      </div>
+    </article>
+
+    <div class="sectionTestimony__arrows">
+      <i class="fa-solid fa-chevron-left sectionTestimony__arrow sectionTestimony__arrowLeft--hover"></i>
+      <i class="fa-solid fa-chevron-right sectionTestimony__arrow sectionTestimony__arrowRight--hover"></i>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <ul class="footer__containerLogo">
+      <li class="footer_logo">Darling.</li>
+      <li class="footer__copyright">© 2022 Brand, Inc.</li>
+    </ul>
+
+    <div class="footer__containerLinks"></div>
+
+    <ul class="footer__firtsLinks">
+      <li class="footer__links footer__links--hover">Shop</li>
+      <li class="footer__links footer__links--hover">Collections</li>
+      <li class="footer__links footer__links--hover">About</li>
+    </ul>
+
+    <ul class="footer__secondLinks footer__secondLinks--hover">
+      <li class="footer__links footer__links--hover">Contact</li>
+      <li class="footer__links footer__links--hover">Privacy</li>
+      <li class="footer__links footer__links--hover">Terms</li>
+    </ul>
+
+    <section class="footer__containerContact">
+      <h3 class="footer__contactTitle">Subscribe to our newsletter</h3>
+      <p class="footer__contactText">
+        For product announcements and exclusive insights
+      </p>
+
+      <form class="footer__contactEmail">
+        <span class="footer__barEmail">
+          <i class="fa-regular fa-envelope footer__iconEmail"></i>
+          <input class="footer__inputEmail" type="email" placeholder="Input your email" />
+        </span>
+        <button class="footer__button">Subscribe</button>
+      </form>
+
+      <ul class="footer__containerRRSS">
+        <li class="footer__rrssIcon"><i class="fa-brands fa-twitter"></i></li>
+        <li class="footer__rrssIcon">
+          <i class="fa-brands fa-facebook"></i>
+        </li>
+        <li class="footer__rrssIcon">
+          <i class="fa-brands fa-linkedin"></i>
+        </li>
+        <li class="footer__rrssIcon"><i class="fa-brands fa-youtube"></i></li>
+      </ul>
+    </section>
+  </footer>
+  <!-- MODAL CART -->
+  <section class="section__modal-container hidden">
+    <section class="section__modal-cart">
+      <div class="section__description">
+        <h1 class="section__modal-title">Your cart</h1>
+        <button id="closeModal" class="section__modal-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div id="containerCart">
+        <!-- Aqui pegamos los detalles del modal -->
+      </div>
+    </section>
+  </section>
+  <script src="/scripts/script.js"></script>
+</body>
+
+</html>

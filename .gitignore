@@ -1,0 +1,13 @@
+# Ignora los archivos de configuración locales
+.vscode/
+
+# Ignora los archivos generados
+*.js.map
+.ini
+# Ignora los archivos de registro
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignora la carpeta de módulos de Node
+node_modules/

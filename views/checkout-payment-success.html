@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Payment</title>
+  <link rel="stylesheet" href="/styles/checkout-payment.css">
+  <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles/modal.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__logo">Darling.</h1>
+    <input type="checkbox" id="check">
+    <label for="check" class="header__nav-mostrar-menu"> &#8801 </label>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="/index.html" class="header__nav-link">Home</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="./products-listing.html" class="header__nav-link">Shop</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="./products-listing.html" class="header__nav-link">Collection</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">About</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">Contact</a>
+        </li>
+        <li class="header__nav-item header__nav-item--profile">
+          <a href="./form-payment-method.html" class="header__nav-link">
+            <img src="/Assets/1Home-Page/0Header/Profile1.png" alt="Perfil" />
+          </a>
+        </li>
+        <li class="header__nav-item header__nav-item--cart">
+          <a href="#" class="header__nav-link--active">
+            <img id="btnCart" src="/Assets/1Home-Page/0Header/Shopping cart 1.png" alt="CarritoCompras" />
+          </a>
+        </li>
+      </ul>
+      <label for="check" class="header__nav-esconder-menu"> &#215 </label>
+    </nav>
+  </header>
+
+  <section class="Order">
+    <section class="Order__summary">
+      <h3>Order summary</h3>
+      <figure>
+        <img class="Order__summary-imgProduct" src="/Assets/Checkout-payment/1Order-summary/1Luxury.png" alt="Luxury">
+        <figcaption>
+          <h5>Luxury Charms Ring</h5>
+          <p>Code: 78205</p>
+        </figcaption>
+        <p class="Order__summary-precio">$620.73</p>
+        <button><img src="/Assets/Checkout-payment/1Order-summary/botebasura.png" alt="boteBasura"></button>
+      </figure>
+      <figure>
+        <img class="Order__summary-imgProduct" src="/Assets/Checkout-payment/1Order-summary/2Exquisite.png"
+          alt="Exquisite">
+        <figcaption>
+          <h5>Exquisite Earrings</h5>
+          <p>Code: 92701</p>
+        </figcaption>
+        <p class="Order__summary-precio">$125.28</p>
+        <button><img src="/Assets/Checkout-payment/1Order-summary/botebasura.png" alt="boteBasura"></button>
+      </figure>
+      <figure>
+        <img class="Order__summary-imgProduct" src="/Assets/Checkout-payment/1Order-summary/3Delights.png"
+          alt="Delights">
+        <figcaption>
+          <h5>Delights Earrings</h5>
+          <p>Code: 78201</p>
+        </figcaption>
+        <p class="Order__summary-precio">$327.71</p>
+        <button><img src="/Assets/Checkout-payment/1Order-summary/botebasura.png" alt="boteBasura"></button>
+      </figure>
+    </section>
+
+    <form class="Order__payment">
+      <span class="Order__payment-method">
+        <h3>Payment method</h3>
+        <p>Change payment methods</p>
+        <img src="/Assets/Checkout-payment/2Payment-meto/mastercard.png" alt="Mastercard">
+        <select name="Metodos" id="method-select">
+          <option value="">Mastercard **** 5987</option>
+        </select>
+      </span>
+      <br>
+      <div class="Order__payment-voucher">
+        <h4>Voucher</h4>
+        <span>
+          <input type="text" placeholder="$15 OFF" />
+          <button>Apply</button>
+        </span>
+        <label for="etiquetaDescuento">$15 OFF</label>
+      </div>
+      <br>
+      <div class="Order__payment-summary">
+        <h4 class="Order__payment-summary-title">Summary</h4>
+        <div>
+          <p>Subtotal</p>
+          <h4>$1073.72</h4>
+        </div>
+        <div>
+          <p>Discount</p>
+          <h4>-$15</h4>
+        </div>
+        <div>
+          <p>Fee</p>
+          <h4>$0</h4>
+        </div>
+        <br>
+        <div>
+          <p>Total</p>
+          <h3>$1058.72</h3>
+        </div>
+        <br>
+        <button>Proceed to payment</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="section-other-products">
+    <div class="section-other-products__header">
+      <h1 class="section-other-products__title">You may also like</h1>
+      <a href="">View more</a>
+    </div>
+
+    <section class="section-other-products__container-cards">
+      <figure class="section-other-products__container-card">
+        <img class="section-other-products__img" src="/Assets/Checkout-payment/3YouMay-Like/1Shimmering Stones.jpg"
+          alt="Shimmering Stones">
+        <figcaption class="section-other-products__text">
+          <h5 class="section-other-products__subtitle">Shimmering Stones</h5>
+          <p class="section-other-products__price">$168.76</p>
+        </figcaption>
+      </figure>
+
+      <figure class="section-other-products__container-card">
+        <img class="section-other-products__img" src="/Assets/Checkout-payment/3YouMay-Like/2Exquisite Ornaments.jpg"
+          alt="Exquisite Ornaments">
+        <figcaption class="section-other-products__text">
+          <h5 class="section-other-products__subtitle">Exquisite Ornaments</h5>
+          <p class="section-other-products__price">$125.28</p>
+        </figcaption>
+      </figure>
+
+      <figure class="section-other-products__container-card">
+        <img class="section-other-products__img" src="/Assets/Checkout-payment/3YouMay-Like/3Elegance and Grace.jpg"
+          alt="Elegance and Grace">
+        <figcaption class="section-other-products__text">
+          <h5 class="section-other-products__subtitle">Elegance and Grace</h5>
+          <p class="section-other-products__price">$620.73</p>
+        </figcaption>
+      </figure>
+
+      <figure class="section-other-products__container-card">
+        <img class="section-other-products__img" src="/Assets/Checkout-payment/3YouMay-Like/4Luxury Charms.jpg"
+          alt="Luxury Charms">
+        <figcaption class="section-other-products__text">
+          <h5 class="section-other-products__subtitle">Luxury Charms</h5>
+          <p class="section-other-products__price">$327.71</p>
+        </figcaption>
+      </figure>
+
+      <figure class="section-other-products__container-card">
+        <img class="section-other-products__img" src="/Assets/Checkout-payment/3YouMay-Like/5Blissful Bloom.jpg"
+          alt="Blissful Bloom">
+        <figcaption class="section-other-products__text">
+          <h5 class="section-other-products__subtitle">Blissful Bloom</h5>
+          <p class="section-other-products__price">$327.71</p>
+        </figcaption>
+      </figure>
+    </section>
+  </section>
+  <br>
+  <br>
+
+  <footer class="footer">
+    <figure class="info__web">
+      <h1>Darling.</h1>
+      <figcaption>© 2022 Brand, Inc.</figcaption>
+    </figure>
+
+    <div class="footer__containerLinks">
+      <ul class="footer__firtsLinks">
+        <li><a href="">Shop</a></li>
+        <li><a href="">Collections</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+
+      <ul class="footer__secondLinks">
+        <li><a href="">Contact</a></li>
+        <li><a href="">Privacy</a></li>
+        <li><a href="">Terms</a></li>
+      </ul>
+    </div>
+
+    <section class="footer__containerContact">
+      <h3>Subscribe to our newsletter</h3>
+      <p>For product announcements and exclusive insights</p>
+
+      <div class="footer__contactEmail">
+        <span class="Email">
+          <img src="/Assets/2Our-Products/4Footer/Mail.png" alt="emailIcon">
+          <input type="email" placeholder="Input your email" />
+        </span>
+        <button>Subscribe</button>
+      </div>
+
+      <figure class="footer__icons">
+        <img src="/Assets/2Our-Products/4Footer/Logo twitter 2.png" alt="logoTwitter">
+        <img src="/Assets/2Our-Products/4Footer/Logo facebook 2.png" alt="logoFb">
+        <img src="/Assets/2Our-Products/4Footer/Logo linkedin 2.png" alt="logoLink">
+        <img src="/Assets/2Our-Products/4Footer/Logo youtube 2.png" alt="logoYoutube">
+      </figure>
+    </section>
+  </footer>
+  <!-- MODAL CART -->
+  <section class="section__modal-container hidden">
+    <section class="section__modal-cart">
+      <div class="section__description">
+        <h1 class="section__modal-title">Your cart</h1>
+        <button id="closeModal" class="section__modal-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div id="containerCart">
+        <!-- Aqui pegamos los detalles del modal -->
+      </div>
+    </section>
+  </section>
+  <script src="/scripts/script.js"></script>
+</body>
+
+</html>

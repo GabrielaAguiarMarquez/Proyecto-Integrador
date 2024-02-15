@@ -620,257 +620,232 @@ const listProducts = [
   },
 ];
 
-// Obtener el ID del producto de la URL
 const urlParams = new URLSearchParams(document.location.search);
-const productId = urlParams.get("id");
-
-// Mostrar un mensaje de alerta con el ID del producto
-console.log(`Hiciste clic en el producto con el ID: ${productId}`);
-
+const productId = urlParams.get('id');
+const contenedorCards = document.getElementById('productDetails');
+const contenedorNav = document.getElementById('navShop');
 //VISUALIZACION CART
 const cartButton = document.getElementById("btnCart");
 const modal = document.querySelector(".section__modal-container");
+const cardsModal = document.querySelector('#containerCart');
 const closeButton = document.getElementById("closeModal");
 
+const btnCarrito = document.getElementById('addToCart');
+
+// Función para mostrar u ocultar el modal
 const toggleModal = (button, modal) => {
   button.addEventListener("click", () => {
-    // modal.classList.toggle("hidden");
     modal.classList.toggle("show");
   });
 };
-
 toggleModal(cartButton, modal);
 toggleModal(closeButton, modal);
 
-// Buscar en el array el producto, si lo consigue lo imprimiremos en la pantalla
+const detalleProducto = (contNav, contCard, lista) => {
+  const producto = lista.find((buscar) => buscar.id == productId);
+  if(producto) {
+    contNav.innerHTML = '';
+    contNav.innerHTML = 
+    `
+          <ul class="main__nav-list">
+            <li><a class="main__nav-link" href="../index.html">Home<span class="main__link-arrows"> <i class="fa-solid fa-angle-right"></i></span></a></li>
+            <li><a class="main__nav-link" href="../views/products-listing.html">Shop<span class="main__link-arrows"> <i class="fa-solid fa-angle-right"></i> </span></a></li>
+            <li><a class="main__nav-link">${producto.nombre}</a></li>
+        </ul>
+      `;
+      contCard.innerHTML = '';
+      contCard.innerHTML = 
+      `
+      <div class="section-product">
+      <article class="section-product__container-img">
+      <figure class="section-product__figure-first">
+          <img class="section-product__reference-img section-product__reference-img--active"
+          src="${producto.imagen[1]}" alt="${producto.nombre}">
+          <img class="section-product__reference-img" src="${producto.imagen[2]}" alt="
+          Golden Aventurine ring and calaite ring">
+          <img class="section-product__reference-img" src="${producto.imagen[3]}"
+          alt="${producto.nombre}">
+          <img class="section-product__reference-img" src="${producto.imagen[4]}"
+          alt="${producto.nombre}">
+      </figure>
+  
+      <figure class="section-product__figure-second">
+          <span><i class="section-product__favorite-icon section-product__favorite-icon--hover fa-regular fa-heart"></i></span>
+          <img class="section-product__ring-img" src="${producto.imagen[0]}" alt="
+          ${producto.nombre}">
+      </figure>
+      </article>
+  </div>
+  
+  <div class="section-product__container">
+      <section class="section-product__containerPrice">
+      <h1 class="section-product__title">${producto.nombre}</h1>
+  
+      <p class="section-product__code">Code: ${producto.codigo}</p>
+  
+      <h3 class="section-product__price">${producto.precio}</h3>
+  
+      <p class="section-product__color-product">Color - Rose Gold</p>
+  
+      <span class="section-product__containerCircles">
+          <div class="section-product__circle"></div>
+          <div class="section-product__circle section-product__circle--active"></div>
+      </span>
+      </section>
+  
+      <section class="section-product__container-size">
+      <section class="section-product__description-size">
+          <p class="section-product__size">Size - 48</p>
+          <p class="section-product__question">What is my size?</p>
+      </section>
+      <section class="section-product__container-button-size">
+          <button class="section-product__size-button section-product__size-button--active">48</button>
+          <button class="section-product__size-button">50</button>
+          <button class="section-product__size-button">52</button>
+          <button class="section-product__size-button">54</button>
+          <button class="section-product__size-button">56</button>
+          <button class="section-product__size-button">58</button>
+          <button class="section-product__size-button">60</button>
+          <button class="section-product__size-button">62</button>
+          <button class="section-product__size-button">64</button>
+          <button class="section-product__size-button">65</button>
+          <button class="section-product__size-button">68</button>
+          <button class="section-product__size-button">70</button>
+      </section>
+  
+      </section>
+  
+      <section class="section-product__container-quantity">
+      <p class="section-product__required-quantity">Quantity</p>
+      <div>
+          <button class="section-product__button-quantity" id="btn-minus">-</button>
+          <button class="section-buttonProduct__button-quantity" id="quantityProducts">1</p>
+          <button class="section-product__button-quantity" id="btn-plus">+</button>
+      </div>
+      </section>
+  
+      <section class="section-product__container-buy">
+  
+      <div class="section-product__btn-container">
+        <button onclick="addToCart()" class="section-product__add-buy">
+            <img class="section-product__cart-buy" src="/Assets/product-details/Add shopping cart.svg" alt="Add shopping cart">
+            <span class="section-product__text-button ">
+              Add to bag
+            </span>
+        </button>
+        <button class="section-product__buy-now">
+            Buy now
+        </button>
+      </div>
+  
+      <section class="section-product__container-payment-options">
+          <div class="section-product__payment-options">
+          <select class="section-product__payment-select" name="delivery">
+              <option value="delivery">Delivery</option>
+          </select>
+          <select class="section-product__payment-select" name="payment">
+              <option value="Payment">Payment</option>
+          </select>
+          </div>
+  
+          <div class="section-product__payment-options">
+          <select class="section-product__payment-select" name="Warranty">
+              <option value="Warranty">Warranty</option>
+          </select>
+          <select class="section-product__payment-select" name="Care">
+              <option value="Care">Care</option>
+          </select>
+          </div>
+      </section>
+      </section>
+  </div>`;
+  const minus = document.getElementById('btn-minus');
+const plus = document.getElementById('btn-plus');
+let quantity = document.getElementById('quantityProducts');
+let quantityCompra = document.getElementById('quantityCompra');
+let counter = 1;
 
-const cardsContainer = document.getElementById("productDetails");
-const navShop = document.getElementById("navShop");
-const containerCart = document.getElementById("containerCart");
-
-const printedList = (containerDetails, containerNav, containerModal, lista) => {
-  const item = lista.find((producto) => producto.id == productId);
-  if (item) {
-    containerNav.innerHTML = "";
-    containerNav.innerHTML = `
-        <ul class="main__nav-list">
-          <li><a class="main__nav-link" href="../index.html">Home<span class="main__link-arrows"> <i class="fa-solid fa-angle-right"></i></span></a></li>
-          <li><a class="main__nav-link" href="../views/products-listing.html">Shop<span class="main__link-arrows"> <i class="fa-solid fa-angle-right"></i> </span></a></li>
-          <li><a class="main__nav-link">${item.nombre}</a></li>
-      </ul>
-    `;
-
-    containerDetails.innerHTML = "";
-    containerDetails.innerHTML += `
-        <div class="section-product">
-        <article class="section-product__container-img">
-        <figure class="section-product__figure-first">
-            <img class="section-product__reference-img section-product__reference-img--active"
-            src="${item.imagen[1]}" alt="${item.nombre}">
-            <img class="section-product__reference-img" src="${item.imagen[2]}" alt="
-            Golden Aventurine ring and calaite ring">
-            <img class="section-product__reference-img" src="${item.imagen[3]}"
-            alt="${item.nombre}">
-            <img class="section-product__reference-img" src="${item.imagen[4]}"
-            alt="${item.nombre}">
-        </figure>
-    
-        <figure class="section-product__figure-second">
-            <span><i class="section-product__favorite-icon section-product__favorite-icon--hover fa-regular fa-heart"></i></span>
-            <img class="section-product__ring-img" src="${item.imagen[0]}" alt="
-            ${item.nombre}">
-        </figure>
-        </article>
-    </div>
-    
-    <div class="section-product__container">
-        <section class="section-product__containerPrice">
-        <h1 class="section-product__title">${item.nombre}</h1>
-    
-        <p class="section-product__code">Code: ${item.codigo}</p>
-    
-        <h3 class="section-product__price">${item.precio}</h3>
-    
-        <p class="section-product__color-product">Color - Rose Gold</p>
-    
-        <span class="section-product__containerCircles">
-            <div class="section-product__circle"></div>
-            <div class="section-product__circle section-product__circle--active"></div>
-        </span>
-        </section>
-    
-        <section class="section-product__container-size">
-        <section class="section-product__description-size">
-            <p class="section-product__size">Size - 48</p>
-            <p class="section-product__question">What is my size?</p>
-        </section>
-        <section class="section-product__container-button-size">
-            <button class="section-product__size-button section-product__size-button--active">48</button>
-            <button class="section-product__size-button">50</button>
-            <button class="section-product__size-button">52</button>
-            <button class="section-product__size-button">54</button>
-            <button class="section-product__size-button">56</button>
-            <button class="section-product__size-button">58</button>
-            <button class="section-product__size-button">60</button>
-            <button class="section-product__size-button">62</button>
-            <button class="section-product__size-button">64</button>
-            <button class="section-product__size-button">65</button>
-            <button class="section-product__size-button">68</button>
-            <button class="section-product__size-button">70</button>
-        </section>
-    
-        </section>
-    
-        <section class="section-product__container-quantity">
-        <p class="section-product__required-quantity">Quantity</p>
-        <div>
-            <button class="section-product__button-quantity" id="btn-minus">-</button>
-            <button class="section-buttonProduct__button-quantity" id="quantityProducts">1</p>
-            <button class="section-product__button-quantity" id="btn-plus">+</button>
-        </div>
-        </section>
-    
-        <section class="section-product__container-buy">
-
-        <div class="section-product__btn-container">
-          <button id="btnAddToCart" class="section-product__add-buy">
-              <img class="section-product__cart-buy" src="/Assets/product-details/Add shopping cart.svg" alt="Add shopping cart">
-              <span class="section-product__text-button " id="addToCart">
-                Add to bag
-              </span>
-          </button>
-          <button class="section-product__buy-now">
-              Buy now
-          </button>
-        </div>
-    
-        <section class="section-product__container-payment-options">
-            <div class="section-product__payment-options">
-            <select class="section-product__payment-select" name="delivery">
-                <option value="delivery">Delivery</option>
-            </select>
-            <select class="section-product__payment-select" name="payment">
-                <option value="Payment">Payment</option>
-            </select>
-            </div>
-    
-            <div class="section-product__payment-options">
-            <select class="section-product__payment-select" name="Warranty">
-                <option value="Warranty">Warranty</option>
-            </select>
-            <select class="section-product__payment-select" name="Care">
-                <option value="Care">Care</option>
-            </select>
-            </div>
-        </section>
-        </section>
-    
-    </div>
-        `;
-
-    /* =============== Cantida de productos: Botones  ================*/
-
-    const minus = document.getElementById("btn-minus");
-    const plus = document.getElementById("btn-plus");
-    const quantity = document.getElementById("quantityProducts");
-
-    let counter = 1;
-
-    minus.addEventListener("click", () => {
-      if (counter > 1) {
+minus.addEventListener("click", () => {
+    if(counter > 1) {
         counter--;
         quantity.textContent = counter;
-      }
-    });
-
-    plus.addEventListener("click", () => {
-      counter++;
-      quantity.textContent = counter;
-    });
-
-    /* =============== Productos carrito  ================*/
-    let buttonClicked = false;
-
-    const añadir = document.getElementById("addToCart");
-
-    // Cuando cargo la page, busca en el localStorage e imprime lo que se guardo
-    window.addEventListener("load", () => {
-      const storedCart = JSON.parse(localStorage.getItem("cart"));
-      if (storedCart && storedCart.length > 0) {
-        storedCart.forEach((product) => {
-          showProductInCart(product);
-        });
-      }
-    });
-
-    añadir.addEventListener("click", () => {
-      buttonClicked = true;
-      console.log(`Hiciste clic en el botón addToCart, con el id ${productId}`);
-
-      if (buttonClicked) {
-        // Agrega el producto al carrito
-        const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
-        storedCart.push(item);
-        localStorage.setItem("cart", JSON.stringify(storedCart));
-
-        // Muestra el producto en el carrito
-        showProductInCart(item);
-      }
-    });
-    let totalProducts = 0;
-
-    // Función para mostrar el producto en el carrito
-    const showProductInCart = (product) => {
-      // Incrementa el total de productos
-      totalProducts += counter;
-
-      // Muestra el producto en el carrito
-      containerModal.innerHTML += `
-    <section class="section__purchase-details">
-      <figure class="section__products-details-container">
-        <img class="section__products-details-img" src="${product.imagen[0]}" alt="${product.nombre}">
-        <figcaption>
-          <div class="section__products-details-textContainer">
-            <h3 class="section__products-details-title">${product.nombre}</h3>
-            <i class="section__products-details-edit fa-solid fa-pencil"></i>
-          </div>
-          <p class="section__products-details-code">Code: ${product.codigo}</p>
-          <div class="section__products-details-priceContainer">
-            <h4 class="section__products-details-price">$${product.precio}</h4>
-            <p class="section__products-details-counter">x${counter}</p>
-          </div>
-        </figcaption>
-      </figure>
-      <hr class="section__products-details-separator">
-    </section>
-  `;
-
-      // Actualiza la sección de total de productos
-      updateTotalProducts();
-    };
-
-    // Función para actualizar el total de productos en la sección correspondiente
-    function updateTotalProducts() {
-      // Busca la sección de total de productos
-      const totalProductsSection = document.getElementById("containerTotal");
-
-      // Actualiza el contenido con el total de productos
-      totalProductsSection.innerHTML = `
-  <hr class="section__products-details-separator">
-    <div class="section__products-details-total">
-      <p class="section__products-details-titleTotal">Total:</p>
-      <h4 class="section__products-details-total">$${calculateTotal()}</h4>
-    </div>
-    <button class="section__products-details-btn">Continue to check out</button>
-
-  `;
+        quantityCompra.textContent = `x${counter}`;
     }
+});
 
-    // Función para calcular el total de la compra
-    const calculateTotal = () => {
-      return (listProducts[productId - 1].precio * totalProducts).toFixed(2);
-    };
+plus.addEventListener("click", () => {
+    counter++;
+    quantity.textContent = counter;
+    quantityCompra.textContent = `x${counter}`;
+})
+
+  } else {
+    alert('Producto no encontrado.')
   }
 };
 
-printedList(cardsContainer, navShop, containerCart, listProducts);
+// Carrito
+document.addEventListener('DOMContentLoaded', function() {
+  // Llama a addToCart() para cargar los productos del carrito desde el localStorage
+  addToCart();
+});
+
+
+function addToCart() {
+  const addProductToModal = (contModal, lista) => {
+    const productId = urlParams.get('id');
+    const producto = lista.find((buscar) => buscar.id == productId);
+    if (producto) {  
+      // Obtener los productos agregados al carrito del localStorage
+      let cartProducts = JSON.parse(localStorage.getItem('cartProducts')) || [];
+
+      // Verificar si el producto ya existe en el carrito
+      const existingProductIndex = cartProducts.findIndex(item => item.id == productId);
+
+      if (existingProductIndex !== -1) {
+        // Si el producto ya existe, actualizar la cantidad
+        cartProducts[existingProductIndex].cantidad += 1;
+      } else {
+        // Si el producto no existe, agregarlo al carrito
+        cartProducts.push({...producto, cantidad: 1});
+      }
+
+      // Guardar los productos actualizados en el localStorage
+      localStorage.setItem('cartProducts', JSON.stringify(cartProducts));
+
+      // Renderizar los productos en el contenedor del modal
+      contModal.innerHTML = "";
+      cartProducts.forEach(producto => {
+        contModal.innerHTML +=  
+        `<section class="section__purchase-details">
+          <figure class="section__products-details-container">
+            <img class="section__products-details-img" src="${producto.imagen[0]}" alt="${producto.nombre}">
+            <figcaption>
+              <div class="section__products-details-textContainer">
+                <h3 class="section__products-details-title">${producto.nombre}</h3>
+                <i class="section__products-details-edit fa-solid fa-pencil"></i>
+              </div>
+              <p class="section__products-details-code">Code: ${producto.codigo}</p>
+              <div class="section__products-details-priceContainer">
+                <h4 class="section__products-details-price">$${producto.precio}</h4>
+                <p class="section__products-details-counter" id="quantityCompra">1</p>
+              </div>
+            </figcaption>
+          </figure>
+          <hr class="section__products-details-separator">
+        </section>`;
+      });
+    }
+  }
+
+  addProductToModal(cardsModal, listProducts);
+}
+
+
+detalleProducto(contenedorNav, contenedorCards, listProducts);
+
+
+
+
+
+
